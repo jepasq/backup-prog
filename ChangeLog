@@ -1,0 +1,81 @@
+2010-05-05 Jérôme Pasquier  <rainbru@free.fr>
+
+	* BackupProg/UserInterface/Widget.pm: base implementation.
+
+	* BackupProg/UserInterface/Widget.pm: Defines etxt alignment constants.
+
+2010-05-05 Jérôme Pasquier  <rainbru@free.fr>
+
+	* BackupProg/UserInterface/Preferences.pm: base implementation.
+	
+2010-05-04 Jérôme Pasquier  <rainbru@free.fr>
+
+	* m4/CommonRules.m4 : BP_GEN_INFO_RULES() implementation/
+	* BackupProg/Common/Logger.pm (print_sg): Fixed a print() error due 
+	to tmp file.
+
+	* m4/CommonRules.m4 (BP_GEN_EXE_RULES): install rule uses install-info.
+	* m4/CommonRules.m4 (BP_GEN_INFO_RULES): uninstall-info rule.
+
+2009-10-31 Jérôme Pasquier  <rainbru@free.fr>
+	* BackupProg/Common/Logger.pm : Uses a temp file.
+	* BackupProg/Common/Config.pm : implementation started.
+
+2009-10-30 Jérôme Pasquier  <rainbru@free.fr>
+	* BackupProg/Parser/CommandLine.pm : implementation started.
+
+2009-10-29 Jérôme Pasquier  <rainbru@free.fr>
+	* m4/CommonRules.m4 : Created a man2html rules to test manpage.
+	
+2009-10-28 Jérôme Pasquier  <rainbru@free.fr>
+	* backup_prog.1 : Added command line options documentation.
+
+2009-10-27 Jérôme Pasquier  <rainbru@free.fr>
+	* BackupProg/Parser/ConfigFile.pm : implementation started.
+	* BackupProg/Exception/OpenFile.pm : implementation started.
+
+2009-10-26 Jérôme Pasquier  <rainbru@free.fr>
+	* BackupProg/Exception/BadArgument.pm : implementation started.
+	* BackupProg/Exception/BaseException.pm : implementation started.
+
+2009-10-25 Jérôme Pasquier  <rainbru@free.fr>
+	* backup_prog.1 : manpage created.
+
+	* BackupProg/Common/Def.pm : Now defines and export null.
+	* BackupProg/Common/Logger.pm : POD documentation moves to Logger.pod.
+
+2009-10-24 Jérôme Pasquier  <rainbru@free.fr>
+	* BackupProg/Common/Def.pm : Defines accessors.
+	* BackupProg/Common/Def.pm : Defines and exports booleans.
+
+	* BackupProg/Common/Logger.pm : Implements LogModes.
+
+2009-10-23 Jérôme Pasquier  <rainbru@free.fr>
+	* BackupProg/Common/Logger.pm (print_message) : Implements LogLevels.
+	* BackupProg/Common/Def.pm (get_version) : Implemented.
+	* BackupProg/Common/Logger.pm (print_message) : Now use
+	caller() by itself.
+
+2009-10-22 Jérôme Pasquier  <rainbru@free.fr>
+	* BackupProg/Common/Logger.pm : LogLevel imlementation.
+	
+2009-10-21 Jérôme Pasquier  <rainbru@free.fr>
+	* BackupProg/Common/Logger.pm : Now a Class::Singleton.
+	
+2009-10-20 Jérôme Pasquier  <rainbru@free.fr>
+	* Makefile.in : Created in all sources directories.
+	* gen-makefiles.sh : created.
+	* m4/CommonRules.sh : created.
+	
+2009-10-19 Jérôme Pasquier  <rainbru@free.fr>
+	* Makefile : Created recursive rules to install (with links).
+
+	* UserInterface/MainWindow.pl : Created for module import
+	test after installation : OK.
+
+	* backup_prog.pl : Played with GetOpt::Declare : OK.
+	* backup_prog.pl : Trying to handle get_distant.d/ config files
+	with Config::General : OK.
+	
+2009-10-18 Jérôme Pasquier  <rainbru@free.fr>
+	* backup_prog.pl : First try of using libperl-curses : OK.

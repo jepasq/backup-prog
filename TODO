@@ -1,0 +1,79 @@
+backup_prog - GPLv3 - A new version of my backup tool using
+   perl/curses.
+
+o [mouse] Graphical User Interface: BackupProg/UserInterface/Widgets.pm 
+   See the SCREEN.Layout file
+- See the label/border placement bug
+- options hashmap should contains 
+   color pair index for normal, pause, error, warning
+- label type printf + setValue()
+- See the Back Color Erase (fix it with space chars)
+
+* BackupProg/UserInterface/Prefrences.pm 
+- Should contains options hashmap for each widget
+
+* Texinfo manual
+- in BackupProg.texinfo
+
+* Testing
+- -h <keyword> (pod2usage)
+- -b/--batch    non-interactive mode
+
+* Logger:
+- LOGCf(msg) : pour configfile
+- LOGCl(msg) : pour commandline
+
+o [mouse] Logger configuration
+- Logger->new()                               OK
+- $conf = Common::Config->new()
+- Parser::CommandLine->parse_before_configfile($conf)
+   -c,--config-file <file> parsing
+- Parser::ConfigFile->parse($conf)
+   parse --config-file argument or search for available config files
+- Parser::CommandLine->parse($conf)
+- Logger->configure($conf)
+   Open real file log
+   Copy tmp file in real log file
+   close and remove tmp file
+- UserInterface::Mainwindow->new($conf)
+   skin parsing
+   widget creation
+
+* Documentation
+   See template in doc/POD_TEMPLATE
+   Remove NYI mark from manpage when implemented
+- manpage : test in html with `make man2html'
+
+* Gettext
+- See the problem with the __ shorthand
+
+* run-parts:
+- get_distant.d/
+- add_local.d/
+- add_distant.d/
+- remove.d/
+- remove_weekly.d/
+- mask_pwd.d/
+- stats.d/ Appelé en dernier (readme + stats: SLOC + $ + todosum + DL SF)
+
+* in doc/ directory
+   Many ideas and concepts
+- get_distant.d/
+- SKINS
+- CONFIG_FILES
+
+* Can use clamscan on individual files and archives
+
+=== ChangeLog ===
+   Please update version in BackupProg/Common/Def.pm and version.all
+   Please use GNU ChangeLog file
+   Please update doc/NEEDED_MODULES
+   SLOC is the result of sloccount
+   PO is the not translated/ttranslated gettext messages (make nb-messages)
+   (5 items by revision)
+
+* v0.0.1-12 (06 may 2010 - ???) SLOC ??? PO ??/??
+- Widget.pm handles all label alignment (in draw_label function)
+- Widget.pm text alignment constants definition
+- Widget.pm handles options through a hashmap
+- UserInterface/Widget.pm implementation started
