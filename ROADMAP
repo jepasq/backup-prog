@@ -2,5 +2,13 @@
 
 * v1.0.0
 ** v0.1.0
-** v0.0.2
-**** See if it still works in 2022
+*** v0.0.2
+**** Correct project setup
+:LOGBOOK:
+CLOCK: [2022-07-07 jeu. 23:58]--[2022-07-08 ven. 00:18] =>  0:20
+:END:
+- [X] Add a README.md file
+- [X] Add a GPLv3 COPYING file  
+- [ ] See if it still works in 2022
+  - [ ] Subroutine main::getchar redefined at ./backup_prog.pl line 24
+  - [ ] Can't locate BackupProg/UserInterface/MainWindow.pm in @INC
