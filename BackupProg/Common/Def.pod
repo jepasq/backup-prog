@@ -1,0 +1,93 @@
+=pod
+
+=head1 NAME
+
+F<BackupProg::Common::Def> is a class containing global values such as 
+program name, version and so on.
+
+=head1 SYNOPSIS
+
+       use BackupProg::Common::Def qw(:Booleans);
+       print true."\n";
+
+       my $def = BackupProg::Common::Def->new();
+       print $def->version()"\n";
+
+=head1 DESCRIPTION
+
+F<BackupProg::Common::Def>  is a module that any others can use. It contains
+two sort of content : Constants and OO-ish values.
+
+=head1 CONSTANTS
+
+=over 4
+
+=item false/true
+
+These values try to emulate boolean like in C/C++.
+
+=item null
+
+Like the previous one, it is a C/C++ emulation.
+
+=back
+
+=head1 EXPORTED TAGS
+
+=over 4
+
+=item Booleans
+
+This tag exports values of F<false>/F<true> and F<null>.
+
+=back
+
+=head1 CONSTRUCTOR
+
+For the OO-ish part of this module. You must use a constructor that takes
+no arguments.
+
+=head1 METHODS
+
+Note : try to keep this list alphabetically ordered.
+
+=over 4
+
+=item F<string>: date
+
+This accessor simply return the today's date and time in the form 
+X<yyyy-mm-dd hh:mm>.
+
+=item F<string>: progname
+
+This accessor simply returns the program name.
+
+=item F<string>: user
+
+Returns a string containing the precess owner name.
+
+=item F<string>: version
+
+This accessor returns the version and revision of the program in the form
+C<x.y.z-r>.
+
+=back
+
+=head1 KNOWN BUGS
+
+None.
+
+=head1 SEE ALSO
+
+F<BackupProg::Common::Logger> which uses this values to print the log 
+introduction.
+
+=head1 AUTHOR
+
+Jerome Pasquier <rainbru@free.fr>
+
+=head1 COPYRIGHT
+
+Licensed under the term of the GNU GPL v3.
+
+=cut

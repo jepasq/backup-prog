@@ -1,0 +1,137 @@
+=pod
+
+=head1 NAME
+
+F<BackupProg::Common::Logger> - the logger singleton of my C<backup_prog> 
+utility.
+
+=head1 SYNOPSIS
+
+    use BackupProg::Common::Logger;
+    my $log = BackupProg::Common::Logger->instance();
+    $log->LOGI("The first message in Logger");
+
+=head1 DESCRIPTION
+
+F<BackupProg::Common::Logger> is a singleton class (only one instance
+can be created) used to print messages in a file.
+
+=head1 CONSTANTS
+
+=over 4
+
+=item LogLevels
+
+There is three handled log levels : F<LL_INFO>, F<LL_WARN> and F<LL_ERR> for
+informative, warning and error. These are used in constructor and some 
+methods.
+
+=item LogModes
+
+Logger accept two modes to open logfile : F<LM_APPEND> append the messages, 
+adding them to the end of the existing file, and F<LM_NEWFILE> that replace
+existing log file each time the program starts.
+
+=back
+
+=head1 EXPORTED TAGS
+
+=over 4
+
+=item LogLevels
+
+This tag, intended to be used by the first caller of the constructor, avoid
+the use of fully scoped constant names. You can write :
+
+    use BackupProg::Common::Logger qw(:LogLevels);
+    print "=>".LL_WARN."\n";
+
+instead of :
+
+    use BackupProg::Common::Logger;
+    print "=>".BackupProg::Common::Logger::LL_WARN."\n";
+
+It automatically exports all constant saw in the CONSTANTS section related
+to log levels (does not export log modes).
+
+=item LogModes
+
+This export constants related to log modes.
+
+=back
+
+=head1 CONSTRUCTOR
+
+This class does not have a C<new> constructor. Please use the F<instance()>
+method inherited from C<Call::Singleton> instead. The Logger is eradu to
+use after this call (file is open ...).
+
+You can pass these optional arguments :
+
+=over 4
+
+=item filename: F<string>
+
+The logfile name, default to C<backup_prog.log>.
+
+=item loglevel: F<constant>
+
+The lowest level to be print. Pick a value in the C<LogLevel> constants. For
+example, if you choose F<LL_WARN>, all informatives messages will not be
+printed.
+
+=item idententification length: F<-1|integer>
+
+The first element of a message is the Perl package name, which emited the
+message. As this information can be very long, it can be truncated to the
+left, with a maximum number of character. You can pass the -1 value, which
+disable this feature. Example of truncation :
+
+    [BackupProg::UserInterface::MainWindow-32] II Informative message
+
+become, with a length of 25 :
+
+    [...rInterface::MainWindow-32] II Informative message
+
+=back
+
+=head1 METHODS
+
+The following methods are public ones. Note that if you use GNU Gettext for
+localize your messages, you must call it yourself :
+
+=over 4
+
+=item LOGI( F<string> )
+
+Log an informative message.
+
+=item LOGW( F<string> )
+
+Log an warning message.
+
+=item LOGE( F<string> )
+
+Log an error message.
+
+=back
+
+=head1 KNOWN BUGS
+
+If used outside a OO project, messages are not logged in the order LOG*
+are called. The modules you call seems to be interpreted first.
+
+=head1 SEE ALSO
+
+F<BackupProg::Common::Def> which provides informations printed in the
+log information.
+
+=head1 AUTHOR
+
+Jerome Pasquier <rainbru@free.fr>
+
+=head1 COPYRIGHT
+
+Licensed under the term of the GNU GPL v3.
+
+=cut
