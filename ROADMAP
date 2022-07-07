@@ -5,6 +5,7 @@
 *** v0.0.2
 **** [fix_InstallRule] Correct project setup
 :LOGBOOK:
+CLOCK: [2022-07-08 ven. 01:00]--[2022-07-08 ven. 01:18] =>  0:18
 CLOCK: [2022-07-08 ven. 00:37]--[2022-07-08 ven. 00:52] =>  0:15
 CLOCK: [2022-07-07 jeu. 23:58]--[2022-07-08 ven. 00:18] =>  0:20
 :END:
@@ -17,5 +18,7 @@ CLOCK: [2022-07-07 jeu. 23:58]--[2022-07-08 ven. 00:18] =>  0:20
     Fixed removing 'use POSIX' from main script
   - [ ] Can't locate BackupProg/UserInterface/MainWindow.pm in @INC
     Maybe need to install. If yes, please explain that in README.md.
+- [ ] Can't install locale files
+  Trying in /usr/share/locale/fr_FR/LC_MESSAGES//BackupProg.mo
 - [ ] Should we add doc/ directory to repo
  

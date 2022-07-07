@@ -55,7 +55,7 @@ dnl $1 are the Target sub directory
 dnl $2 are the Modules names (with .pm extension)
 define([BP_GEN_MOD_SOURCES],[dnl
 MOD_SRC= $2
-MOD_TARGET=/usr/local/lib/site_perl/$1/
+MOD_TARGET=/usr/lib/perl5/5.36/site_perl/$1/
 ])dnl
 define([BP_GEN_EXE_RULES],[dnl
 link-modules:

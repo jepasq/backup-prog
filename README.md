@@ -6,4 +6,14 @@ A flexible TUI backup tool written in perl/curses.
 
 On arch-based distributions :
 
-	sudo pacman -S perl-curses perl-locale-gettext
+	sudo pacman -S perl-curses perl-locale-gettext perl-class-singleton \
+		perl-switch perl-datetime
+
+## Installation
+
+### Destination
+
+The modules destination is defined in the *m4/CommonRules.m4* file
+as `MOD_TARGET` variable. The executable script will be installed 
+as the name stored in the variable `EXE_TARGET`.
+
