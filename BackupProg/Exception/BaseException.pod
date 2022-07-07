@@ -1,0 +1,79 @@
+=pod
+
+=head1 NAME 
+
+F<BackupProg::Exception::BaseException> - base class of all exceptions.
+
+=head1 SYNOPSIS
+
+To create a subclass from this :
+
+   package BackupProg::Exception::BadArgument;
+
+   use strict;
+
+   use Locale::gettext qw(gettext); use POSIX;
+   use Error qw(:try);
+
+   use BackupProg::Exception::BaseException;
+
+   # inherits BaseException
+   use vars qw(@ISA); 
+   @ISA = qw(BackupProg::Exception::BaseException);
+
+   sub new(){
+        my $class = shift;
+	my $self = bless { }, $class;
+
+    	my $msg = shift;
+
+    	$self->{THROWN_MSG} = $self->create_throw_message($class);
+    	$self->{MESSAGE} = $self->create_message($msg) ."My message";
+    }
+
+=head1 DESCRIPTION
+
+This is the base module of all exceptions in F<backup_prog>. Do not use
+it, please use subclass.
+
+=head1 CONSTRUCTOR
+
+=over 4
+
+=item message: F<string>
+
+      The message that will be printed in the exception message.
+
+=back
+
+=head1 METHODS
+
+=over 4
+
+=item message: F<string>
+
+      Return the exception message containing throw information and message.
+
+=back
+
+=head1 KNOWN BUGS
+
+If you have a message 
+
+       Can't call method "message" on an undefined value at ...
+
+Please be sure you do not have omit the clause 
+
+      use Error qw(:try);
+
+=head1 SEE ALSO
+
+=head1 AUTHOR
+
+Jerome Pasquier <rainbru@free.fr>
+
+=head1 COPYRIGHT
+
+Licensed under the term of the GNU GPL v3.
+
+=cut

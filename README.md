@@ -7,9 +7,11 @@ A flexible TUI backup tool written in perl/curses.
 On arch-based distributions :
 
 	sudo pacman -S perl-curses perl-locale-gettext perl-class-singleton \
-		perl-switch perl-datetime
+		perl-switch perl-datetime perl-data-dump
 
 ## Installation
+
+`backup-prog` needs to be installed before correctly running.
 
 ### Destination
 

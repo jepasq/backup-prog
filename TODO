@@ -71,9 +71,5 @@ o [mouse] Logger configuration
    PO is the not translated/ttranslated gettext messages (make nb-messages)
    (5 items by revision)
 
-* v0.0.1-12 (06 may 2010 - 07 Jui. 2022) SLOC ??? PO ??/??
-- 5 Jul 2022: get back after a 12y pause
-- Widget.pm handles all label alignment (in draw_label function)
-- Widget.pm text alignment constants definition
-- Widget.pm handles options through a hashmap
-- UserInterface/Widget.pm implementation started
+* v0.0.1-13 (06 may 2010 - 07 Jui. 2022) SLOC ??? PO ??/??
+

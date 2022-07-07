@@ -17,7 +17,7 @@
 # You should have received a copy of the GNU General Public License
 # along with backup_prog.  If not, see <http://www.gnu.org/licenses/>.
 
-use strict;
+#use strict;
 
 use Curses;
 use Locale::gettext qw(gettext textdomain); 
