@@ -19,6 +19,10 @@
 
 #use strict;
 
+# Fix the setlocale() error
+use POSIX qw(locale_h);
+use locale;
+
 use Curses;
 use Locale::gettext qw(gettext textdomain); 
 #use POSIX; # Got a 'Subroutine main::getchar redefined' error

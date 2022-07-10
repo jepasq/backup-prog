@@ -1,0 +1,45 @@
+=pod
+
+=head1 NAME
+
+F<backup_prog> - A perl/curses based tool used to create backup.
+
+=head1 SYNOPSIS
+
+F<backup_prog> [options]
+
+=head1 DESCRIPTION
+
+This is the development documentation of F<backup_prog>. For a user
+documentation, you can try :
+
+=over 4
+
+=item * F<backup_prog -h> will show you the command-line arguments 
+description.
+
+=item * F<man backup_prog> for the manpage describing in details the 
+command-line arguments.
+
+=item * F<info backup_prog> for the texinfo user manual, the more detailled 
+document. For details in configuration, usage and more ...
+
+=back
+
+=head1 KNOWN BUGS
+
+None.
+
+=head1 SEE ALSO
+
+None.
+
+=head1 AUTHOR
+
+Jerome Pasquier <rainbru@free.fr>
+
+=head1 COPYRIGHT
+
+Licensed under the term of the GNU GPL v3.
+
+=cut
