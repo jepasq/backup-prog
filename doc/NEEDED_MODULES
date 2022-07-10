@@ -1,0 +1,9 @@
+These packages are needed (in a Debian) :
+  Package      	   	  Version tesed
+  libcurses-perl   	  1.23-1+b1
+  libdata-dump-perl	  1.08-3
+  libconfig-general-perl  2.40-1		  
+  libclass-singleton-perl 1.03-7 
+  liberror-perl		  0.17-1
+
+File::Temp standard from perl v5.6.1

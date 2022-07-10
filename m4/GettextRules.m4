@@ -38,6 +38,7 @@ update-po:
 	@echo "PLEASE EDIT $(I18N)-fr.po"
 
 install-mo:
+	mkdir -p $(LOC)
 	msgfmt $(I18N)-fr.po -o $(LOC)/$(I18).mo
 
 uninstall-mo:

@@ -19,7 +19,8 @@ CLOCK: [2022-07-07 jeu. 23:58]--[2022-07-08 ven. 00:18] =>  0:20
   - [X] Can't locate BackupProg/UserInterface/MainWindow.pm in @INC
     Maybe need to install. If yes, please explain that in README.md.
 - [X] Undefined subroutine &main::setlocale called at backup_prog line 61
-- [ ] Can't install locale files
+- [X] Can't install locale files
   Trying in /usr/share/locale/fr_FR/LC_MESSAGES//BackupProg.mo
+
 - [ ] Should we add doc/ directory to repo
  
