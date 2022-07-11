@@ -57,7 +57,7 @@ sub new(){
     
     my $win=newwin($options{'h'}, $options{'w'}, 
 		   $options{'y'}, $options{'x'});
-    $win->bkgd(COLOR_PAIR(1)|' ');
+    $win->bkgd(COLOR_PAIR(1)||' ');
     $win->attrset(COLOR_PAIR(1));
     
     draw_label($win, $options{'text_y'}, $options{'w'}, $options{'align'}, $label);

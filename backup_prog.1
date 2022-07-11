@@ -1,0 +1,139 @@
+.\"                              hey, Emacs:   -*- nroff -*-
+.\"
+.\"
+.TH BACKUP_PROG 1 "October 29, 2009"
+.\" Please update the above date whenever this man page is modified.
+.\"
+.\" Some roff macros, for reference:
+.\" .nh        disable hyphenation
+.\" .hy        enable hyphenation
+.\" .ad l      left justify
+.\" .ad b      justify to both left and right margins (default)
+.\" .nf        disable filling
+.\" .fi        enable filling
+.\" .br        insert line break
+.\" .sp <n>    insert n+1 empty lines
+.\" for manpage-specific macros, see man(7)
+.SH NAME
+.B backup_prog \- a perl/curses based backup program.
+.SH SYNOPSIS
+.B backup_prog
+.RI [ options ]
+.br
+.SH DESCRIPTION
+\fBbackup_prog\fP is a perl/curses based program used to backup my 
+development data. It provide many backup type (daily/weekly...) and
+support distant retrieving of files using scp.
+.PP
+For more informations on \fBbackup_prog\fP you can see the info node : 
+\fBinfo backup_prog\fP or the perldoc documentation : \fBperldoc 
+backup_prog.pl\fP.
+
+.SH OPTIONS
+\fBbackup_prog\fP accepts the following command-line options.
+.\" ===============================================
+.\"          
+.\" ===============================================
+.SS GENERAL OPTIONS
+Here are the options I can put in other sections. Mandatory arguments to long
+options are mandatory for short options too.
+.TP
+.\" ================ --config-file option
+NYI \fB-c\fP, \fB\-\-config\-file\fP \fIfilename\fP
+Set the config file to a named one. Disable parsing of all others
+system wide config files. Using this option can speed up processing
+of configuration files.
+.TP
+.\" ================ --help option
+NYI \fB-h\fP, \fB\-\-help\fP
+Show a list of command line options and exit.
+.TP
+.\" ================ --backup-type option
+NYI \fB-t\fP, \fB\-\-backup\-type\fP \fIhourly\fP|\fIdaily\fP|\fIweekly\fP|\fIcomplete\fP
+.RS
+.TP .4i
+\fBhourly\fP :
+This backup type intended to eb used with the \fB--no-gui\fB option, eventually
+cron-ed. It was made to allow weekly backup even if some hosts are unreachable.
+.TP
+\fBdaily\fP : 
+This is a backup type only provided for consummers who wants daily backup. 
+Do not used for my personnal datas.
+.TP
+\fBweekly\fP : 
+This is the most used backup type, intended to be placed on small cartridge,
+most of the big files are removed (data files, PDFs...). It size is around
+28 Mo.
+.TP
+\fBcomplete\fP : 
+The biggest backup, containing files removed during the \fBweekly\fP one. This
+backup intended to be placed on a CD and is about 300Mo actually.
+.RE
+.TP
+.\" ================ --no-gui option
+NYI \fB\-\-no-gui\fP
+Do not draw the curses-based graphical user interface. This option is used
+to launch \fBbackup_prog\fP as a background process.
+.\" ===============================================
+.\"          
+.\" ===============================================
+.SS LOGGER OPTIONS
+.TP
+.\" ================ --log-level option
+NYI \fB\-\-log\-level\fP \fIinfo\fP|\fIwarn\fP|\fIerror\fP
+Set the logging level to \fBlevel\fP, all logger messages with inferior
+level will not be printed. \fBlevel\fP can be one of the following :
+.RS
+.TP .4i
+\fBinfo\fP :
+All messages, even informative one will be logged. The info level also contains
+messages relative to configuration files and command line arguments parsing.
+.TP
+\fBwarn\fP :
+Only warning and error messages are logged. Informative ones are omitted.
+.TP
+\fBerror\fP : 
+Only error messages are logged. Warning and informative ones are omitted.
+.RE
+.TP
+.\" ================ --log-file option
+NYI \fB\-\-log\-file\fP \fIfilename\fP
+Change the files where are printed logger messages to \fIfilename\fP. By 
+default, the logfile is \fBbackup_prog.log\fP (in the execution directory).
+.TP
+.\" ================ --log-ident-len option
+NYI \fB\-\-log\-ident\-len\fP \fI-1\fP|\fIn\fP
+The Logger has the ability to truncate the Perl packages name in the log file.
+The possible values are :
+.RS
+.TP .4i
+\fB-1\fP :
+Do not truncate at all the identification part of the logged message. Please
+note that this option also disable the justify ability of the logger : the
+II, WW and other indications will not be aligned anymore.
+.TP
+\fBn\fP :
+Truncate on the left the identification part to \fBn\fP characters.
+.RE
+.TP
+.\" ================ --log-mode option
+NYI \fB\-\-log\-mode\fP \fIappend\fP|\fInewfile\fP
+Defines how the logger will deal with the log file :
+.RS
+.TP .4i
+\fBappend\fP :
+The messages, including introduction, will be append to the logfile if it
+exists.
+.TP
+\fBnewfile\fP :
+The old logfile will be overwritten if it exists. 
+.RE
+.\" ==================================
+.SH HISTORY
+\fBbackup_prog\fP started I saw how it was awful to maintain my old 
+backup_prog.sh shell script (700+ SLOC).
+.\" ==================================
+.SH AUTHOR
+Written by Jérôme PASQUIER.
+.SH REPORTING BUG
+Report bugs to  <rainbru@free.fr>.

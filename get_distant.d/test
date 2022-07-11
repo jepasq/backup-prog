@@ -1,0 +1,11 @@
+# Hey emacs, this is a -*- Apache -*- file
+<get aze>
+     ssh_key    = "iyu"
+</get>
+
+<extern_tool tool1>
+   path         = "/usr/bin/aze" # It is a comment
+   cmd_arg      = "-q hhhhh"
+   report       = yes
+   latex_string = "azeaze %s azeaz"
+</extern_tool>

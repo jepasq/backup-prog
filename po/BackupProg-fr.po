@@ -1,0 +1,372 @@
+# French translations for PACKAGE package
+# Traductions françaises du paquet PACKAGE.
+# Copyright (C) 2009 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Jérôme Pasquier <rainbru@free.fr>, 2009.
+#
+#: backup_prog.pl:67 BackupProg/Parser/CommandLine.pm:36
+#: BackupProg/Parser/CommandLine.pm:37 BackupProg/Parser/CommandLine.pm:54
+msgid ""
+msgstr ""
+"Project-Id-Version: BackupProg 0.0.0-7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-10-31 15:08+0100\n"
+"PO-Revision-Date: 2009-10-30 20:50+0100\n"
+"Last-Translator: Jérôme Pasquier <rainbru@free.fr>\n"
+"Language-Team: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: backup_prog.pl:68
+msgid "BackupProg"
+msgstr "BackupProg"
+
+#. TRANSLATOR : This is a message for You
+#: backup_prog.pl:71
+msgid "Welcome to backup_prog\n"
+msgstr "Bienvenue a backup_prog\n"
+
+#: backup_prog.pl:77
+msgid "Parsing config file \n"
+msgstr ""
+
+#: backup_prog.pl:90 BackupProg/Common/Config.pm:27
+#: BackupProg/Common/Logger.pm:59
+msgid "backup_prog.log"
+msgstr "backup_prog.log"
+
+#: backup_prog.pl:94
+msgid "Error creating Logger : "
+msgstr "Erreur pendant la création du Logger : "
+
+#: backup_prog.pl:94 backup_prog.pl:98 BackupProg/Exception/BadArgument.pm:38
+#: BackupProg/Parser/ConfigFile.pm:42 BackupProg/Parser/ConfigFile.pm:43
+#: BackupProg/Parser/ConfigFile.pm:44
+#: BackupProg/UserInterface/MainWindow.pm:30
+msgid "\n"
+msgstr "\n"
+
+#: backup_prog.pl:98
+msgid "Error opening logfile : "
+msgstr "Erreur pendant l'ouverture du fichier Log : "
+
+#: backup_prog.pl:108
+msgid "Catched a MainWindow exception\n"
+msgstr ""
+
+#: BackupProg/Common/Def.pm:24
+msgid "true"
+msgstr "vrai"
+
+#: BackupProg/Common/Def.pm:25
+msgid "false"
+msgstr "faux"
+
+#: BackupProg/Common/Def.pm:27
+msgid "null"
+msgstr "null"
+
+#: BackupProg/Common/Def.pm:33
+msgid "Booleans"
+msgstr "Booleans"
+
+#: BackupProg/Common/Def.pm:39 BackupProg/Parser/ConfigFile.pm:29
+msgid "backup_prog"
+msgstr "backup_prog"
+
+#: BackupProg/Common/Def.pm:40
+#, fuzzy
+msgid "0.0.1-9"
+msgstr "0.0.0-8"
+
+#. LogLevels
+#: BackupProg/Common/Logger.pm:37
+msgid "LL_INFO"
+msgstr "LL_INFO"
+
+#: BackupProg/Common/Logger.pm:38
+msgid "LL_WARN"
+msgstr "LL_WARN"
+
+#: BackupProg/Common/Logger.pm:39
+msgid "LL_ERR"
+msgstr "LL_ERR"
+
+#: BackupProg/Common/Logger.pm:40
+msgid "LL_EXC"
+msgstr "LL_EXC"
+
+#. LogMode (>100 to make error)
+#: BackupProg/Common/Logger.pm:43
+msgid "LM_APPEND"
+msgstr "LM_APPEND"
+
+#: BackupProg/Common/Logger.pm:44
+msgid "LM_NEWFILE"
+msgstr "LM_NEWFILE"
+
+#: BackupProg/Common/Logger.pm:50
+msgid "LogLevels"
+msgstr "LogLevels"
+
+#: BackupProg/Common/Logger.pm:51
+msgid "LogModes"
+msgstr "LogModes"
+
+#: BackupProg/Common/Logger.pm:68
+msgid "LogMode instead of a LogLevel"
+msgstr "LogMode recu a la place d'un LogLevel"
+
+#. A LogLevel has been used instead of a LogMode
+#. ($self->{LOG_MODE} > 100) or throw
+#. BackupProg::Exception::BadArgument("LogLevel instead of a LogMode");
+#. Must be called here due to singleton implementation
+#. (Can't be called by backup_prog.pl)
+#: BackupProg/Common/Logger.pm:77
+msgid "Logger started"
+msgstr "Logger démarré"
+
+#: BackupProg/Common/Logger.pm:90
+msgid "a"
+msgstr "a"
+
+#: BackupProg/Common/Logger.pm:93
+msgid "w"
+msgstr "w"
+
+#: BackupProg/Common/Logger.pm:115
+msgid "=================================\n"
+msgstr "=================================\n"
+
+#: BackupProg/Common/Logger.pm:118
+msgid "Starting '"
+msgstr "Démarrage de '"
+
+#: BackupProg/Common/Logger.pm:118 BackupProg/Common/Logger.pm:120
+msgid "' "
+msgstr "' "
+
+#: BackupProg/Common/Logger.pm:119
+msgid "v"
+msgstr "v"
+
+#: BackupProg/Common/Logger.pm:119 BackupProg/Common/Logger.pm:159
+msgid " "
+msgstr " "
+
+#: BackupProg/Common/Logger.pm:120
+msgid "by '"
+msgstr "par '"
+
+#: BackupProg/Common/Logger.pm:121
+msgid "on '"
+msgstr "le '"
+
+#: BackupProg/Common/Logger.pm:121
+msgid "'\n"
+msgstr "'\n"
+
+#: BackupProg/Common/Logger.pm:123
+msgid "  II = Informative\n"
+msgstr "  II = Information\n"
+
+#: BackupProg/Common/Logger.pm:124
+msgid "  WW = Warning\n"
+msgstr "  WW = Avertissement (warning)\n"
+
+#: BackupProg/Common/Logger.pm:125
+msgid "  EE = Error\n"
+msgstr "  EE = Erreur\n"
+
+#: BackupProg/Common/Logger.pm:126
+msgid "  XX = Exception\n"
+msgstr ""
+
+#: BackupProg/Common/Logger.pm:143
+msgid "II"
+msgstr "II"
+
+#: BackupProg/Common/Logger.pm:144
+msgid "WW"
+msgstr "WW"
+
+#: BackupProg/Common/Logger.pm:145
+msgid "EE"
+msgstr "EE"
+
+#: BackupProg/Common/Logger.pm:146
+msgid "XX"
+msgstr ""
+
+#: BackupProg/Common/Logger.pm:154
+msgid "..."
+msgstr "..."
+
+#: BackupProg/Common/Logger.pm:164 BackupProg/Common/Logger.pm:167
+msgid "[$package-$line] $ll $message\n"
+msgstr "[$package-$line] $ll $message\n"
+
+#: BackupProg/Exception/BaseException.pm:34
+msgid "Empty message"
+msgstr "Message vide"
+
+#: BackupProg/Exception/BaseException.pm:50
+#, perl-format
+msgid "Exception '%s' thrown from :\n"
+msgstr "Exception '%s' lancée depuis :\n"
+
+#: BackupProg/Exception/BaseException.pm:51
+#: BackupProg/Exception/BadArgument.pm:44
+#, perl-format
+msgid "  Module   : %s\n"
+msgstr "  Module   : %s\n"
+
+#: BackupProg/Exception/BaseException.pm:52
+#, perl-format
+msgid "  Line     : %u"
+msgstr "  Ligne    : %u"
+
+#: BackupProg/Exception/BaseException.pm:53
+msgid ""
+"\n"
+"===============\n"
+msgstr ""
+"\n"
+"\n"
+"================\n"
+
+#: BackupProg/Exception/BaseException.pm:60
+#, fuzzy, perl-format
+msgid ""
+"\n"
+"  Message  : %s\n"
+msgstr ""
+"\n"
+"  Message  : %s\n"
+
+#: BackupProg/Exception/BadArgument.pm:45
+#, fuzzy, perl-format
+msgid "  Line     : %u\n"
+msgstr "  Ligne    : %u"
+
+#: BackupProg/Exception/BadArgument.pm:46
+msgid "Caller informations :\n"
+msgstr ""
+
+#: BackupProg/Exception/OpenFile.pm:35
+msgid "No filename"
+msgstr ""
+
+#: BackupProg/Exception/OpenFile.pm:36
+#, fuzzy
+msgid "No message"
+msgstr "Aucun message"
+
+#: BackupProg/Exception/OpenFile.pm:46
+#, perl-format
+msgid "  Filename : %s\n"
+msgstr ""
+
+#: BackupProg/Parser/CommandLine.pm:35
+msgid "parse_before_configfile ():\n"
+msgstr ""
+
+#: BackupProg/Parser/CommandLine.pm:43
+msgid "help|?"
+msgstr ""
+
+#: BackupProg/Parser/CommandLine.pm:44
+msgid "c|config-file=s"
+msgstr ""
+
+#: BackupProg/Parser/CommandLine.pm:49
+msgid "config_file = '$config_file'\n"
+msgstr ""
+
+#: BackupProg/Parser/CommandLine.pm:53
+msgid "parse ():\n"
+msgstr ""
+
+#: BackupProg/Parser/CommandLine.pm:58
+msgid "l|log-file=s"
+msgstr ""
+
+#: BackupProg/Parser/CommandLine.pm:60
+msgid "logfile = '$logfile'\n"
+msgstr ""
+
+#: BackupProg/Parser/ConfigFile.pm:28
+msgid "/etc"
+msgstr ""
+
+#: BackupProg/Parser/ConfigFile.pm:28
+msgid "HOME"
+msgstr ""
+
+#: BackupProg/Parser/ConfigFile.pm:28
+msgid "config"
+msgstr ""
+
+#: BackupProg/Parser/ConfigFile.pm:29
+msgid "backup"
+msgstr "backup"
+
+#: BackupProg/Parser/ConfigFile.pm:30
+msgid "rc"
+msgstr ""
+
+#: BackupProg/Parser/ConfigFile.pm:30
+msgid "hourly.rc"
+msgstr ""
+
+#: BackupProg/Parser/ConfigFile.pm:30
+msgid "weekly.rc"
+msgstr ""
+
+#: BackupProg/Parser/ConfigFile.pm:30
+msgid "daily.rc"
+msgstr ""
+
+#: BackupProg/Parser/ConfigFile.pm:30
+msgid "complete.rc"
+msgstr ""
+
+#: BackupProg/Parser/ConfigFile.pm:37
+msgid "$dir/$bas.$ext"
+msgstr ""
+
+#: BackupProg/UserInterface/MainWindow.pm:30
+msgid "We are in MainWindow::new()"
+msgstr "Nous sommes dans MainWindow::new()"
+
+#: BackupProg/UserInterface/MainWindow.pm:35
+msgid "Informative message"
+msgstr "Message d'information"
+
+#: BackupProg/UserInterface/MainWindow.pm:36
+msgid "Warning message"
+msgstr "Message d'avertissement"
+
+#: BackupProg/UserInterface/MainWindow.pm:37
+msgid "Error message"
+msgstr "Message d'erreur"
+
+#~ msgid "in catch block\n"
+#~ msgstr "Dans un block catch\n"
+
+#~ msgid "aze"
+#~ msgstr "aze"
+
+#~ msgid "The first message in Logger with var $test"
+#~ msgstr "Le premier message du Logger avec la variable $test"
+
+#~ msgid "Cannot open $self->{FILENAME} : $!"
+#~ msgstr "$self->{FILENAME} n'a pas pu être ouvert : $!"
+
+#~ msgid "$message"
+#~ msgstr "$message"
+
+#~ msgid "Exception '$class_name' thrown from :\n"
+#~ msgstr "Exception '$class_name' lancée depuis :\n"
