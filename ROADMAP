@@ -3,12 +3,38 @@
 * v1.0.0
 ** v0.1.0
 *** v0.0.2
+**** Compute ETA (Estimated Time of Arrival)
+- Try using these datas ETA :
+<Weekly>
+  <Backup date>
+  size + time
+  <./Backup>
+  ... other backup nodes
+</Weekly>
+... Same for Complete +
+<Host name> ... 1 node par host
+  <backup date>size + time</backup>
+</Host>
+
+- Same for :
+- programmation/ directory copy (very long)
+- call to remove.d
+- report generation (Latex)
 **** May implement unit tests
 **** Make this old version work
+:LOGBOOK:
+CLOCK: [2022-07-12 mar. 01:46]--[2022-07-12 mar. 02:03] =>  0:17
+:END:
      At least, fix easy to understand issues.
 - [X] Argument " " isn't numeric in bitwise or (|) at BackupProg/UserInterface/Widget.pm
   Seems fixed but the application screen doesn't show anyway
-**** TODO Correct project setup
+- [ ] Currently, UserInterface/MainWindow.pm tries to create a new widget but
+  the label isn't drawn
+- [ ] Follow *doc/SCREEN_LAYOUT* and create needed widgets.
+**** TODO Correctly handle doc/ directory content
+Either add it to git or move it to README.md file.
+- [ ] Must also move TODO content here
+**** DONE Correct project setup
 :LOGBOOK:
 CLOCK: [2022-07-12 mar. 00:44]--[2022-07-12 mar. 00:51] =>  0:07
 CLOCK: [2022-07-08 ven. 01:00]--[2022-07-08 ven. 01:18] =>  0:18
@@ -27,6 +53,3 @@ CLOCK: [2022-07-07 jeu. 23:58]--[2022-07-08 ven. 00:18] =>  0:20
 - [X] Undefined subroutine &main::setlocale called at backup_prog line 61
 - [X] Can't install locale files
   Trying in /usr/share/locale/fr_FR/LC_MESSAGES//BackupProg.mo
-
-- [ ] Should we add doc/ directory to repo
-  Some of these file may become a section of README.md file

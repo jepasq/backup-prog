@@ -1,6 +1,6 @@
 backup_prog - GPLv3 - A flexible backup tool written in perl/curses.
 
-o [mouse] Graphical User Interface: BackupProg/UserInterface/Widgets.pm 
+o Graphical User Interface: BackupProg/UserInterface/Widgets.pm 
    See the SCREEN.Layout file
 - See the label/border placement bug
 - options hashmap should contains 

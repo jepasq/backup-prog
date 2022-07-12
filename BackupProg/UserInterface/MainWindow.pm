@@ -88,8 +88,8 @@ sub new(){
 	);
 
     my $w = BackupProg::UserInterface::Widget->new("Essaia", \%woptions);
-
     endwin();
+    getch();
 
 
 }
