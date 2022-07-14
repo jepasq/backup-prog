@@ -3,6 +3,18 @@
 * v1.0.0
 ** v0.1.0
 *** v0.0.2
+**** Full logfile handling
+- We search in the following config files :
+   backup_prog.rc, backup_prog.hourly.rc, backup_prog.weekly.rc
+   backup_prog.daily.rc, backup_prog.complete.rc
+   or any file found in ~/.backup_prog/ directory ?
+- Anf there, in the format of an apache init file   
+<Hourly||Daily||Weekly||Complete Logger>
+file      = /var/log/backup_prog.hourly
+    level     = warn
+    ident_len = 40
+    mode      = append
+</Hourly or any other opened markup>
 **** Make and improve translation
 :LOGBOOK:
 CLOCK: [2022-07-14 jeu. 03:33]--[2022-07-14 jeu. 03:55] =>  0:22
@@ -57,6 +69,9 @@ CLOCK: [2022-07-12 mar. 01:46]--[2022-07-12 mar. 02:03] =>  0:17
     passer StatTime au constructeur
     gestion signal POSIX pour update interval
 **** TODO Correctly handle doc/ directory content
+:LOGBOOK:
+CLOCK: [2022-07-14 jeu. 05:10]--[2022-07-14 jeu. 05:38] =>  0:28
+:END:
 Either add it to git or move it to README.md file.
 - [ ] Must also move TODO content here
 **** DONE Correct project setup

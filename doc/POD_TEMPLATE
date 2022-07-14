@@ -1,0 +1,65 @@
+Is here a template for POD documentation :
+
+
+=pod
+
+=head1 NAME
+
+=head1 SYNOPSIS
+
+=head1 DESCRIPTION
+
+=head1 CONSTANTS
+
+=over 4
+
+=item LogLevels
+
+=item LogModes
+
+=back
+
+=head1 EXPORTED TAGS
+
+=over 4
+
+=item LogLevels
+
+=item LogModes
+
+=back
+
+=head1 CONSTRUCTOR
+
+=over 4
+
+=item filename: F<string>
+
+=item loglevel: F<constant>
+
+=item idententification length: F<-1|integer>
+
+=back
+
+=head1 METHODS
+
+=over 4
+
+=item LOGI( F<string> )
+
+
+=back
+
+=head1 KNOWN BUGS
+
+=head1 SEE ALSO
+
+=head1 AUTHOR
+
+Jerome Pasquier <rainbru@free.fr>
+
+=head1 COPYRIGHT
+
+Licensed under the term of the GNU GPL v3.
+
+=cut

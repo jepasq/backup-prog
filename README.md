@@ -27,7 +27,8 @@ To install backup_prog :
 ## POD documentation
 
 The POD documentation, in .pod files is not installed, because it is
-a developper only documentation.
+a developper only documentation. To keep a good documentation organization,
+you can follow `doc/POD_TEMPLATE` example.
 
 ## Translation
 
