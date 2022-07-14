@@ -23,6 +23,7 @@
 **** May implement unit tests
 **** Make this old version work
 :LOGBOOK:
+CLOCK: [2022-07-14 jeu. 01:16]--[2022-07-14 jeu. 01:54] =>  0:38
 CLOCK: [2022-07-12 mar. 01:46]--[2022-07-12 mar. 02:03] =>  0:17
 :END:
      At least, fix easy to understand issues.
@@ -30,7 +31,21 @@ CLOCK: [2022-07-12 mar. 01:46]--[2022-07-12 mar. 02:03] =>  0:17
   Seems fixed but the application screen doesn't show anyway
 - [ ] Currently, UserInterface/MainWindow.pm tries to create a new widget but
   the label isn't drawn
+  see https://www.perl.com/article/197/2015/10/6/Display-real-time-data-with-Curses/
 - [ ] Follow *doc/SCREEN_LAYOUT* and create needed widgets.
+- [ ] Gettext : see the problem with the __ shorthand
+- [ ] Continue to implement UI classes
+  - [ ] Widget (started
+    String: text
+    win: Window curses ou Panel si pkus simple
+    refresh(): si text changé
+    force_refresh(): aucun test
+  - [ ] WidgetList  
+    refresh(): refresh() sur toutes les window
+    force_refresh(): force_refresh() sur toutes les window
+  - [ ] ElaspedTime inherits Window:
+    passer StatTime au constructeur
+    gestion signal POSIX pour update interval
 **** TODO Correctly handle doc/ directory content
 Either add it to git or move it to README.md file.
 - [ ] Must also move TODO content here

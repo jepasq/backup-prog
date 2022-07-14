@@ -55,16 +55,17 @@ sub new(){
 
     my $log = BackupProg::Common::Logger->instance();
     
-    my $win=newwin($options{'h'}, $options{'w'}, 
-		   $options{'y'}, $options{'x'});
+    my $win=newwin($options{'h'}, $options{'w'}, $options{'y'}, $options{'x'});
     $win->bkgd(COLOR_PAIR(1)||' ');
     $win->attrset(COLOR_PAIR(1));
+
     
     draw_label($win, $options{'text_y'}, $options{'w'}, $options{'align'},
 	       $label);
     $log->LOGI("New widget's label is '$label'");
     #draw_border($win, $options{'border'}, $options{'w'},, $options{'h'});
 
+    $win->addstr(0, 0, "azeaze");
     $win->refresh();
 
     foreach my $k (keys(%options)){
@@ -72,11 +73,10 @@ sub new(){
     }
 
     $log->LOGI( $options{'w'});
-
 }
 
 sub draw_label(){
-# y is the label_y value
+    # y is the label_y value
     my ($win, $y, $w, $align, $label) = @_;
 
     if ($align==Left){

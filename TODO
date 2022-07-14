@@ -43,9 +43,6 @@ o [mouse] Logger configuration
    Remove NYI mark from manpage when implemented
 - manpage : test in html with `make man2html'
 
-* Gettext
-- See the problem with the __ shorthand
-
 * run-parts:
 - get_distant.d/
 - add_local.d/
