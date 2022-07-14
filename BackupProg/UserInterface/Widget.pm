@@ -66,8 +66,8 @@ sub new(){
     #draw_border($win, $options{'border'}, $options{'w'},, $options{'h'});
 
     $win->addstr(0, 0, "azeaze");
-    $win->refresh();
-
+    refresh($win);
+    
     foreach my $k (keys(%options)){
 	$log->LOGI("$k=$options{$k})");
     }
@@ -106,6 +106,11 @@ sub draw_border(){
 	die("Border '".$border."' not implemented");
     }
 
+}
+
+sub refresh(){
+     my ($win) = @_;
+    $win->refresh();
 }
 
 1;

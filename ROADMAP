@@ -3,6 +3,15 @@
 * v1.0.0
 ** v0.1.0
 *** v0.0.2
+**** Make and improve translation
+:LOGBOOK:
+CLOCK: [2022-07-14 jeu. 03:33]--[2022-07-14 jeu. 03:55] =>  0:22
+:END:
+I18n for backup instructions :
+- Please update po/POTFILES for all translatable files 
+- A translator comment is noted as is :
+  =# TRANSLATOR : This is a message for You=
+- please use sprint function. Interpolation does not work.
 **** Compute ETA (Estimated Time of Arrival)
 - Try using these datas ETA :
 <Weekly>
@@ -23,6 +32,7 @@
 **** May implement unit tests
 **** Make this old version work
 :LOGBOOK:
+CLOCK: [2022-07-14 jeu. 02:22]--[2022-07-14 jeu. 02:39] =>  0:17
 CLOCK: [2022-07-14 jeu. 01:16]--[2022-07-14 jeu. 01:54] =>  0:38
 CLOCK: [2022-07-12 mar. 01:46]--[2022-07-12 mar. 02:03] =>  0:17
 :END:

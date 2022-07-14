@@ -65,8 +65,6 @@ sub new(){
     print Locale::gettext::gettext("We are in MainWindow::new()"), "\n";
     
     my $log = BackupProg::Common::Logger->instance();
-    
-
     $log->LOGI("Informative message");
     $log->LOGW("Warning message");
     $log->LOGE("Error message");
@@ -75,23 +73,18 @@ sub new(){
 
     initscr();
     start_color();
-    init_pair(1, COLOR_BLACK, COLOR_CYAN);
+#    init_pair(1, COLOR_BLACK, COLOR_CYAN);
 
-    my %woptions= ( 
-	'x' => 4, 
-	'y' => 8,
-	'w' => 20,
-	'h' => 23,
-	'align' => Center,
-	'text_y' => 1,
-	'border' => TopCenterLeft
+    my %woptions= ( 'x'=>4, 'y'=>8, 'w'=>20, 'h'=>23,
+		    'align' => Center,
+		    'text_y' => 1,
+		    'border' => TopCenterLeft
 	);
-
     my $w = BackupProg::UserInterface::Widget->new("Essaia", \%woptions);
+#    addstr(1, 1, "aze");
+#    refresh();
+    
     getch();
     endwin();  # Restore the screen at the end of the program
-
-
 }
-
 1;

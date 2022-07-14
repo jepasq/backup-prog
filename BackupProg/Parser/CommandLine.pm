@@ -24,6 +24,9 @@ use Getopt::Long;
 use Pod::Usage;
 use Data::Dump qw(dump);
 
+# We use this contant to avoid gettext warnings when updating message catalog
+use constant EMPTYSTR => "";
+
 sub new{
     my $class = shift;
     my $self = bless { }, $class;
@@ -33,8 +36,8 @@ sub parse_before_configfile{
     my $self = shift;
     
     print("parse_before_configfile ():\n");
-    my $help = '';
-    my $config_file = '';
+    my $help = EMPTYSTR;
+    my $config_file = EMPTYSTR;
 
     my %opts = ();
 
@@ -51,7 +54,7 @@ sub parse_before_configfile{
 
 sub parse{
     print("parse ():\n");
-    my $logfile = '';
+    my $logfile = EMPTYSTR;
 
     # Provide error messages for unknown options
     Getopt::Long::Configure( qw(no_pass_through) );

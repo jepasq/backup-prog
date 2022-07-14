@@ -24,8 +24,13 @@ To install backup_prog :
 - `make links` for development installation (use symbolic links)
 - `make install` for production (will copy files
 
-POD documentation
-=================
+## POD documentation
 
 The POD documentation, in .pod files is not installed, because it is
 a developper only documentation.
+
+## Translation
+
+Translatable files must be listed in *po/POTFILES*.
+`make update-po` will generate po file. You have to edit 
+po/BackupProg-*.po files.
