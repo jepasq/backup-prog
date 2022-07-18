@@ -60,6 +60,7 @@ I18n for backup instructions :
 **** May implement unit tests
 **** TODO Make this old version work
 :LOGBOOK:
+CLOCK: [2022-07-18 lun. 03:26]--[2022-07-18 lun. 03:52] =>  0:26
 CLOCK: [2022-07-14 jeu. 02:22]--[2022-07-14 jeu. 02:39] =>  0:17
 CLOCK: [2022-07-14 jeu. 01:16]--[2022-07-14 jeu. 01:54] =>  0:38
 CLOCK: [2022-07-12 mar. 01:46]--[2022-07-12 mar. 02:03] =>  0:17
@@ -67,10 +68,10 @@ CLOCK: [2022-07-12 mar. 01:46]--[2022-07-12 mar. 02:03] =>  0:17
      At least, fix easy to understand issues.
 - [X] Argument " " isn't numeric in bitwise or (|) at BackupProg/UserInterface/Widget.pm
   Seems fixed but the application screen doesn't show anyway
-- [ ] Currently, UserInterface/MainWindow.pm tries to create a new widget but
-  the label isn't drawn
+- [X] Currently, UserInterface/MainWindow.pm tries to create a new widget but
+  the label isn't drawn : FIXED. Was due to getch()
   see https://www.perl.com/article/197/2015/10/6/Display-real-time-data-with-Curses/
-- [ ] Follow *doc/SCREEN_LAYOUT* and create needed widgets.
+- [ ] Follow *doc/SCREEN_LAYOUT* and create needed widgets.  
 - [ ] Gettext : see the problem with the __ shorthand
 - [ ] Continue to implement UI classes
   - [ ] Widget (started

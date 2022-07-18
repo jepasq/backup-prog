@@ -60,6 +60,9 @@ erase(); refresh();
 endwin();
 =cut
 
+use constant {
+    prgname => "BackupProg",
+};
 
 sub new(){
     print Locale::gettext::gettext("We are in MainWindow::new()"), "\n";
@@ -72,19 +75,28 @@ sub new(){
 #    throw BackupProg::Exception::BadArgument("MainWindow creation error");
 
     initscr();
-    start_color();
+#    start_color();
 #    init_pair(1, COLOR_BLACK, COLOR_CYAN);
 
-    my %woptions= ( 'x'=>4, 'y'=>8, 'w'=>20, 'h'=>23,
-		    'align' => Center,
-		    'text_y' => 1,
-		    'border' => TopCenterLeft
-	);
-    my $w = BackupProg::UserInterface::Widget->new("Essaia", \%woptions);
-#    addstr(1, 1, "aze");
+    my %woptions= ('x'=>2, 'y'=>0, 'w'=>20, 'h'=>23,
+		   'align' => Center,
+		   'text_y' => 0,
+		   'border' => TopCenterLeft);
+    my $w = BackupProg::UserInterface::Widget->new("Menu=Ctrl+T", \%woptions);
+
+    my %woptions= ('x'=>20, 'y'=>0, 'w'=>20, 'h'=>23,
+		   'align' => Center,
+		   'text_y' => 0,
+		   'border' => TopCenterLeft);
+    my $w2= BackupProg::UserInterface::Widget->new(prgname, \%woptions);
+
+    #    addstr(1, 1, "aze");
 #    refresh();
+
+
     
-    getch();
+    #getch();
+    sleep 10;
     endwin();  # Restore the screen at the end of the program
 }
 1;

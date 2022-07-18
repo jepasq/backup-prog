@@ -58,21 +58,13 @@ sub new(){
     my $win=newwin($options{'h'}, $options{'w'}, $options{'y'}, $options{'x'});
     $win->bkgd(COLOR_PAIR(1)||' ');
     $win->attrset(COLOR_PAIR(1));
-
     
     draw_label($win, $options{'text_y'}, $options{'w'}, $options{'align'},
 	       $label);
     $log->LOGI("New widget's label is '$label'");
-    #draw_border($win, $options{'border'}, $options{'w'},, $options{'h'});
+    draw_border($win, $options{'border'}, $options{'w'},, $options{'h'});
 
-    $win->addstr(0, 0, "azeaze");
-    refresh($win);
-    
-    foreach my $k (keys(%options)){
-	$log->LOGI("$k=$options{$k})");
-    }
-
-    $log->LOGI( $options{'w'});
+    $win->refresh();
 }
 
 sub draw_label(){
