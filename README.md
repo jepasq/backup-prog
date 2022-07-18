@@ -7,7 +7,7 @@ A flexible TUI backup tool written in perl/curses.
 On arch-based distributions :
 
 	sudo pacman -S perl-curses perl-locale-gettext perl-class-singleton \
-		perl-switch perl-datetime perl-data-dump
+		perl-switch perl-datetime perl-data-dump perl-test2-suite
 
 ## Installation
 
@@ -23,6 +23,13 @@ To install backup_prog :
 - call `gen-makefiles.sh`
 - `make links` for development installation (use symbolic links)
 - `make install` for production (will copy files
+
+## Unit tests
+
+This package is shipped with unit tests written using 'test2' module. It can 
+be called after a simple call to `./gen-makefiles.sh` :
+
+	make check
 
 ## POD documentation
 

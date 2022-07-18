@@ -15,3 +15,4 @@ for d in $SUBDIRS; do (
 	echo "Generating $OUT for directory $d/ ..."
 	cd $d && $M4 $IN > $OUT 
 ); done
+

@@ -53,9 +53,13 @@ I18n for backup instructions :
 - call to remove.d
 - report generation (Latex)
 **** May implement unit tests
+:LOGBOOK:
+CLOCK: [2022-07-18 lun. 06:19]--[2022-07-18 lun. 06:38] =>  0:19
+:END:
 - Maybe give a try to Test::More and Test2::Suite
   see https://metacpan.org/pod/Test2::Tools::Basic
-  - [ ] Start with the Widget thing (refresh and force_refresh)
+- [ ] Add a check rule to the Makefile
+- [ ] Start with the Widget thing (refresh and force_refresh)
 **** TODO Mainpage and pod work
 :LOGBOOK:
 CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15

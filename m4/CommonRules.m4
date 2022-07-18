@@ -197,4 +197,9 @@ install-info: texinfo-info texinfo-html texinfo-docbook
 uninstall-info:
 	install-info --remove $(INFO).info
 ])dnl
+define([BP_GEN_CHECK_RULE],[dnl
+check:
+	./tests/backup_prog_t.pl
+])dnl
 changequote(`,')dnl
+
