@@ -1,18 +1,7 @@
 backup_prog - GPLv3 - A flexible backup tool written in perl/curses.
 
-o Graphical User Interface: BackupProg/UserInterface/Widgets.pm 
-   See the SCREEN.Layout file
-- See the label/border placement bug
-- options hashmap should contains 
-   color pair index for normal, pause, error, warning
-- label type printf + setValue()
-- See the Back Color Erase (fix it with space chars)
-
 * BackupProg/UserInterface/Prefrences.pm 
 - Should contains options hashmap for each widget
-
-* Texinfo manual
-- in BackupProg.texinfo
 
 * Testing
 - -h <keyword> (pod2usage)
@@ -37,28 +26,6 @@ o [mouse] Logger configuration
 - UserInterface::Mainwindow->new($conf)
    skin parsing
    widget creation
-
-* Documentation
-   See template in doc/POD_TEMPLATE
-   Remove NYI mark from manpage when implemented
-- manpage : test in html with `make man2html'
-
-* run-parts:
-- get_distant.d/
-- add_local.d/
-- add_distant.d/
-- remove.d/
-- remove_weekly.d/
-- mask_pwd.d/
-- stats.d/ Appelé en dernier (readme + stats: SLOC + $ + todosum + DL SF)
-
-* in doc/ directory
-   Many ideas and concepts
-- get_distant.d/
-- SKINS
-- CONFIG_FILES
-
-* Can use clamscan on individual files and archives
 
 === ChangeLog ===
    Please update version in BackupProg/Common/Def.pm and version.all

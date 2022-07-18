@@ -14,11 +14,11 @@
 2010-05-05 Jérôme Pasquier  <rainbru@free.fr>
 
 	* BackupProg/UserInterface/Preferences.pm: base implementation.
-	
+
 2010-05-04 Jérôme Pasquier  <rainbru@free.fr>
 
 	* m4/CommonRules.m4 : BP_GEN_INFO_RULES() implementation/
-	* BackupProg/Common/Logger.pm (print_sg): Fixed a print() error due 
+	* BackupProg/Common/Logger.pm (print_sg): Fixed a print() error due
 	to tmp file.
 
 	* m4/CommonRules.m4 (BP_GEN_EXE_RULES): install rule uses install-info.
@@ -33,7 +33,7 @@
 
 2009-10-29 Jérôme Pasquier  <rainbru@free.fr>
 	* m4/CommonRules.m4 : Created a man2html rules to test manpage.
-	
+
 2009-10-28 Jérôme Pasquier  <rainbru@free.fr>
 	* backup_prog.1 : Added command line options documentation.
 

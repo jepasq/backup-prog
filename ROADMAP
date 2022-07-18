@@ -3,6 +3,8 @@
 * v1.0.0
 ** v0.1.0
 *** v0.0.2
+**** May use external tools on generated archives
+- [ ] For example =clamscan=
 **** Full logfile handling
 - We search in the following config files :
    backup_prog.rc, backup_prog.hourly.rc, backup_prog.weekly.rc
@@ -24,6 +26,20 @@ I18n for backup instructions :
 - A translator comment is noted as is :
   =# TRANSLATOR : This is a message for You=
 - please use sprint function. Interpolation does not work.
+**** Mainpage and pod work
+     See template in doc/POD_TEMPLATE
+     Remove NYI mark from manpage when implemented
+- manpage : test in html with `make man2html'
+- Finally, texinfo : in BackupProg.texinfo
+**** run-parts work
+- get_distant.d/
+- add_local.d/
+- add_distant.d/
+- remove.d/
+- remove_weekly.d/
+- mask_pwd.d/
+- stats.d/ called last to get all stats
+  readme + stats: SLOC + $ + todosum + distant download
 **** Compute ETA (Estimated Time of Arrival)
 - Try using these datas ETA :
 <Weekly>
@@ -42,7 +58,7 @@ I18n for backup instructions :
 - call to remove.d
 - report generation (Latex)
 **** May implement unit tests
-**** Make this old version work
+**** TODO Make this old version work
 :LOGBOOK:
 CLOCK: [2022-07-14 jeu. 02:22]--[2022-07-14 jeu. 02:39] =>  0:17
 CLOCK: [2022-07-14 jeu. 01:16]--[2022-07-14 jeu. 01:54] =>  0:38
@@ -68,11 +84,19 @@ CLOCK: [2022-07-12 mar. 01:46]--[2022-07-12 mar. 02:03] =>  0:17
   - [ ] ElaspedTime inherits Window:
     passer StatTime au constructeur
     gestion signal POSIX pour update interval
-**** TODO Correctly handle doc/ directory content
+- Graphical User Interface: BackupProg/UserInterface/Widgets.pm 
+   See the SCREEN.Layout file
+- See the label/border placement bug
+- options hashmap should contains 
+   color pair index for normal, pause, error, warning
+- label type printf + setValue()
+- See the Back Color Erase (fix it with space chars)
+**** TODO Correctly handle doc/ directory a and TODO content
 :LOGBOOK:
+CLOCK: [2022-07-18 lun. 02:08]--[2022-07-18 lun. 02:28] =>  0:20
 CLOCK: [2022-07-14 jeu. 05:10]--[2022-07-14 jeu. 05:38] =>  0:28
 :END:
-Either add it to git or move it to README.md file.
+     Either add it to git or move it to README.md file.
 - [ ] Must also move TODO content here
 **** DONE Correct project setup
 :LOGBOOK:
