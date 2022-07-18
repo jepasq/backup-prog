@@ -39,15 +39,16 @@ sub new(){
     my $log = BackupProg::Common::Logger->instance();
     
     my $win=newwin($options{'h'}, $options{'w'}, $options{'y'}, $options{'x'});
-    $win->bkgd(COLOR_PAIR(1)||' ');
-    $win->attrset(COLOR_PAIR(1));
+    if ($win) {
+	# $win may be NULL when running unit test. Shouldn't in normal run.
+	$win->bkgd(COLOR_PAIR(1)||' ');
+	$win->attrset(COLOR_PAIR(1));
     
-    draw_label($win, $options{'text_y'}, $options{'w'}, $options{'align'},
+	draw_label($win, $options{'text_y'}, $options{'w'}, $options{'align'},
 	       $label);
-    $log->LOGI("New widget's label is '$label'");
-    draw_border($win, $options{'border'}, $options{'w'},, $options{'h'});
-
-    $win->refresh();
+	draw_border($win, $options{'border'}, $options{'w'},, $options{'h'});
+	$win->refresh();
+    }
 }
 
 sub draw_label(){
@@ -74,8 +75,12 @@ sub draw_border(){
     my ($win, $border, $w, $h) = @_;
 
     if ($border=TopCenterLeft){
-	$win->move($h,0); #y, x
-	$win->addch( ACS_BTEE);
+	#$win->move($h,0); #y, x
+	#$win->addch( ACS_BTEE);
+	box($win, 0, 0);
+	#border($win, ' ', ACS_VLINE, ' ', ACS_HLINE, 0, 0, 0, 0);
+	#$win->move($h+1,0); #y, x
+	#$win->hline(ACS_HLINE, $w)
     }
     else{
 	die("Border '".$border."' not implemented");

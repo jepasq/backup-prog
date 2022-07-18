@@ -24,6 +24,7 @@ use POSIX;
 use Error qw(:try);
 
 use BackupProg::Common::Logger;
+use BackupProg::Common::Def;
 use BackupProg::UserInterface::Preferences;
 use BackupProg::UserInterface::Widget qw(:Align :BorderTypes);
 use Curses;
@@ -60,10 +61,6 @@ erase(); refresh();
 endwin();
 =cut
 
-use constant {
-    prgname => "BackupProg",
-};
-
 sub new(){
     print Locale::gettext::gettext("We are in MainWindow::new()"), "\n";
     
@@ -78,25 +75,25 @@ sub new(){
 #    start_color();
 #    init_pair(1, COLOR_BLACK, COLOR_CYAN);
 
-    my %woptions= ('x'=>2, 'y'=>0, 'w'=>20, 'h'=>23,
+    my %woptions= ('x'=>2, 'y'=>0, 'w'=>20, 'h'=>24,
 		   'align' => Center,
 		   'text_y' => 0,
 		   'border' => TopCenterLeft);
     my $w = BackupProg::UserInterface::Widget->new("Menu=Ctrl+T", \%woptions);
 
-    my %woptions= ('x'=>20, 'y'=>0, 'w'=>20, 'h'=>23,
+    %woptions= ('x'=>20, 'y'=>0, 'w'=>25, 'h'=>4,
 		   'align' => Center,
 		   'text_y' => 0,
 		   'border' => TopCenterLeft);
-    my $w2= BackupProg::UserInterface::Widget->new(prgname, \%woptions);
+    my $def=BackupProg::Common::Def->new();
+    my $prgname = sprintf("%s v%s", $def->progname(), $def->version());
+    my $w2= BackupProg::UserInterface::Widget->new($prgname, \%woptions);
 
     #    addstr(1, 1, "aze");
 #    refresh();
 
-
-    
     #getch();
-    sleep 10;
+    sleep 5;
     endwin();  # Restore the screen at the end of the program
 }
 1;

@@ -54,11 +54,12 @@ I18n for backup instructions :
 - report generation (Latex)
 **** May implement unit tests
 :LOGBOOK:
+CLOCK: [2022-07-18 lun. 07:01]--[2022-07-18 lun. 07:45] =>  0:44
 CLOCK: [2022-07-18 lun. 06:19]--[2022-07-18 lun. 06:38] =>  0:19
 :END:
 - Maybe give a try to Test::More and Test2::Suite
   see https://metacpan.org/pod/Test2::Tools::Basic
-- [ ] Add a check rule to the Makefile
+- [X] Add a check rule to the Makefile
 - [ ] Start with the Widget thing (refresh and force_refresh)
 **** TODO Mainpage and pod work
 :LOGBOOK:

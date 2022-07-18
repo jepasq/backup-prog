@@ -39,5 +39,5 @@ todo "Waiting for Widget implementation" => sub {
 		   'text_y' => 0,
 		   'border' => TopCenterLeft);
     my $w = BackupProg::UserInterface::Widget->new("Menu=Ctrl+T", \%woptions);
-}
-done_testing;
+};
+done_testing();
