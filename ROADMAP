@@ -26,11 +26,6 @@ I18n for backup instructions :
 - A translator comment is noted as is :
   =# TRANSLATOR : This is a message for You=
 - please use sprint function. Interpolation does not work.
-**** Mainpage and pod work
-     See template in doc/POD_TEMPLATE
-     Remove NYI mark from manpage when implemented
-- manpage : test in html with `make man2html'
-- Finally, texinfo : in BackupProg.texinfo
 **** run-parts work
 - get_distant.d/
 - add_local.d/
@@ -58,8 +53,21 @@ I18n for backup instructions :
 - call to remove.d
 - report generation (Latex)
 **** May implement unit tests
+- Maybe give a try to Test::More and Test2::Suite
+  see https://metacpan.org/pod/Test2::Tools::Basic
+  - [ ] Start with the Widget thing (refresh and force_refresh)
+**** TODO Mainpage and pod work
+:LOGBOOK:
+CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
+:END:
+     See template in doc/POD_TEMPLATE
+     Remove NYI mark from manpage when implemented
+     To, preview a pod-based documentation =perldoc -t file.pod=
+- manpage : test in html with `make man2html'
+- Finally, texinfo : in BackupProg.texinfo
 **** TODO Make this old version work
 :LOGBOOK:
+CLOCK: [2022-07-18 lun. 04:01]--[2022-07-18 lun. 04:06] =>  0:05
 CLOCK: [2022-07-18 lun. 03:26]--[2022-07-18 lun. 03:52] =>  0:26
 CLOCK: [2022-07-14 jeu. 02:22]--[2022-07-14 jeu. 02:39] =>  0:17
 CLOCK: [2022-07-14 jeu. 01:16]--[2022-07-14 jeu. 01:54] =>  0:38
@@ -71,14 +79,10 @@ CLOCK: [2022-07-12 mar. 01:46]--[2022-07-12 mar. 02:03] =>  0:17
 - [X] Currently, UserInterface/MainWindow.pm tries to create a new widget but
   the label isn't drawn : FIXED. Was due to getch()
   see https://www.perl.com/article/197/2015/10/6/Display-real-time-data-with-Curses/
-- [ ] Follow *doc/SCREEN_LAYOUT* and create needed widgets.  
+- [ ] Must implement widget dirty flag, refresh and force_refresh  
+- [ ] Follow *doc/SCREEN_LAYOUT* and create needed widgets.
 - [ ] Gettext : see the problem with the __ shorthand
 - [ ] Continue to implement UI classes
-  - [ ] Widget (started
-    String: text
-    win: Window curses ou Panel si pkus simple
-    refresh(): si text changé
-    force_refresh(): aucun test
   - [ ] WidgetList  
     refresh(): refresh() sur toutes les window
     force_refresh(): force_refresh() sur toutes les window

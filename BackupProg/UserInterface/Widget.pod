@@ -1,0 +1,46 @@
+=pod
+
+=head1 NAME
+
+F<BackupProg::UserInterface::Widget> is a widget implementation for ncurses
+based on ncurses window with a dirty-flag feature.
+
+=head1 SYNOPSIS
+
+=head1 DESCRIPTION
+
+=head1 CONSTANTS
+
+=head1 EXPORTED TAGS
+
+=head1 CONSTRUCTOR
+
+=over 4
+
+=item label (F<string>): The label to be printed.
+
+=item options (F<hash>): A hash with position and border options :
+      ('x'=>2, 'y'=>0, 'w'=>20, 'h'=>23,
+       'align' => Center, 'text_y' => 0,
+       'border' => TopCenterLeft).
+
+
+=item idententification length: F<-1|integer>
+
+=back
+
+=head1 METHODS
+
+=over 4
+
+=item draw_label()
+
+=item draw_border()
+
+=item refresh()
+
+=back
+
+=head1 KNOWN BUGS
+
+=head1 SEE ALSO
