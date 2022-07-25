@@ -7,26 +7,6 @@ backup_prog - GPLv3 - A flexible backup tool written in perl/curses.
 - -h <keyword> (pod2usage)
 - -b/--batch    non-interactive mode
 
-* Logger:
-- LOGCf(msg) : pour configfile
-- LOGCl(msg) : pour commandline
-
-o [mouse] Logger configuration
-- Logger->new()                               OK
-- $conf = Common::Config->new()
-- Parser::CommandLine->parse_before_configfile($conf)
-   -c,--config-file <file> parsing
-- Parser::ConfigFile->parse($conf)
-   parse --config-file argument or search for available config files
-- Parser::CommandLine->parse($conf)
-- Logger->configure($conf)
-   Open real file log
-   Copy tmp file in real log file
-   close and remove tmp file
-- UserInterface::Mainwindow->new($conf)
-   skin parsing
-   widget creation
-
 === ChangeLog ===
    Please update version in BackupProg/Common/Def.pm and version.all
    Please use GNU ChangeLog file

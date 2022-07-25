@@ -3,6 +3,88 @@
 * v1.0.0
 ** v0.1.0
 *** v0.0.2
+**** Maybe skin handling
+#+BEGIN_EXAMPLE
+# INHERITS : Skin files with extension will not be read (let us create 
+# 'default_pairs.inc' which is not a complete skin
+
+# SCREEN_SIZE : by indication the columns and lines number, we can
+# stretch widget position and size if real screen is larger
+
+# COMMAND_LINE_ARGS :
+# --list-skins : List of all no-extension files
+# --test-skin : Only create screen to test the position of widgets
+
+
+<Colors>
+    red = 200, 250, 254 # Values from 0 to 254
+</Colors>
+
+<color_pairs>
+    1 = red, black
+</color_pairs>
+
+<Skin Default> # skin name
+    size       = 80x40
+    color_pair = 4
+    inherits   = <script_name>
+</Skin>
+
+<Widget lab_appname>
+    position = 3,8
+    size = 36x4
+    text ="aze"
+#    border = box|hline|vline, x,y,w,h, color_pair
+    border = hline, 0, 2, 8, 1, 4
+</Widget>
+#+END_EXAMPLE
+
+**** Handle distant files
+To speed up backup and avoid distant `scp` each week (and to avoid error when host is unreachable), we can call from a cron.hourly job :
+- [ ] backup_prog --hourly
+  - try a `host` command to know if host is reachable
+  - retrieve the file if reachable
+  - No error if unreachable (log in /var/log/backup_prog.hourly)
+  - broadcast message if retrieve is success
+
+#+BEGIN_EXAMPLE
+#  using Config::General
+<get name>
+   ssh_key     = /path/to/ssh
+   local_dir   = pth/to/place/distant/dir
+   distant_dir = /where/to/get/it
+   user_name   = login to host with name :
+   host        = hostname to connect to
+</get>
+
+keep_n_files <name>{
+   base_dir      = /path/to/getted/files
+   file_pattern  = *.tar.bz2
+   keep_n_number = 3  // We will keep only 3 files
+}
+
+extern_tool <name>{               // 0 to n blocks
+   path         = "/usr/bin/aze"
+   cmd_arg      = "-q hhhhh"
+   report       = yes
+   latex_string = "azeaze %s azeaz" // %s is the result returned by the tool 
+}
+
+# REPORT :Individual report for each get_distant.d file
+# makefile rule make pdf from tex
+# Content :
+# - Date/time of file
+# - md5dum + check result
+# - backup file weight
+# - ignored files + file weight and type (with file) + user
+# - Treat sub-archive (see redmine one)
+<report NAME>
+	title = "kjh"
+	type = text|pdf|html	
+	file = filename
+	mail = aze@mlkdfsdf.com
+</report>
+#+END_EXAMPLE
 **** May use external tools on generated archives
 - [ ] For example =clamscan=
 **** Full logfile handling
@@ -61,6 +143,25 @@ CLOCK: [2022-07-18 lun. 06:19]--[2022-07-18 lun. 06:38] =>  0:19
   see https://metacpan.org/pod/Test2::Tools::Basic
 - [X] Add a check rule to the Makefile
 - [ ] Start with the Widget thing (refresh and force_refresh)
+**** More Logger configuration work
+- [ ] Maybe
+  - LOGCf(msg) : pour configfile
+  - LOGCl(msg) : pour commandline
+
+- Logger->new()                               OK
+- $conf = Common::Config->new()
+- Parser::CommandLine->parse_before_configfile($conf)
+   -c,--config-file <file> parsing
+- Parser::ConfigFile->parse($conf)
+   parse --config-file argument or search for available config files
+- Parser::CommandLine->parse($conf)
+- Logger->configure($conf)
+   Open real file log
+   Copy tmp file in real log file
+   close and remove tmp file
+- UserInterface::Mainwindow->new($conf)
+   skin parsing
+   widget creation
 **** TODO Mainpage and pod work
 :LOGBOOK:
 CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
@@ -101,8 +202,9 @@ CLOCK: [2022-07-12 mar. 01:46]--[2022-07-12 mar. 02:03] =>  0:17
    color pair index for normal, pause, error, warning
 - label type printf + setValue()
 - See the Back Color Erase (fix it with space chars)
-**** TODO Correctly handle doc/ directory a and TODO content
+**** DONE Correctly handle doc/ directory a and TODO content
 :LOGBOOK:
+CLOCK: [2022-07-25 lun. 10:17]--[2022-07-25 lun. 10:49] =>  0:32
 CLOCK: [2022-07-18 lun. 02:08]--[2022-07-18 lun. 02:28] =>  0:20
 CLOCK: [2022-07-14 jeu. 05:10]--[2022-07-14 jeu. 05:38] =>  0:28
 :END:
