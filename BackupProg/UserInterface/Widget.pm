@@ -32,6 +32,10 @@ our %EXPORT_TAGS = (
 
 sub new(){
     my ($class) = shift;
+    my $self = {};
+
+    $self->{dirty} = 1;
+    
     my ($label)= shift;
     my (%options) = %{(shift)}; # Shift an hash
 
@@ -49,6 +53,8 @@ sub new(){
 	draw_border($win, $options{'border'}, $options{'w'},, $options{'h'});
 	$win->refresh();
     }
+    
+    return bless $self, $class;
 }
 
 sub draw_label(){
@@ -89,8 +95,23 @@ sub draw_border(){
 }
 
 sub refresh(){
-     my ($win) = @_;
-    $win->refresh();
+    my $self = shift;
+    if ($self->{dirty}) {
+	$self->draw_border();
+	$self->draw_label();
+	$self->{win}->refresh();
+    }
+    $self->{dirty} = 0;
+}
+
+sub force_refresh(){
+     my $self = shift;
+
+     $self->draw_border();
+     $self->draw_label();
+     $self->{win}->refresh();
+
+     $self->{dirty} = 0;
 }
 
 1;
