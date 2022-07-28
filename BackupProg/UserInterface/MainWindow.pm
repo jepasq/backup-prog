@@ -76,7 +76,7 @@ sub new(){
 #    init_pair(1, COLOR_BLACK, COLOR_CYAN);
 
     my %woptions= ('x'=>2, 'y'=>0, 'w'=>20, 'h'=>24,
-		   'align' => Center,
+		   'align' => Left,
 		   'text_y' => 0,
 		   'border' => TopCenterLeft);
     my $w = BackupProg::UserInterface::Widget->new("Menu=Ctrl+T", \%woptions);
@@ -89,6 +89,13 @@ sub new(){
     my $prgname = sprintf("%s v%s", $def->progname(), $def->version());
     my $w2= BackupProg::UserInterface::Widget->new($prgname, \%woptions);
 
+    %woptions= ('x'=>30, 'y'=>0, 'w'=>20, 'h'=>4,
+		   'align' => Left,
+		   'text_y' => 0,
+		   'border' => TopCenterLeft);
+    my $wmode = BackupProg::UserInterface::Widget->new("mode", \%woptions);
+
+    
     #    addstr(1, 1, "aze");
 #    refresh();
 

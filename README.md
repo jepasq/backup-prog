@@ -39,6 +39,19 @@ you can follow `doc/POD_TEMPLATE` example and to view the result :
 
 	perdoc-t <filename>.pod
 
+To be able to run rhe `man2html` rule of the top-level *Makefile*, you will
+need to install `rman` binary which is part of the *polyglotman* suite :
+
+	sudo apt-get install rman 
+
+on debian while on arch (package is from *AUR*) :
+
+	git clone https://aur.archlinux.org/polyglotman.git
+	cd polyglotman    # please examine the PKGBUILD file
+	makepkg
+	sudo pacman -U polyglotman-*.pkg.tar.zst
+	
+
 ## Translation
 
 Translatable files must be listed in *po/POTFILES*.

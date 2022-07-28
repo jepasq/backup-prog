@@ -169,10 +169,13 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
      See template in doc/POD_TEMPLATE
      Remove NYI mark from manpage when implemented
      To, preview a pod-based documentation =perldoc -t file.pod=
-- manpage : test in html with `make man2html'
+- [ ] manpage : test in html with `make man2html'
+  =rman -f html backup_prog.1 > backup_prog.1.html=
+  **macro "" not recognized -- ignoring**
 - Finally, texinfo : in BackupProg.texinfo
 **** TODO Make this old version work
 :LOGBOOK:
+CLOCK: [2022-07-28 jeu. 09:06]--[2022-07-28 jeu. 09:42] =>  0:36
 CLOCK: [2022-07-27 mer. 09:35]--[2022-07-27 mer. 10:09] =>  0:34
 CLOCK: [2022-07-18 lun. 04:01]--[2022-07-18 lun. 04:06] =>  0:05
 CLOCK: [2022-07-18 lun. 03:26]--[2022-07-18 lun. 03:52] =>  0:26
@@ -188,15 +191,16 @@ CLOCK: [2022-07-12 mar. 01:46]--[2022-07-12 mar. 02:03] =>  0:17
   see https://www.perl.com/article/197/2015/10/6/Display-real-time-data-with-Curses/
 - [X] Must implement widget dirty flag, refresh and force_refresh  
 - [ ] Follow *doc/SCREEN_LAYOUT* and create needed widgets.
+  from MainWindow
 - [ ] Gettext : see the problem with the __ shorthand
 - [ ] Continue to implement UI classes
   - [ ] WidgetList  
     refresh(): refresh() sur toutes les window
     force_refresh(): force_refresh() sur toutes les window
-  - [ ] ElaspedTime inherits Window:
+  - [ ] ElaspedTime inherits Window:x
     passer StatTime au constructeur
     gestion signal POSIX pour update interval
-- Graphical User Interface: BackupProg/UserInterface/Widgets.pm 
+- [ ] Continue BackupProg/UserInterface/Widgets.pm implementation
    See the SCREEN.Layout file
 - See the label/border placement bug
 - options hashmap should contains 
