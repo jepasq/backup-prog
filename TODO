@@ -9,14 +9,13 @@ backup_prog - GPLv3 - A flexible backup tool written in perl/curses.
 
 === ChangeLog ===
    Please update version in BackupProg/Common/Def.pm and version.all
-   Please use GNU ChangeLog file
-   Please update doc/NEEDED_MODULES (may be outdated)
-   SLOC is the result of sloccount
+   SLOC is the result of sloc on 'src/ and tests/'
    PO is the not translated/translated gettext messages (make nb-messages)
    (8 items by revision)
 
 * v0.0.1-13 (06 may 2010 - 07 Jui. 2022) SLOC ??? PO ??/??
-- (6) Explain 'polyglotman/rman' instalation in README
+- (7) Remove doc/NEEDED_MODULES (outdated and install explained in README)
+- Explain 'polyglotman/rman' instalation in README
 - Implement Widget's dirty flag
 - Finally fixed the widget drawing issue
 - Improve i18n documentation

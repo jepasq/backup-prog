@@ -142,6 +142,8 @@ CLOCK: [2022-07-18 lun. 06:19]--[2022-07-18 lun. 06:38] =>  0:19
 - Maybe give a try to Test::More and Test2::Suite
   see https://metacpan.org/pod/Test2::Tools::Basic
 - [X] Add a check rule to the Makefile
+- [ ] Must work again
+  Subroutine refresh redefined at /usr/lib/perl5/
 - [ ] Start with the Widget thing (refresh and force_refresh)
 **** More Logger configuration work
 - [ ] Maybe
@@ -190,6 +192,8 @@ CLOCK: [2022-07-12 mar. 01:46]--[2022-07-12 mar. 02:03] =>  0:17
   the label isn't drawn : FIXED. Was due to getch()
   see https://www.perl.com/article/197/2015/10/6/Display-real-time-data-with-Curses/
 - [X] Must implement widget dirty flag, refresh and force_refresh  
+- [X] Continue BackupProg/UserInterface/Widgets.pm implementation
+   See the SCREEN.Layout file
 - [ ] Follow *doc/SCREEN_LAYOUT* and create needed widgets.
   from MainWindow
 - [ ] Gettext : see the problem with the __ shorthand
@@ -200,8 +204,6 @@ CLOCK: [2022-07-12 mar. 01:46]--[2022-07-12 mar. 02:03] =>  0:17
   - [ ] ElaspedTime inherits Window:x
     passer StatTime au constructeur
     gestion signal POSIX pour update interval
-- [ ] Continue BackupProg/UserInterface/Widgets.pm implementation
-   See the SCREEN.Layout file
 - See the label/border placement bug
 - options hashmap should contains 
    color pair index for normal, pause, error, warning
