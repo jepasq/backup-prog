@@ -39,6 +39,12 @@ based on ncurses window with a dirty-flag feature.
 
 =item refresh()
 
+=item force_refresh()
+
+=item set_label(F<string>):
+ Change the current label and set the dirty flag to 1 (true value) so the
+ next refresh() call will draw it.
+
 =back
 
 =head1 KNOWN BUGS

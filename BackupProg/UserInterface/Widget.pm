@@ -35,8 +35,8 @@ sub new(){
     my $self = {};
 
     $self->{dirty} = 1;
+    $self->{label}= shift;
     
-    my ($label)= shift;
     my (%options) = %{(shift)}; # Shift an hash
 
 
@@ -49,7 +49,7 @@ sub new(){
 	$win->attrset(COLOR_PAIR(1));
     
 	draw_label($win, $options{'text_y'}, $options{'w'}, $options{'align'},
-	       $label);
+	    $self->{label});
 	draw_border($win, $options{'border'}, $options{'w'},, $options{'h'});
 	$win->refresh();
     }
@@ -114,4 +114,11 @@ sub force_refresh(){
      $self->{dirty} = 0;
 }
 
+sub set_label(){
+     my $self = shift;
+     my $text = shift;
+
+     $self->{label} = $text;
+     $self->{dirty} = 1;
+}     
 1;

@@ -37,7 +37,7 @@ The POD documentation, in .pod files is not installed, because it is
 a developper only documentation. To keep a good documentation organization,
 you can follow `doc/POD_TEMPLATE` example and to view the result :
 
-	perdoc-t <filename>.pod
+	perldoc -t <filename>.pod
 
 To be able to run rhe `man2html` rule of the top-level *Makefile*, you will
 need to install `rman` binary which is part of the *polyglotman* suite :

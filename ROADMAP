@@ -177,6 +177,7 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
 - Finally, texinfo : in BackupProg.texinfo
 **** TODO Make this old version work
 :LOGBOOK:
+CLOCK: [2022-07-29 ven. 08:51]--[2022-07-29 ven. 09:10] =>  0:19
 CLOCK: [2022-07-28 jeu. 09:06]--[2022-07-28 jeu. 09:42] =>  0:36
 CLOCK: [2022-07-27 mer. 09:35]--[2022-07-27 mer. 10:09] =>  0:34
 CLOCK: [2022-07-18 lun. 04:01]--[2022-07-18 lun. 04:06] =>  0:05
@@ -194,9 +195,12 @@ CLOCK: [2022-07-12 mar. 01:46]--[2022-07-12 mar. 02:03] =>  0:17
 - [X] Must implement widget dirty flag, refresh and force_refresh  
 - [X] Continue BackupProg/UserInterface/Widgets.pm implementation
    See the SCREEN.Layout file
+- [X] label type printf + setTest
 - [ ] Follow *doc/SCREEN_LAYOUT* and create needed widgets.
   from MainWindow
 - [ ] Gettext : see the problem with the __ shorthand
+- [ ] Widget's draw_label and draw_border should become instance function
+  Should shift $self
 - [ ] Continue to implement UI classes
   - [ ] WidgetList  
     refresh(): refresh() sur toutes les window
@@ -207,7 +211,6 @@ CLOCK: [2022-07-12 mar. 01:46]--[2022-07-12 mar. 02:03] =>  0:17
 - See the label/border placement bug
 - options hashmap should contains 
    color pair index for normal, pause, error, warning
-- label type printf + setValue()
 - See the Back Color Erase (fix it with space chars)
 **** DONE Correctly handle doc/ directory a and TODO content
 :LOGBOOK:
