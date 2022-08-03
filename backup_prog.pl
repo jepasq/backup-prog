@@ -8,6 +8,8 @@ use locale;
 
 use Curses;
 use Locale::gettext qw(gettext textdomain); 
+use Locale::TextDomain ('backup_prog');
+
 #use POSIX; # Got a 'Subroutine main::getchar redefined' error
 use Error qw(:try);
 

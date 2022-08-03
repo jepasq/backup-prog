@@ -8,7 +8,7 @@ On arch-based distributions :
 
 	sudo pacman -S  m4 make perl-curses perl-locale-gettext  \
 		perl-class-singleton perl-switch perl-datetime       \
-		perl-data-dump perl-test2-suite
+		perl-data-dump perl-test2-suite perl-libintl-perl
 
 ## Installation
 

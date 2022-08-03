@@ -3,7 +3,7 @@
 =head1 NAME 
 
 F<BackupProg::Exception::BadArgument> - an exception used to tell a bad 
-argument was pass.
+argument has been passed.
 
 =head1 SYNOPSIS
 
@@ -22,8 +22,6 @@ In the class which could catch it :
 	 print "in catch block\n";
     	 print "Error creating Logger : ".$E->message()."\n";
    };
-
-
 
 =head1 DESCRIPTION
 
@@ -47,10 +45,6 @@ None.
 
 See F<BackupProg::Exception::BaseException>, the class BadArgument inherits 
 from.
-
-=head1 AUTHOR
-
-Jerome Pasquier <rainbru@free.fr>
 
 =head1 COPYRIGHT
 
