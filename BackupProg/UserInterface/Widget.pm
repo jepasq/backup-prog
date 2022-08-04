@@ -42,7 +42,10 @@ sub new(){
     
     my (%options) = %{(shift)}; # Shift an hash
 
-
+    $self->{align} = $options{'align'};
+    $self->{y} = $options{'y'};
+    $self->{w} = $options{'w'};
+    
     if ($options{'text_y'} < 1) {
 	my $log = BackupProg::Common::Logger->instance();
 	$log->LOGW("The Widget's 'text_y' property is lesser than 1. ".
@@ -52,16 +55,18 @@ sub new(){
 
     my $log = BackupProg::Common::Logger->instance();
     
-    my $win=newwin($options{'h'}, $options{'w'}, $options{'y'}, $options{'x'});
-    if ($win) {
-	# $win may be NULL when running unit test. Shouldn't in normal run.
-	$win->bkgd(COLOR_PAIR(1)||' ');
-	$win->attrset(COLOR_PAIR(1));
+    $self->{win}=newwin($options{'h'}, $options{'w'}, $options{'y'}, $options{'x'});
+    if ($self->{win}) {
+	# $self->{win} may be NULL when running unit test. Shouldn't in normal run.
+	$self->{win}->bkgd(COLOR_PAIR(1)||' ');
+	$self->{win}->attrset(COLOR_PAIR(1));
     
-	draw_label($win, $options{'text_y'}, $options{'w'}, $options{'align'},
-	    $self->{label});
-	draw_border($win, $options{'border'}, $options{'w'},, $options{'h'});
-	$win->refresh();
+#	draw_label($win, $options{'text_y'}, $options{'w'}, $options{'align'},
+#		   $self->{label});
+
+	draw_label($self);
+	draw_border($self->{win}, $options{'border'}, $options{'w'},, $options{'h'});
+	$self->{win}->refresh();
     }
     
     return bless $self, $class;
@@ -69,29 +74,29 @@ sub new(){
 
 sub draw_label(){
     # y is the label_y value
-    my ($win, $y, $w, $align, $label) = @_;
+    my $self = shift;
 
-    my $ly=$y;
+    my $ly=$self->{y};
     my $lx=1;
     
-    if ($align==Left){
+    if ($self->{align}==Left){
 	$lx = 1;
     }
-    elsif ($align==Right){
-	$lx = $w - length($label) - 1;
+    elsif ($self->{align}==Right){
+	$lx = $self->{w} - length($self->{label}) - 1;
     }
-    elsif ($align==Center){
-	$ly = ($w / 2) - (length($label) / 2);
+    elsif ($self->{align}==Center){
+	$ly = ($self->{w} / 2) - (length($self->{label}) / 2);
 	$lx = $ly;
     }
     else{
-	die("Alignment '".$align."' not implemented");
+	die("Alignment '".$self->{align}."' not implemented");
     }
 
     my $log = BackupProg::Common::Logger->instance();
-    $log->LOGI("[y:".$ly.", x:".$lx."] Printing label '".$label."'");
+    $log->LOGI("[y:".$ly.", x:".$lx."] Printing label '".$self->{label}."'");
 
-    $win->addstr($ly, $lx, $label);
+    $self->{win}->addstr($ly, $lx, $self->{label});
     
 }
 

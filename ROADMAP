@@ -177,6 +177,7 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
 - Finally, texinfo : in BackupProg.texinfo
 **** TODO Continue UserInterface classes implementation
 :LOGBOOK:
+CLOCK: [2022-08-04 jeu. 11:41]--[2022-08-04 jeu. 12:18] =>  0:37
 CLOCK: [2022-08-04 jeu. 10:31]--[2022-08-04 jeu. 10:49] =>  0:18
 :END:
 - [X] The actual bug with widget label drawing si due to align property
@@ -184,6 +185,8 @@ CLOCK: [2022-08-04 jeu. 10:31]--[2022-08-04 jeu. 10:49] =>  0:18
   - [X] Log x and y values
 - [ ] Widget's draw_label and draw_border should become instance function
   Should shift $self
+  - [ ] First draw_label
+  - [ ] then, draw_border
 - [ ] Follow *doc/SCREEN_LAYOUT* and create needed widgets.
   from MainWindow
 - [ ] Continue to implement UI classes
