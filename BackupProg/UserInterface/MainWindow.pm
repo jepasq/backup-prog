@@ -31,7 +31,7 @@ sub new(){
 
     my %woptions1= ('x'=>2, 'y'=>0, 'w'=>20, 'h'=>24,
 		   'align' => Left,
-		   'text_y' => 0,
+		   'text_y' => 1,
 		   'border' => TopCenterLeft);
     my $w = BackupProg::UserInterface::Widget->new("Menu=Ctrl+T", \%woptions1);
 
@@ -45,7 +45,7 @@ sub new(){
 
     my %woptions3= ('x'=>30, 'y'=>0, 'w'=>25, 'h'=>4,
 		   'align' => Right,
-		   'text_y' => 0,
+		   'text_y' => 1,
 		   'border' => TopCenterLeft);
     my $wmode = BackupProg::UserInterface::Widget->new("mode", \%woptions3);
 

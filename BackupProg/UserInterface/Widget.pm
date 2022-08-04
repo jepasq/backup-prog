@@ -43,6 +43,13 @@ sub new(){
     my (%options) = %{(shift)}; # Shift an hash
 
 
+    if ($options{'text_y'} < 1) {
+	my $log = BackupProg::Common::Logger->instance();
+	$log->LOGW("The Widget's 'text_y' property is lesser than 1. ".
+		   "The label may be masked by the widget's border ".
+		   "(Widget's label is '".$self->{label}.")");
+    }
+
     my $log = BackupProg::Common::Logger->instance();
     
     my $win=newwin($options{'h'}, $options{'w'}, $options{'y'}, $options{'x'});
@@ -64,20 +71,28 @@ sub draw_label(){
     # y is the label_y value
     my ($win, $y, $w, $align, $label) = @_;
 
+    my $ly=$y;
+    my $lx=1;
+    
     if ($align==Left){
-	$win->addstr($y,1, $label);
+	$lx = 1;
     }
     elsif ($align==Right){
-	$win->addstr($y,$w - length($label) - 1, 
-		     $label);
+	$lx = $w - length($label) - 1;
     }
     elsif ($align==Center){
-	my $y = ($w / 2) - (length($label) / 2);
-	$win->addstr($y, $y, $label);
+	$ly = ($w / 2) - (length($label) / 2);
+	$lx = $ly;
     }
     else{
 	die("Alignment '".$align."' not implemented");
     }
+
+    my $log = BackupProg::Common::Logger->instance();
+    $log->LOGI("[y:".$ly.", x:".$lx."] Printing label '".$label."'");
+
+    $win->addstr($ly, $lx, $label);
+    
 }
 
 sub draw_border(){

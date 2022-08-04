@@ -176,8 +176,12 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
   **macro "" not recognized -- ignoring**
 - Finally, texinfo : in BackupProg.texinfo
 **** TODO Continue UserInterface classes implementation
-- [ ] The actual bug with widget label drawing si due to align property
+:LOGBOOK:
+CLOCK: [2022-08-04 jeu. 10:31]--[2022-08-04 jeu. 10:49] =>  0:18
+:END:
+- [X] The actual bug with widget label drawing si due to align property
   Center almost work while other values seems to fail
+  - [X] Log x and y values
 - [ ] Widget's draw_label and draw_border should become instance function
   Should shift $self
 - [ ] Follow *doc/SCREEN_LAYOUT* and create needed widgets.
