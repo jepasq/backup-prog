@@ -177,6 +177,7 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
 - Finally, texinfo : in BackupProg.texinfo
 **** TODO Make this old version work
 :LOGBOOK:
+CLOCK: [2022-08-04 jeu. 08:46]--[2022-08-04 jeu. 09:06] =>  0:20
 CLOCK: [2022-08-03 mer. 10:09]--[2022-08-03 mer. 10:36] =>  0:27
 CLOCK: [2022-08-02 mar. 10:14]--[2022-08-02 mar. 10:36] =>  0:22
 CLOCK: [2022-07-29 ven. 08:51]--[2022-07-29 ven. 09:10] =>  0:19
@@ -198,11 +199,13 @@ CLOCK: [2022-07-12 mar. 01:46]--[2022-07-12 mar. 02:03] =>  0:17
 - [X] Continue BackupProg/UserInterface/Widgets.pm implementation
    See the SCREEN.Layout file
 - [X] label type printf + setTest
-- [X] Widget's draw_label and draw_border should become instance function
-  Should shift $self
 - [X] Gettext : see the problem with the __ shorthand
   Should be done with the Locale::TextDomain call. Now it wordks in
   MainWindow ctor
+- [ ] The actual bug with widget label drawing si due to align property
+  Center almost work while other values seems to fail
+- [ ] Widget's draw_label and draw_border should become instance function
+  Should shift $self
 - [ ] Follow *doc/SCREEN_LAYOUT* and create needed widgets.
   from MainWindow
 - [ ] Continue to implement UI classes

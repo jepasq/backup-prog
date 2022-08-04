@@ -8,6 +8,9 @@ use Error qw(:try);
 
 use BackupProg::Common::Logger;
 use BackupProg::UserInterface::Preferences;
+
+use BackupProg::Exception::BadArgument;
+
 use Curses;
 
 use constant {
@@ -89,7 +92,8 @@ sub draw_border(){
 	#$win->hline(ACS_HLINE, $w)
     }
     else{
-	die("Border '".$border."' not implemented");
+	my $msg="Border '".$border."' not implemented";
+	throw BackupProg::Exception::BadArgument($msg);
     }
 
 }
