@@ -45,6 +45,8 @@ sub new(){
     $self->{align} = $options{'align'};
     $self->{y} = $options{'y'};
     $self->{w} = $options{'w'};
+
+    $self->{text_y} = $options{'text_y'};
     
     if ($options{'text_y'} < 1) {
 	my $log = BackupProg::Common::Logger->instance();
@@ -86,18 +88,14 @@ sub draw_label(){
 	$lx = $self->{w} - length($self->{label}) - 1;
     }
     elsif ($self->{align}==Center){
-	$ly = ($self->{w} / 2) - (length($self->{label}) / 2);
-	$lx = $ly;
+	$lx = ($self->{w} / 2) - (length($self->{label}) / 2) -1;
+	$ly = $self->{text_y};
     }
     else{
 	die("Alignment '".$self->{align}."' not implemented");
     }
 
-    my $log = BackupProg::Common::Logger->instance();
-    $log->LOGI("[y:".$ly.", x:".$lx."] Printing label '".$self->{label}."'");
-
     $self->{win}->addstr($ly, $lx, $self->{label});
-    
 }
 
 sub draw_border(){

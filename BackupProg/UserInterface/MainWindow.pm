@@ -29,26 +29,32 @@ sub new(){
 #    start_color();
 #    init_pair(1, COLOR_BLACK, COLOR_CYAN);
 
-    my %woptions1= ('x'=>2, 'y'=>0, 'w'=>20, 'h'=>24,
+    my %woptions1= ('x'=>2, 'y'=>1, 'w'=>15, 'h'=>3,
 		   'align' => Left,
 		   'text_y' => 1,
 		   'border' => TopCenterLeft);
     my $w = BackupProg::UserInterface::Widget->new("Menu=Ctrl+T", \%woptions1);
 
-    my %woptions2= ('x'=>20, 'y'=>0, 'w'=>25, 'h'=>4,
+    my %woptions2= ('x'=>20, 'y'=>1, 'w'=>20, 'h'=>3,
 		   'align' => Center,
-		   'text_y' => 0,
+		   'text_y' => 1,
 		   'border' => TopCenterLeft);
     my $def=BackupProg::Common::Def->new();
-    my $prgname = sprintf("%s v%s", $def->progname(), $def->version());
-    my $w2= BackupProg::UserInterface::Widget->new($prgname, \%woptions2);
+    my $w2= BackupProg::UserInterface::Widget->new($def->progname(),
+						   \%woptions2);
 
-    my %woptions3= ('x'=>30, 'y'=>0, 'w'=>25, 'h'=>4,
-		   'align' => Right,
+    my %woptions3= ('x'=>60, 'y'=>1, 'w'=>12, 'h'=>3,
+		   'align' => Center,
 		   'text_y' => 1,
 		   'border' => TopCenterLeft);
     my $wmode = BackupProg::UserInterface::Widget->new("mode", \%woptions3);
 
+    my %woptions4= ('x'=>72, 'y'=>1, 'w'=>16, 'h'=>3,
+		   'align' => Right,
+		   'text_y' => 1,
+		   'border' => TopCenterLeft);
+    my $ver = sprintf("v%s", $def->version());
+    my $wversion = BackupProg::UserInterface::Widget->new($ver, \%woptions4);
     
     #    addstr(1, 1, "aze");
 #    refresh();
