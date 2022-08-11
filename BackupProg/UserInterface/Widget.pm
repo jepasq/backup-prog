@@ -67,7 +67,7 @@ sub new(){
 #		   $self->{label});
 
 	draw_label($self);
-	draw_border($self->{win}, $options{'border'}, $options{'w'},, $options{'h'});
+	draw_border($self);
 	$self->{win}->refresh();
     }
     
@@ -99,18 +99,18 @@ sub draw_label(){
 }
 
 sub draw_border(){
-    my ($win, $border, $w, $h) = @_;
+    my $self = shift;
 
-    if ($border=TopCenterLeft){
+    if ($self->{border}=TopCenterLeft){
 	#$win->move($h,0); #y, x
 	#$win->addch( ACS_BTEE);
-	box($win, 0, 0);
+	box($self->{win}, 0, 0);
 	#border($win, ' ', ACS_VLINE, ' ', ACS_HLINE, 0, 0, 0, 0);
 	#$win->move($h+1,0); #y, x
 	#$win->hline(ACS_HLINE, $w)
     }
     else{
-	my $msg="Border '".$border."' not implemented";
+	my $msg="Border '".$self->{border}."' not implemented";
 	throw BackupProg::Exception::BadArgument($msg);
     }
 
