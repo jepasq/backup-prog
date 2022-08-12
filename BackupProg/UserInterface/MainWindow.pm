@@ -10,6 +10,7 @@ use BackupProg::Common::Logger;
 use BackupProg::Common::Def;
 use BackupProg::UserInterface::Preferences;
 use BackupProg::UserInterface::Widget qw(:Align :BorderTypes);
+use BackupProg::UserInterface::WidgetList;
 use Curses;
 
 
@@ -29,6 +30,8 @@ sub new(){
 #    start_color();
 #    init_pair(1, COLOR_BLACK, COLOR_CYAN);
 
+    my $wl = BackupProg::UserInterface::WidgetList->new();
+    
     my %woptions1= ('x'=>2, 'y'=>1, 'w'=>15, 'h'=>3,
 		   'align' => Left,
 		   'text_y' => 1,

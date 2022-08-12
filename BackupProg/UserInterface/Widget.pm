@@ -59,12 +59,8 @@ sub new(){
     
     $self->{win}=newwin($options{'h'}, $options{'w'}, $options{'y'}, $options{'x'});
     if ($self->{win}) {
-	# $self->{win} may be NULL when running unit test. Shouldn't in normal run.
 	$self->{win}->bkgd(COLOR_PAIR(1)||' ');
 	$self->{win}->attrset(COLOR_PAIR(1));
-    
-#	draw_label($win, $options{'text_y'}, $options{'w'}, $options{'align'},
-#		   $self->{label});
 
 	draw_label($self);
 	draw_border($self);
