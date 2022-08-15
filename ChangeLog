@@ -1,3 +1,13 @@
+* v0.0.1-14 (29 Jul. 2022 - 15 Aug. 2022) SLOC 329 PO 37/49
+- Add first WidgetList unit tests
+- WidgetList empty class added
+- Widget::draw_border is now an instance function
+- Add version widget and use text_y for centered labels
+- Widget::draw_label is an instance method
+- Fix the Widget label issue and add a warning for bad label_y values
+- Widget uses Exception in case of bad Alignment flag
+- Add perl-libintl-perl dependency to fix gettext shorthand issue
+
 * v0.0.1-13 (07 Jui. 2022 - 29 Jul. 2022) SLOC 325 PO 37/49
 - Implement widget::set_label()
 - Remove doc/NEEDED_MODULES (outdated and install explained in README)
