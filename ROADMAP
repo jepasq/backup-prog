@@ -134,8 +134,9 @@ I18n for backup instructions :
 - programmation/ directory copy (very long)
 - call to remove.d
 - report generation (Latex)
-**** May implement unit tests
+**** TODO May implement unit tests
 :LOGBOOK:
+CLOCK: [2022-08-15 lun. 12:26]--[2022-08-15 lun. 12:32] =>  0:06
 CLOCK: [2022-07-18 lun. 07:01]--[2022-07-18 lun. 07:45] =>  0:44
 CLOCK: [2022-07-18 lun. 06:19]--[2022-07-18 lun. 06:38] =>  0:19
 :END:
@@ -145,6 +146,7 @@ CLOCK: [2022-07-18 lun. 06:19]--[2022-07-18 lun. 06:38] =>  0:19
 - [ ] Must work again
   Subroutine refresh redefined at /usr/lib/perl5/
 - [ ] Start with the Widget thing (refresh and force_refresh)
+- [ ] WidgetList unit tests should go in another file ?
 **** More Logger configuration work
 - [ ] Maybe
   - LOGCf(msg) : pour configfile
