@@ -48,7 +48,8 @@ need to install `rman` binary which is part of the *polyglotman* suite :
 on debian while on arch (package is from *AUR*) :
 
 	git clone https://aur.archlinux.org/polyglotman.git
-	cd polyglotman    # please examine the PKGBUILD file
+	cd polyglotman
+           # please examine the PKGBUILD file
 	makepkg
 	sudo pacman -U polyglotman-*.pkg.tar.zst
 	

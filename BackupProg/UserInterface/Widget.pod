@@ -25,7 +25,7 @@ based on ncurses window with a dirty-flag feature.
        'border' => TopCenterLeft).
 
 
-=item idententification length: F<-1|integer>
+=item identification length: F<-1|integer>
 
 =back
 

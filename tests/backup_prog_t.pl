@@ -6,8 +6,6 @@ use Test2::Tools::Basic;
 
 use BackupProg::UserInterface::Widget qw(:Align :BorderTypes);
 use BackupProg::UserInterface::WidgetList;
-
-
 =for
 ok($x, "simple test");
 if ($passing) {
@@ -49,7 +47,7 @@ todo "Waiting for Widget implementation" => sub {
 
 todo "WidgetList should have an len() method" => sub {
     my $l = BackupProg::UserInterface::WidgetList->new();
-    my $le = $l->len();
+ #   my $le = $l->len();
 };
 
 todo "WidgetList should have an append() method" => sub {
