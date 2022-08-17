@@ -144,7 +144,7 @@ CLOCK: [2022-07-18 lun. 06:19]--[2022-07-18 lun. 06:38] =>  0:19
   see https://metacpan.org/pod/Test2::Tools::Basic
 - [X] Add a check rule to the Makefile
 - [ ] Must work again
-  Subroutine refresh redefined at /usr/lib/perl5/
+  Subroutine refresh redefined at /usr/lib/perl5/5.36/site_perl/BackupProg/UserInterface/Widget.pm
 - [ ] Start with the Widget thing (refresh and force_refresh)
 - [ ] WidgetList unit tests should go in another file ?
 **** More Logger configuration work
@@ -180,6 +180,7 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
 - Finally, texinfo : in BackupProg.texinfo
 **** TODO Continue UserInterface classes implementation
 :LOGBOOK:
+CLOCK: [2022-08-17 mer. 13:59]--[2022-08-17 mer. 14:28] =>  0:29
 CLOCK: [2022-08-17 mer. 12:45]--[2022-08-17 mer. 13:14] =>  0:29
 CLOCK: [2022-08-12 ven. 12:03]--[2022-08-12 ven. 12:12] =>  0:09
 CLOCK: [2022-08-11 jeu. 13:40]--[2022-08-11 jeu. 13:48] =>  0:08
@@ -199,11 +200,12 @@ CLOCK: [2022-08-04 jeu. 10:31]--[2022-08-04 jeu. 10:49] =>  0:18
   from MainWindow
 - [-] Continue to implement UI classes : eventually with unit tests
   - [X] WidgetList
-  - [ ] unit tests have a =Can't locate object method "append/new"= error
+  - [X] unit tests have a =Can't locate object method "append/new"= error
+    Was due to file installed and not linked. New code wasn't in /usr/lib/.
   - [ ] append() and other list-related     
     refresh(): refresh() sur toutes les window
     force_refresh(): force_refresh() sur toutes les window
-  - [ ] ElaspedTime inherits Window:x
+  - [ ] ElaspedTime inherits Window
     passer StatTime au constructeur
     gestion signal POSIX pour update interval
 - options hashmap should contains 

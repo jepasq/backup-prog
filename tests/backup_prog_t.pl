@@ -43,11 +43,9 @@ todo "Waiting for Widget implementation" => sub {
 
 
 # WidgetList unit tests
-
-
 todo "WidgetList should have an len() method" => sub {
     my $l = BackupProg::UserInterface::WidgetList->new();
- #   my $le = $l->len();
+    ok($l->len() == 0, "WidgetList len should be 0");
 };
 
 todo "WidgetList should have an append() method" => sub {
@@ -59,6 +57,7 @@ todo "WidgetList should have an append() method" => sub {
 
     my $l = BackupProg::UserInterface::WidgetList->new();
     $l->append($w);
+    ok($l->len() == 1, "WidgetList len should now be 1");
 };
 
 done_testing();

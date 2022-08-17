@@ -37,7 +37,9 @@ sub new(){
 		   'text_y' => 1,
 		   'border' => TopCenterLeft);
     my $w = BackupProg::UserInterface::Widget->new("Menu=Ctrl+T", \%woptions1);
-
+    $wl->append($w);
+    
+    
     my %woptions2= ('x'=>20, 'y'=>1, 'w'=>20, 'h'=>3,
 		   'align' => Center,
 		   'text_y' => 1,
