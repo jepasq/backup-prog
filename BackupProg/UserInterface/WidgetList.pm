@@ -8,7 +8,7 @@ use BackupProg::Common::Logger;
 use Exporter qw(import);
 #our @EXPORT_OK   =  qw(Left Right Center 
 
-our @widgets=0;
+our @widgets=();
 
 sub new(){
     my ($class) = shift;
@@ -20,7 +20,6 @@ sub new(){
     
     # The list
     $self->{widgets} = ();
-    $self->{len} = 0;
 
     bless $self, $class;
     return $self;
@@ -28,7 +27,7 @@ sub new(){
 
 sub len(){
      my $self = shift;
-     return (scalar @widgets)-1;
+     return scalar @widgets;
 }
 
 sub append(){
@@ -38,6 +37,14 @@ sub append(){
      push @widgets, $val;
      $self->{log}->LOGI("WidgetList: (@widgets)in len is now ". $self->len());
      # TODO
+}
+
+sub refresh(){
+    my $self = shift;
+
+    foreach ( @widgets ){
+	$_->refresh();
+    }
 }
 
 1;

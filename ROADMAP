@@ -181,6 +181,8 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
 - Finally, texinfo : in BackupProg.texinfo
 **** TODO Continue UserInterface classes implementation
 :LOGBOOK:
+CLOCK: [2022-08-19 ven. 14:33]--[2022-08-19 ven. 14:39] =>  0:06
+CLOCK: [2022-08-19 ven. 13:49]--[2022-08-19 ven. 14:18] =>  0:29
 CLOCK: [2022-08-19 ven. 13:29]--[2022-08-19 ven. 13:38] =>  0:09
 CLOCK: [2022-08-17 mer. 13:59]--[2022-08-17 mer. 14:28] =>  0:29
 CLOCK: [2022-08-17 mer. 12:45]--[2022-08-17 mer. 13:14] =>  0:29
@@ -205,8 +207,8 @@ CLOCK: [2022-08-04 jeu. 10:31]--[2022-08-04 jeu. 10:49] =>  0:18
   - [X] unit tests have a =Can't locate object method "append/new"= error
     Was due to file installed and not linked. New code wasn't in /usr/lib/.
   - [X] append() and other list-related     
-  - [ ] refresh(): refresh() sur toutes les window
-  - [ ] force_refresh(): force_refresh() sur toutes les window
+  - [X] refresh(): refresh() sur toutes les widgets
+  - [ ] force_refresh(): force_refresh() sur toutes les widget
   - [ ] ElaspedTime inherits Window
     passer StatTime au constructeur
     gestion signal POSIX pour update interval

@@ -60,5 +60,17 @@ todo "WidgetList should have an append() method" => sub {
     ok($l->len() == 1, "WidgetList len should now be 1");
 };
 
+todo "WidgetList has a refresh() method" => sub {
+    my %woptions= ('x'=>2, 'y'=>0, 'w'=>20, 'h'=>23,
+		   'align' => Center,
+		   'text_y' => 0,
+		   'border' => TopCenterLeft);
+    my $w = BackupProg::UserInterface::Widget->new("Test", \%woptions);
+
+    my $l = BackupProg::UserInterface::WidgetList->new();
+    $l->append($w);
+    ok($l->refresh());
+};
+
 done_testing();
 
