@@ -56,10 +56,6 @@ Call force_refresh() function on all widgets.
 
 =head1 SEE ALSO
 
-=head1 AUTHOR
-
-Jerome Pasquier <rainbru@free.fr>
-
 =head1 COPYRIGHT
 
 Licensed under the term of the GNU GPL v3.
