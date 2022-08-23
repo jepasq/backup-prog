@@ -47,4 +47,12 @@ sub refresh(){
     }
 }
 
+sub force_refresh(){
+    my $self = shift;
+
+    foreach ( @widgets ){
+	$_->force_refresh();
+    }
+}
+
 1;

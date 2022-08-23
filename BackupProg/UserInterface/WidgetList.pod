@@ -46,6 +46,10 @@ Add the given Widget to the internal list.
 Refresh all widgets if needed. The needed is done by the widget's dirty flag
 value.
 
+=item force_refresh()
+
+Call force_refresh() function on all widgets.
+
 =back
 
 =head1 KNOWN BUGS

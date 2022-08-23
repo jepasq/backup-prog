@@ -60,7 +60,7 @@ sub new(){
 		   'border' => TopCenterLeft);
     my $ver = sprintf("v%s", $def->version());
     my $wversion = BackupProg::UserInterface::Widget->new($ver, \%woptions4);
-    
+
     #    addstr(1, 1, "aze");
 #    refresh();
 
