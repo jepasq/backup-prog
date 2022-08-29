@@ -57,7 +57,8 @@ sub new(){
 
     my $log = BackupProg::Common::Logger->instance();
     
-    $self->{win}=newwin($options{'h'}, $options{'w'}, $options{'y'}, $options{'x'});
+    $self->{win}=newwin($options{'h'},$options{'w'},
+			$options{'y'},$options{'x'});
     if ($self->{win}) {
 	$self->{win}->bkgd(COLOR_PAIR(1)||' ');
 	$self->{win}->attrset(COLOR_PAIR(1));
@@ -66,7 +67,6 @@ sub new(){
 	draw_border($self);
 	$self->{win}->refresh();
     }
-    
     return bless $self, $class;
 }
 
