@@ -19,15 +19,20 @@ sub new() {
     $self->draw_label();
 
     my $log = BackupProg::Common::Logger->instance();
-    my $sttime = DateTime->now();
+    $self->{sttime} = DateTime->now();
     sleep(61);
-    my $entime = DateTime->now;
-    my $elapse = $entime - $sttime;
-    $log->LOGI("Elapsed time : ".$elapse->in_units('seconds')."s");
-    $log->LOGI("Elapsed time : ".$elapse->in_units('minutes')."m");
-    $log->LOGI("Elapsed time : ".$elapse->in_units('hours')."h");
-
+    $log->LOGI($self->get_elapsed_str());
     # Already blessed by parent
     return $self;
 }
+
+sub get_elapsed_str() {
+    my $self = shift;
+
+    my $elapse = DateTime->now - $self->{sttime};
+    my $stt = sprintf("Ela. %d:%02d:%02d", $elapse->in_units('hours'),
+		      $elapse->in_units('minutes'),
+		      $elapse->in_units('seconds'));
+}
+
 1;

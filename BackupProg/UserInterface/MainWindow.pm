@@ -18,7 +18,7 @@ use Curses;
 #use BackupProg::Exception::BadArgument;
 
 sub new(){
-    print __"We are in MainWindow::new()", "\n";
+    #print __"We are in MainWindow::new()", "\n";
     
     my $log = BackupProg::Common::Logger->instance();
     $log->LOGI("Informative message");
