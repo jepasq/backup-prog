@@ -181,6 +181,7 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
 - Finally, texinfo : in BackupProg.texinfo
 **** TODO Continue UserInterface classes implementation
 :LOGBOOK:
+CLOCK: [2022-08-30 mar. 14:38]--[2022-08-30 mar. 14:53] =>  0:15
 CLOCK: [2022-08-29 lun. 01:43]--[2022-08-29 lun. 02:18] =>  0:35
 CLOCK: [2022-08-23 mar. 03:24]--[2022-08-23 mar. 03:39] =>  0:15
 CLOCK: [2022-08-23 mar. 02:28]--[2022-08-23 mar. 02:35] =>  0:07
@@ -213,8 +214,9 @@ CLOCK: [2022-08-04 jeu. 10:31]--[2022-08-04 jeu. 10:49] =>  0:18
   - [X] refresh(): refresh() sur toutes les widgets
   - [X] force_refresh(): force_refresh() sur tous les widget
   - [ ] ElaspedTime inherits Window
-    - [ ] pass StatTime to constructor or add a startTimer function
-    - [ ] Test signal POSIX pour update interval
+    - [ ] Compute and print elapsed time from start
+    - [ ] Manage to print in label
+    - [ ] Update each second
 - options hashmap should contains 
    color pair index for normal, pause, error, warning
 - See the Back Color Erase (fix it with space chars)
