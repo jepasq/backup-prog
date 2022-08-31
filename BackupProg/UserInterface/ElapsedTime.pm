@@ -20,8 +20,16 @@ sub new() {
 
     my $log = BackupProg::Common::Logger->instance();
     $self->{sttime} = DateTime->now();
-    sleep(61);
-    $log->LOGI($self->get_elapsed_str());
+
+    $SIG{ALRM} = sub {
+	#my $log = BackupProg::Common::Logger->instance();
+	#$log->LOGI($self->get_elapsed_str());
+	
+    	print "aze" ;
+	alarm 1;
+    };
+#    alarm 1;
+    
     # Already blessed by parent
     return $self;
 }
