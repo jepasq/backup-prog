@@ -15,11 +15,12 @@ sub new() {
 
     # possibly call Parent->new(@args) first
     my $self = $class->SUPER::new('zze', @args);
-    $self->{label}= 'ertetr';
-    $self->draw_label();
+    $self->SUPER::set_label('ertetr');
+    $self->SUPER::draw_label();
 
     my $log = BackupProg::Common::Logger->instance();
     $self->{sttime} = DateTime->now();
+    $log->LOGI("In ElapsedTime widget constructor".$self->SUPER::get_label());
 
     $SIG{ALRM} = sub {
 	#my $log = BackupProg::Common::Logger->instance();

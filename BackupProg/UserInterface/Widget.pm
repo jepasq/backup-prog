@@ -139,4 +139,11 @@ sub set_label(){
      $self->{label} = $text;
      $self->{dirty} = 1;
 }     
+
+sub get_label(){
+     my $self = shift;
+
+     return $self->{label};
+}     
+
 1;
