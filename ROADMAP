@@ -108,6 +108,12 @@ I18n for backup instructions :
 - A translator comment is noted as is :
   =# TRANSLATOR : This is a message for You=
 - please use sprint function. Interpolation does not work.
+**** Handle colors
+- [ ] Widget constructor paramater options hashmap should contains 
+   color pair index for normal, pause, error, warning
+- [ ] See the Back Color Erase (fix it with space chars)
+  Currently, we're using ' ' (space character) to erase some part of the
+  printed strings
 **** run-parts work
 - get_distant.d/
 - add_local.d/
@@ -179,8 +185,12 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
   =rman -f html backup_prog.1 > backup_prog.1.html=
   **macro "" not recognized -- ignoring**
 - Finally, texinfo : in BackupProg.texinfo
-**** TODO Continue UserInterface classes implementation
+**** TODO Elapsed time widget issues
+- [ ] Manage to print in label
+- [ ] Update each second (see https://stackoverflow.com/a/3753532)
+**** DONE Continue UserInterface classes implementation
 :LOGBOOK:
+CLOCK: [2022-09-05 lun. 02:19]--[2022-09-05 lun. 03:13] =>  0:54
 CLOCK: [2022-09-05 lun. 01:14]--[2022-09-05 lun. 01:48] =>  0:34
 CLOCK: [2022-08-31 mer. 18:43]--[2022-08-31 mer. 19:06] =>  0:23
 CLOCK: [2022-08-30 mar. 14:56]--[2022-08-30 mar. 15:27] =>  0:31
@@ -218,11 +228,6 @@ CLOCK: [2022-08-04 jeu. 10:31]--[2022-08-04 jeu. 10:49] =>  0:18
   - [X] force_refresh(): force_refresh() sur tous les widget
   - [-] ElaspedTime inherits Window
     - [X] Compute and print elapsed time from start
-    - [ ] Manage to print in label
-    - [ ] Update each second (see https://stackoverflow.com/a/3753532)
-- options hashmap should contains 
-   color pair index for normal, pause, error, warning
-- See the Back Color Erase (fix it with space chars)
 **** DONE Make this old version work
 :LOGBOOK:
 CLOCK: [2022-08-04 jeu. 08:46]--[2022-08-04 jeu. 09:06] =>  0:20

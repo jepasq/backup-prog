@@ -6,11 +6,12 @@ use BackupProg::Common::Logger;
 use BackupProg::UserInterface::Widget;
 
 use DateTime;
+use Curses;
 
 our @ISA = qw(BackupProg::UserInterface::Widget);
-    
-sub new() {
 
+
+sub new() {
     my ($class, @args) = @_;
 
     # possibly call Parent->new(@args) first
@@ -20,16 +21,17 @@ sub new() {
 
     my $log = BackupProg::Common::Logger->instance();
     $self->{sttime} = DateTime->now();
-    $log->LOGI("In ElapsedTime widget constructor".$self->SUPER::get_label());
-
+    $log->LOGI("In ElapsedTime widget constructor. Label is '".
+	       $self->SUPER::get_label()."'");
+    addstr(10, 10, $self->get_elapsed_str());
     $SIG{ALRM} = sub {
-	#my $log = BackupProg::Common::Logger->instance();
-	#$log->LOGI($self->get_elapsed_str());
+	my $log = BackupProg::Common::Logger->instance();
+	$log->LOGI($self->get_elapsed_str());
 	
-    	print "aze" ;
-	alarm 1;
+	alarm(1);
+
     };
-#    alarm 1;
+    alarm(1);
     
     # Already blessed by parent
     return $self;
