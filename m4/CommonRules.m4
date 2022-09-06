@@ -70,7 +70,14 @@ link-exe:
 unlink-exe:
 	@$(RMF) $(EXE_TARGET)
 
-links: link-modules link-exe install-man
+check-target-dir:
+	@echo "Checking destination directory..."
+	if [ ! -d $(MOD_TARGET) ]; then  \
+	  @echo "Can't find destination directory ($(MOD_TARGET))"; \
+	  exit 1; \
+	fi  
+
+links: link-modules link-exe install-man check-target-dir
 	@echo "Note that manpage in installed (not linked)"
 
 unlinks: unlink-exe unlink-modules uninstall-man
