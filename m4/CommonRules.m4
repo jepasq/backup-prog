@@ -73,8 +73,8 @@ unlink-exe:
 check-target-dir:
 	@echo "Checking destination directory..."
 	if [ ! -d $(MOD_TARGET) ]; then  \
-	  @echo "Can't find destination directory ($(MOD_TARGET))"; \
-	  exit 1; \
+	echo "Can't find destination directory ($(MOD_TARGET))"; \
+	exit 1; \
 	fi  
 
 links: link-modules link-exe install-man check-target-dir
