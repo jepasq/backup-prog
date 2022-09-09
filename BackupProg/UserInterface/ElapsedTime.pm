@@ -29,7 +29,6 @@ sub new() {
 	$log->LOGI($self->get_elapsed_str());
 	
 	alarm(1);
-
     };
     alarm(1);
     

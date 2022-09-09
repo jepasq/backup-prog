@@ -71,10 +71,13 @@ unlink-exe:
 	@$(RMF) $(EXE_TARGET)
 
 check-target-dir:
-	@echo "Checking destination directory..."
+	@echo -n "Checking destination directory... "; \
 	if [ ! -d $(MOD_TARGET) ]; then  \
-	echo "Can't find destination directory ($(MOD_TARGET))"; \
+	@echo "no"; \
+	@echo "Can't find destination directory ($(MOD_TARGET))"; \
 	exit 1; \
+	else \
+	echo "yes"; \
 	fi  
 
 links: link-modules link-exe install-man check-target-dir
