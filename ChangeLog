@@ -1,3 +1,13 @@
+* v0.0.1-16 (30 Aug. 2022 - 09 Sep. 2022) SLOC 312 PO 37/49
+- Unit tests source cleanup
+- Better information message for check-target-dir Makefile rule
+- Add a m4 existence check in gen-makefiles.sh
+- Fix a nbsp charcater in echo command in check-target_dir rule
+- Add check-target-dir makefile rule to m4 generation code
+- Close the UI-related ROADMAP section
+- Widget::get_label implementation
+- Add pod documentation for ElaspedTime widget
+
 * v0.0.1-15 (15 Aug. 2022 - 30 Aug. 2022) SLOC 172 PO 37/49
 - Implement the get_elapsed_str() method
 - Start to print time in logger
