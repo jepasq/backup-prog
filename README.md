@@ -52,7 +52,12 @@ on debian while on arch (package is from *AUR*) :
            # please examine the PKGBUILD file
 	makepkg
 	sudo pacman -U polyglotman-*.pkg.tar.zst
-	
+
+## Unit tests
+
+After Makefile generation (call to `./gen-makefiles.sh`), running current
+unit tests is done running `make check`. It is a work in progress. Some of
+these tests are outdated.
 
 ## Translation
 

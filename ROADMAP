@@ -142,6 +142,7 @@ I18n for backup instructions :
 - report generation (Latex)
 **** TODO May implement unit tests
 :LOGBOOK:
+CLOCK: [2022-09-09 ven. 02:57]--[2022-09-09 ven. 03:05] =>  0:08
 CLOCK: [2022-08-15 lun. 12:26]--[2022-08-15 lun. 12:32] =>  0:06
 CLOCK: [2022-07-18 lun. 07:01]--[2022-07-18 lun. 07:45] =>  0:44
 CLOCK: [2022-07-18 lun. 06:19]--[2022-07-18 lun. 06:38] =>  0:19
