@@ -49,20 +49,20 @@ sub new(){
     my $w2= BackupProg::UserInterface::Widget->new($def->progname(),
 						   \%woptions2);
 
-    my %woptions3= ('x'=>60, 'y'=>1, 'w'=>12, 'h'=>3,
+    my %woptions3= ('x'=>45, 'y'=>1, 'w'=>12, 'h'=>3,
 		   'align' => Center,
 		   'text_y' => 1,
 		   'border' => TopCenterLeft);
     my $wmode = BackupProg::UserInterface::Widget->new("mode", \%woptions3);
 
-    my %woptions4= ('x'=>72, 'y'=>1, 'w'=>16, 'h'=>3,
+    my %woptions4= ('x'=>57, 'y'=>1, 'w'=>16, 'h'=>3,
 		   'align' => Right,
 		   'text_y' => 1,
 		   'border' => TopCenterLeft);
     my $ver = sprintf("v%s", $def->version());
     my $wversion = BackupProg::UserInterface::Widget->new($ver, \%woptions4);
 
-    my %woptions5= ('x'=>5, 'y'=>5, 'w'=>16, 'h'=>4,
+    my %woptions5= ('x'=>74, 'y'=>1, 'w'=>16, 'h'=>3,
 		   'align' => Right,
 		   'text_y' => 1,
 		   'border' => TopCenterLeft);

@@ -23,14 +23,17 @@ sub new() {
     $self->{sttime} = DateTime->now();
     $log->LOGI("In ElapsedTime widget constructor. Label is '".
 	       $self->SUPER::get_label()."'");
-    addstr(10, 10, $self->get_elapsed_str());
+    #addstr(10, 10, $self->get_elapsed_str());
+
+    $self->{label} = $self->get_elapsed_str();
+    #$self->draw_label();
     $SIG{ALRM} = sub {
 	my $log = BackupProg::Common::Logger->instance();
 	$log->LOGI($self->get_elapsed_str());
 	
 	alarm(1);
     };
-    alarm(1);
+#    alarm(1);
     
     # Already blessed by parent
     return $self;
