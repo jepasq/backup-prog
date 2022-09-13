@@ -98,18 +98,12 @@ sub draw_border(){
     my $self = shift;
 
     if ($self->{border}=TopCenterLeft){
-	#$win->move($h,0); #y, x
-	#$win->addch( ACS_BTEE);
 	box($self->{win}, 0, 0);
-	#border($win, ' ', ACS_VLINE, ' ', ACS_HLINE, 0, 0, 0, 0);
-	#$win->move($h+1,0); #y, x
-	#$win->hline(ACS_HLINE, $w)
     }
     else{
 	my $msg="Border '".$self->{border}."' not implemented";
 	throw BackupProg::Exception::BadArgument($msg);
     }
-
 }
 
 sub refresh(){

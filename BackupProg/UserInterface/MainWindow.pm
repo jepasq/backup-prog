@@ -12,6 +12,7 @@ use BackupProg::UserInterface::Preferences;
 use BackupProg::UserInterface::Widget qw(:Align :BorderTypes);
 use BackupProg::UserInterface::WidgetList;
 use BackupProg::UserInterface::ElapsedTime;
+use BackupProg::UserInterface::ActionList;
 use Curses;
 
 
@@ -67,6 +68,13 @@ sub new(){
 		   'text_y' => 1,
 		   'border' => TopCenterLeft);
     my $et = BackupProg::UserInterface::ElapsedTime->new(\%woptions5);
+
+    my %woptions6= ('x'=>1, 'y'=>5, 'w'=>70, 'h'=>20,
+		   'align' => Left,
+		   'text_y' => 1,
+		   'border' => TopCenterLeft);
+    my $et = BackupProg::UserInterface::ActionList->new(\%woptions6);
+
     
     #    addstr(1, 1, "aze");
     #    refresh();

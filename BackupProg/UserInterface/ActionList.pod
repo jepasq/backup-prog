@@ -1,0 +1,42 @@
+=pod
+
+=head1 NAME
+
+F<BackupProg::UserInterface::ActionList> is a specialized widget used as
+the central widget of backup_prog. It is designed to print a list of done
+actions.
+
+=head1 SYNOPSIS
+
+=head1 DESCRIPTION
+
+=head1 CONSTANTS
+
+=head1 EXPORTED TAGS
+
+=head1 CONSTRUCTOR
+
+=over 4
+
+=item label (F<string>): Inherited from BackupProg::UserInterface::Widget.
+  Unused.
+
+=item options (F<hash>): A hash with position and border options :
+      ('x'=>2, 'y'=>0, 'w'=>20, 'h'=>23,
+       'align' => Center, 'text_y' => 0,
+       'border' => TopCenterLeft). The same hash than with other widgets.
+
+=back
+
+=head1 METHODS
+
+=over 4
+
+=item get_elasped_str()
+  Returns the elasped time in string. It contains hours, minutes and seconds.
+
+=back
+
+=head1 KNOWN BUGS
+
+=head1 SEE ALSO
