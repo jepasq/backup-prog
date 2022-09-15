@@ -63,7 +63,7 @@ sub new(){
     my $ver = sprintf("v%s", $def->version());
     my $wversion = BackupProg::UserInterface::Widget->new($ver, \%woptions4);
 
-    my %woptions5= ('x'=>74, 'y'=>1, 'w'=>16, 'h'=>3,
+    my %woptions5= ('x'=>73, 'y'=>1, 'w'=>18, 'h'=>3,
 		   'align' => Right,
 		   'text_y' => 1,
 		   'border' => TopCenterLeft);

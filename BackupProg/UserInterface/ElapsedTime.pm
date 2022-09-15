@@ -15,8 +15,8 @@ sub new() {
     my ($class, @args) = @_;
 
     # possibly call Parent->new(@args) first
-    my $self = $class->SUPER::new('zze', @args);
-    $self->SUPER::set_label('ertetr');
+    my $self = $class->SUPER::new('ELA. 0:00:00', @args);
+    #$self->SUPER::set_label('ertetr');
     $self->SUPER::draw_label();
 
     my $log = BackupProg::Common::Logger->instance();
@@ -33,7 +33,8 @@ sub new() {
 	
 	alarm(1);
     };
-#    alarm(1);
+    alarm(1);
+    sleep(2);
     
     # Already blessed by parent
     return $self;
