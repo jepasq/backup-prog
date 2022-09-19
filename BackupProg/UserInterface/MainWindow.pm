@@ -73,7 +73,7 @@ sub new(){
 		   'align' => Left,
 		   'text_y' => 1,
 		   'border' => TopCenterLeft);
-    my $et = BackupProg::UserInterface::ActionList->new(\%woptions6);
+    my $al = BackupProg::UserInterface::ActionList->new(\%woptions6);
 
     
     #    addstr(1, 1, "aze");

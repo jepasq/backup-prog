@@ -188,6 +188,7 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
 - Finally, texinfo : in BackupProg.texinfo
 **** TODO Elapsed time widget issues
 :LOGBOOK:
+CLOCK: [2022-09-19 lun. 04:21]--[2022-09-19 lun. 04:49] =>  0:28
 CLOCK: [2022-09-15 jeu. 05:24]--[2022-09-15 jeu. 06:26] =>  1:02
 CLOCK: [2022-09-13 mar. 09:22]--[2022-09-13 mar. 09:34] =>  0:12
 CLOCK: [2022-09-13 mar. 09:02]--[2022-09-13 mar. 09:14] =>  0:12
@@ -205,7 +206,8 @@ CLOCK: [2022-09-07 mer. 04:53]--[2022-09-07 mer. 05:03] =>  0:10
   Basically a full width multiline box with an addItem function
   - [X] Basic box
   - [ ] Handle addItem
-- [ ] Manage to print in label
+- [ ] Manage to print in label from ElapsedTime
+  - [ ] Reimplementing draw_label 
 - [ ] Update each second (see https://stackoverflow.com/a/3753532)
 **** DONE Continue UserInterface classes implementation
 :LOGBOOK:

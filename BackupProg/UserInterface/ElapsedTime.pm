@@ -14,11 +14,13 @@ our @ISA = qw(BackupProg::UserInterface::Widget);
 sub new() {
     my ($class, @args) = @_;
 
+#    $self->{y} = $args{'y'};
+#    $self->{w} = $args{'w'};
+    
     # possibly call Parent->new(@args) first
-    my $self = $class->SUPER::new('ELA. 0:00:00', @args);
-    #$self->SUPER::set_label('ertetr');
+    my $self = $class->SUPER::new('', @args);
     $self->SUPER::draw_label();
-
+    
     my $log = BackupProg::Common::Logger->instance();
     $self->{sttime} = DateTime->now();
     $log->LOGI("In ElapsedTime widget constructor. Label is '".
@@ -26,6 +28,8 @@ sub new() {
     #addstr(10, 10, $self->get_elapsed_str());
 
     $self->{label} = $self->get_elapsed_str();
+    $self->{label} = 'ELA. 0:00:00';
+    $self->draw_label();
     #$self->draw_label();
     $SIG{ALRM} = sub {
 	my $log = BackupProg::Common::Logger->instance();
@@ -34,7 +38,7 @@ sub new() {
 	alarm(1);
     };
     alarm(1);
-    sleep(2);
+    #sleep(2);
     
     # Already blessed by parent
     return $self;
@@ -47,6 +51,17 @@ sub get_elapsed_str() {
     my $stt = sprintf("Ela. %d:%02d:%02d", $elapse->in_units('hours'),
 		      $elapse->in_units('minutes'),
 		      $elapse->in_units('seconds'));
+}
+
+sub draw_label(){
+    # Stolen from Widget's implementation but without alignment handling etc..
+    my $self = shift;
+
+    my $ly=$self->{y};
+    my $lx=1;
+    
+    $lx = $self->{w} - length($self->{label}) - 1;
+    $self->{win}->addstr($ly, $lx, $self->{label});
 }
 
 1;
