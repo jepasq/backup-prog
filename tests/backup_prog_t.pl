@@ -5,8 +5,8 @@
 use Test2::Tools::Basic;
 
 use BackupProg::UserInterface::Widget qw(:Align :BorderTypes);
+use BackupProg::UserInterface::ActionList;
 use BackupProg::UserInterface::WidgetList;
-
 
 todo "Waiting for Widget implementation" => sub {
     my %woptions= ('x'=>2, 'y'=>0, 'w'=>20, 'h'=>23,
@@ -44,6 +44,24 @@ todo "WidgetList has a refresh() method" => sub {
     my $l = BackupProg::UserInterface::WidgetList->new();
     $l->append($w);
     ok($l->refresh());
+};
+
+
+# ActionList unit tests
+todo "ActionList should have an len() method" => sub {
+    my $l = BackupProg::UserInterface::ActionList->new();
+    ok($l->len() == 0, "ActionList len should be 0");
+};
+
+todo "ActionList should have an append() method" => sub {
+    my %woptions= ('x'=>2, 'y'=>0, 'w'=>20, 'h'=>23,
+		   'align' => Center,
+		   'text_y' => 0,
+		   'border' => TopCenterLeft);
+
+    my $l = BackupProg::UserInterface::ActionList->new();
+    $l->append("Here is a new action");
+    ok($l->len() == 1, "ActionList len should now be 1");
 };
 
 done_testing();
