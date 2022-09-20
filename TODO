@@ -14,7 +14,8 @@ backup_prog - GPLv3 - A flexible backup tool written in perl/curses.
    (8 items by revision)
 
 * v0.0.1-17 (09 Sep. 2022 - ???) SLOC ??? PO ??/??
-- (5) Implement len and append methods for ActionList
+- (6) Fix an unintended interpolation in ActionList implementation
+- Implement len and append methods for ActionList
 - Start draw_label overridind in ElepsedTime widget
 - Add an example test example
 - ActionList is a basic box

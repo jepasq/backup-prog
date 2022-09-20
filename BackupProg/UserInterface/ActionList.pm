@@ -38,8 +38,7 @@ sub append(){
      my $val = shift;
      
      push @actions, $val;
-     $self->{log}->LOGI("ActionList: (@widgets)in len is now ". $self->len());
-     # TODO
+     $self->{log}->LOGI("ActionList: (@actions)in len is now ". $self->len());
 }
 
 1;
