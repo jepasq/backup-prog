@@ -13,12 +13,5 @@ backup_prog - GPLv3 - A flexible backup tool written in perl/curses.
    PO is the not translated/translated gettext messages (make nb-messages)
    (8 items by revision)
 
-* v0.0.1-17 (09 Sep. 2022 - ???) SLOC ??? PO ??/??
-- (8) examples/README update
-- First ActionList drawActions implementation
-- Fix an unintended interpolation in ActionList implementation
-- Implement len and append methods for ActionList
-- Start draw_label overridind in ElepsedTime widget
-- Add an example test example
-- ActionList is a basic box
-- Better ElapsedTime widget placement
+* v0.0.1-18 (21 Sep. 2022 - ???) SLOC ??? PO ??/??
+

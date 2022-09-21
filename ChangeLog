@@ -1,3 +1,13 @@
+* v0.0.1-17 (09 Sep. 2022 - 21 Sep. 2022) SLOC 347 PO 37/49
+- examples/README update
+- First ActionList drawActions implementation
+- Fix an unintended interpolation in ActionList implementation
+- Implement len and append methods for ActionList
+- Start draw_label overridind in ElepsedTime widget
+- Add an example test example
+- ActionList is a basic box
+- Better ElapsedTime widget placement
+
 * v0.0.1-16 (30 Aug. 2022 - 09 Sep. 2022) SLOC 312 PO 37/49
 - Unit tests source cleanup
 - Better information message for check-target-dir Makefile rule
