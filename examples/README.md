@@ -1,5 +1,6 @@
 ## examples
 
-Here are modifiable runnable exampel about single perl features.
+Here are modifiable runnable examples about single perl features or 
+implementation tests :
 
-	alarm.pl The SIGALRM event handler and the need (or not) of safe signals.
+	alarm.pl: the SIGALRM event handler and the need (or not) of safe signals.
