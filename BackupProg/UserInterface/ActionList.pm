@@ -47,7 +47,7 @@ sub draw_actions(){
     $self->{log}->LOGI("Printing ActionList with $action_number items...");
 
     $self->{win}->addstr(6, 1, "aze"); #$actions[$i]);
-    for (my $i = 0; $i <= $action_number; $i++) {
+    for (my $i = 0; $i < $action_number; $i++) {
 	my $my= 3 + $i;
 	$self->{win}->addstr($my, 1, $actions[$i]);
     }

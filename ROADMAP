@@ -188,6 +188,7 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
 - Finally, texinfo : in BackupProg.texinfo
 **** TODO Elapsed time widget issues
 :LOGBOOK:
+CLOCK: [2022-09-26 lun. 08:17]--[2022-09-26 lun. 08:24] =>  0:07
 CLOCK: [2022-09-26 lun. 07:29]--[2022-09-26 lun. 07:56] =>  0:27
 CLOCK: [2022-09-20 mar. 03:42]--[2022-09-20 mar. 03:47] =>  0:05
 CLOCK: [2022-09-20 mar. 03:18]--[2022-09-20 mar. 03:39] =>  0:21
@@ -207,10 +208,10 @@ CLOCK: [2022-09-07 mer. 04:53]--[2022-09-07 mer. 05:03] =>  0:10
 - [X] Can't install if /usr/perl/perl5/5.36/ can't be found
   - [X] Should check before install
   Maybe try =perl -e "print qq(@INC)"= to list or check for inc dirs
-- [-] We need a main widget, maybe a ActionList one ?
+- [X] We need a main widget, maybe a ActionList one ?
   Basically a full width multiline box with an addItem function
   - [X] Basic box
-  - [ ] Handle addItem (as implement())
+  - [X] Handle addItem (as implement())
 - [ ] Manage to print in label from ElapsedTime
   - [ ] Reimplementing draw_label 
 - [ ] Update each second (see https://stackoverflow.com/a/3753532)
