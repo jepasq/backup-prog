@@ -188,6 +188,7 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
 - Finally, texinfo : in BackupProg.texinfo
 **** TODO Elapsed time widget issues
 :LOGBOOK:
+CLOCK: [2022-09-26 lun. 07:29]--[2022-09-26 lun. 07:56] =>  0:27
 CLOCK: [2022-09-20 mar. 03:42]--[2022-09-20 mar. 03:47] =>  0:05
 CLOCK: [2022-09-20 mar. 03:18]--[2022-09-20 mar. 03:39] =>  0:21
 CLOCK: [2022-09-20 mar. 02:56]--[2022-09-20 mar. 03:15] =>  0:19
@@ -209,7 +210,7 @@ CLOCK: [2022-09-07 mer. 04:53]--[2022-09-07 mer. 05:03] =>  0:10
 - [-] We need a main widget, maybe a ActionList one ?
   Basically a full width multiline box with an addItem function
   - [X] Basic box
-  - [ ] Handle addItem
+  - [ ] Handle addItem (as implement())
 - [ ] Manage to print in label from ElapsedTime
   - [ ] Reimplementing draw_label 
 - [ ] Update each second (see https://stackoverflow.com/a/3753532)

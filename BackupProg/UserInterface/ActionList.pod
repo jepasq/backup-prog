@@ -40,6 +40,10 @@ Return the length of the internal list as a scalar.
 
 Add the given Widget to the internal list.
 
+=item draw_actions()
+
+Draw all actions added using append') function. ne per line.
+
 =back
 
 =head1 KNOWN BUGS
