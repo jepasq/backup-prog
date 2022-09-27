@@ -30,7 +30,7 @@ sub new() {
     $self->{label} = $self->get_elapsed_str();
     $self->{label} = 'ELA. 0:00:00';
     $self->draw_label();
-    #$self->draw_label();
+
     $SIG{ALRM} = sub {
 	my $log = BackupProg::Common::Logger->instance();
 	$log->LOGI($self->get_elapsed_str());
@@ -61,7 +61,7 @@ sub draw_label(){
     my $lx=1;
     
     $lx = $self->{w} - length($self->{label}) - 1;
-    $self->{win}->addstr($ly, $lx, $self->{label});
+    $self->{win}->addstr(1, $lx, $self->{label});
 }
 
 1;

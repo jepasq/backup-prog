@@ -64,3 +64,11 @@ these tests are outdated.
 Translatable files must be listed in *po/POTFILES*.
 `make update-po` will generate po file. You have to edit 
 po/BackupProg-*.po files.
+
+To edit pofiles, you can check and install `poedit` :
+
+	sudo pacman -S poedit aspell-<language code>
+
+Then, you just need to edit you language file, for example for french user :
+
+	poedit po/BackupProg-fr.po

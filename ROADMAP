@@ -3,6 +3,7 @@
 * v1.0.0
 ** v0.1.0
 *** v0.0.2
+**** May add a d-bus interface
 **** Maybe skin handling
 #+BEGIN_EXAMPLE
 # INHERITS : Skin files with extension will not be read (let us create 
@@ -101,6 +102,7 @@ file      = /var/log/backup_prog.hourly
 </Hourly or any other opened markup>
 **** Make and improve translation
 :LOGBOOK:
+CLOCK: [2022-09-27 mar. 06:05]--[2022-09-27 mar. 06:12] =>  0:07
 CLOCK: [2022-07-14 jeu. 03:33]--[2022-07-14 jeu. 03:55] =>  0:22
 :END:
 I18n for backup instructions :
@@ -188,6 +190,7 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
 - Finally, texinfo : in BackupProg.texinfo
 **** TODO Elapsed time widget issues
 :LOGBOOK:
+CLOCK: [2022-09-27 mar. 05:52]--[2022-09-27 mar. 06:05] =>  0:13
 CLOCK: [2022-09-26 lun. 08:17]--[2022-09-26 lun. 08:24] =>  0:07
 CLOCK: [2022-09-26 lun. 07:29]--[2022-09-26 lun. 07:56] =>  0:27
 CLOCK: [2022-09-20 mar. 03:42]--[2022-09-20 mar. 03:47] =>  0:05
