@@ -13,3 +13,4 @@ backup_prog.1.html
 # Gettext compiled file
 po/messages.mo
 po/BackupProg-fr.pot
+po/*.mo

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: BackupProg 0.0.0-7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-14 03:52+0200\n"
-"PO-Revision-Date: 2022-09-27 06:12+0200\n"
+"PO-Revision-Date: 2022-09-29 10:44+0200\n"
 "Last-Translator: Jérôme Pasquier <rainbru@free.fr>\n"
 "Language-Team: French\n"
 "Language: fr\n"
@@ -53,7 +53,7 @@ msgstr "Bienvenue a backup_prog\n"
 
 #: backup_prog.pl:77
 msgid "Parsing config file"
-msgstr ""
+msgstr "Lecture du fichier de configuration"
 
 #. exit 0; # WARNING =======================================================
 #: backup_prog.pl:84
@@ -85,9 +85,8 @@ msgid "backup_prog"
 msgstr "backup_prog"
 
 #: BackupProg/Common/Def.pm:40
-#, fuzzy
 msgid "0.0.1-12"
-msgstr "0.0.0-8"
+msgstr "0.0.1-12"
 
 #. LogLevels
 #: BackupProg/Common/Logger.pm:40
@@ -133,11 +132,11 @@ msgstr "Logger démarré"
 
 #: BackupProg/Common/Logger.pm:91
 msgid "Opening Logger tmp file\n"
-msgstr ""
+msgstr "Ouverture du fichier de Logger temporaire\n"
 
 #: BackupProg/Common/Logger.pm:94
 msgid "Logger tmp file is '$tmpname'\n"
-msgstr ""
+msgstr "Le chichier temporarire du Logger est '$tmpname'\n"
 
 #: BackupProg/Common/Logger.pm:103
 msgid "a"
@@ -189,7 +188,7 @@ msgstr "  EE = Erreur\n"
 
 #: BackupProg/Common/Logger.pm:134
 msgid "  XX = Exception\n"
-msgstr ""
+msgstr "XX = Exception\n"
 
 #: BackupProg/Common/Logger.pm:151
 msgid "II"
@@ -205,7 +204,7 @@ msgstr "EE"
 
 #: BackupProg/Common/Logger.pm:154
 msgid "XX"
-msgstr ""
+msgstr "XX"
 
 #: BackupProg/Common/Logger.pm:162
 msgid "..."
@@ -266,17 +265,17 @@ msgstr ""
 "  Message  : %s\n"
 
 #: BackupProg/Exception/BadArgument.pm:45
-#, fuzzy, perl-format
+#, perl-format
 msgid "  Line     : %u\n"
-msgstr "  Ligne    : %u"
+msgstr "  Ligne    : %u\n"
 
 #: BackupProg/Exception/BadArgument.pm:46
 msgid "Caller informations :\n"
-msgstr ""
+msgstr "Informations sur l'appelant :\n"
 
 #: BackupProg/Exception/OpenFile.pm:35
 msgid "No filename"
-msgstr ""
+msgstr "Aucun nom de fichier"
 
 #: BackupProg/Exception/OpenFile.pm:36
 #, fuzzy

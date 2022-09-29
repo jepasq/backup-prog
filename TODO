@@ -14,6 +14,7 @@ backup_prog - GPLv3 - A flexible backup tool written in perl/curses.
    (8 items by revision)
 
 * v0.0.1-18 (21 Sep. 2022 - ???) SLOC ??? PO ??/??
-- (3) Improve README section on translation
+- (4) Improve some translatable strings
+- Improve README section on translation
 - Fix for loop upper test in ActionList#draw_actions
 - Add ActionList#draw_actions POD documentation
