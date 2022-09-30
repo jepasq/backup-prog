@@ -153,6 +153,7 @@ CLOCK: [2022-07-18 lun. 06:19]--[2022-07-18 lun. 06:38] =>  0:19
 - Maybe give a try to Test::More and Test2::Suite
   see https://metacpan.org/pod/Test2::Tools::Basic
 - [X] Add a check rule to the Makefile
+- [ ] Added a Widget::get_window test and function but fail
 - [ ] Must work again
   Subroutine refresh redefined at /usr/lib/perl5/5.36/site_perl/BackupProg/UserInterface/Widget.pm
 - [ ] Unit tests should create a log file
@@ -184,7 +185,7 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
 :END:
      See template in doc/POD_TEMPLATE
      Remove NYI mark from manpage when implemented
-     To, preview a pod-based documentation =perldoc -t file.pod=
+     To preview a pod-based documentation =perldoc -t file.pod=
 - [ ] manpage : test in html with `make man2html'
   =rman -f html backup_prog.1 > backup_prog.1.html=
   **macro "" not recognized -- ignoring**

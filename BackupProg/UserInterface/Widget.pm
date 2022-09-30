@@ -136,8 +136,12 @@ sub set_label(){
 
 sub get_label(){
      my $self = shift;
-
      return $self->{label};
 }     
+
+sub get_window() {
+     my $self = shift;
+     return $self->{win};
+}
 
 1;
