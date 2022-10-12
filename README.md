@@ -10,6 +10,8 @@ On arch-based distributions :
 		perl-class-singleton perl-switch perl-datetime       \
 		perl-data-dump perl-test2-suite perl-libintl-perl
 
+This will download nearly 1Tb of new packages on a brand new system.
+
 ## Installation
 
 `backup-prog` needs to be installed before correctly running.
@@ -27,7 +29,8 @@ To install backup_prog :
 
 ## Unit tests
 
-This package is shipped with unit tests written using 'test2' module. It can 
+This package is shipped with unit tests written using perl's 
+[test2](https://metacpan.org/pod/Test2) module. It can 
 be called after a simple call to `./gen-makefiles.sh` :
 
 	make check
