@@ -46,6 +46,8 @@ sub new(){
     $self->{y} = $options{'y'};
     $self->{w} = $options{'w'};
 
+    $self->{border} = $options{'border'};
+
     $self->{text_y} = $options{'text_y'};
     
     if ($options{'text_y'} < 1) {
@@ -80,10 +82,10 @@ sub draw_label(){
     if ($self->{align}==Left){
 	$lx = 1;
     }
-    elsif ($self->{align}==Right){
+    elsif ($self->{align} == Right){
 	$lx = $self->{w} - length($self->{label}) - 1;
     }
-    elsif ($self->{align}==Center){
+    elsif ($self->{align} == Center){
 	$lx = ($self->{w} / 2) - (length($self->{label}) / 2) -1;
 	$ly = $self->{text_y};
     }
@@ -97,7 +99,7 @@ sub draw_label(){
 sub draw_border(){
     my $self = shift;
 
-    if ($self->{border}=TopCenterLeft){
+    if ($self->{border} == TopCenterLeft){
 	box($self->{win}, 0, 0);
     }
     else{
