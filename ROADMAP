@@ -143,22 +143,6 @@ I18n for backup instructions :
 - programmation/ directory copy (very long)
 - call to remove.d
 - report generation (Latex)
-**** TODO May implement unit tests
-:LOGBOOK:
-CLOCK: [2022-09-09 ven. 02:57]--[2022-09-09 ven. 03:05] =>  0:08
-CLOCK: [2022-08-15 lun. 12:26]--[2022-08-15 lun. 12:32] =>  0:06
-CLOCK: [2022-07-18 lun. 07:01]--[2022-07-18 lun. 07:45] =>  0:44
-CLOCK: [2022-07-18 lun. 06:19]--[2022-07-18 lun. 06:38] =>  0:19
-:END:
-- Maybe give a try to Test::More and Test2::Suite
-  see https://metacpan.org/pod/Test2::Tools::Basic
-- [X] Add a check rule to the Makefile
-- [ ] Added a Widget::get_window test and function but fail
-- [ ] Must work again
-  Subroutine refresh redefined at /usr/lib/perl5/5.36/site_perl/BackupProg/UserInterface/Widget.pm
-- [ ] Unit tests should create a log file
-- [ ] Start with the Widget thing (refresh and force_refresh)
-- [ ] WidgetList unit tests should go in another file ?
 **** More Logger configuration work
 - [ ] Maybe
   - LOGCf(msg) : pour configfile
@@ -178,6 +162,22 @@ CLOCK: [2022-07-18 lun. 06:19]--[2022-07-18 lun. 06:38] =>  0:19
 - UserInterface::Mainwindow->new($conf)
    skin parsing
    widget creation
+**** TODO May implement unit tests
+:LOGBOOK:
+CLOCK: [2022-09-09 ven. 02:57]--[2022-09-09 ven. 03:05] =>  0:08
+CLOCK: [2022-08-15 lun. 12:26]--[2022-08-15 lun. 12:32] =>  0:06
+CLOCK: [2022-07-18 lun. 07:01]--[2022-07-18 lun. 07:45] =>  0:44
+CLOCK: [2022-07-18 lun. 06:19]--[2022-07-18 lun. 06:38] =>  0:19
+:END:
+- Maybe give a try to Test::More and Test2::Suite
+  see https://metacpan.org/pod/Test2::Tools::Basic
+- [X] Add a check rule to the Makefile
+- [ ] Added a Widget::get_window test and function but fail
+- [ ] Must work again
+  Subroutine refresh redefined at /usr/lib/perl5/5.36/site_perl/BackupProg/UserInterface/Widget.pm
+- [ ] Unit tests should create a log file
+- [ ] Start with the Widget thing (refresh and force_refresh)
+- [ ] WidgetList unit tests should go in another file ?
 **** TODO Mainpage and pod work
 :LOGBOOK:
 CLOCK: [2022-08-17 mer. 13:14]--[2022-08-17 mer. 13:28] =>  0:14
@@ -192,6 +192,7 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
 - Finally, texinfo : in BackupProg.texinfo
 **** TODO Elapsed time widget issues
 :LOGBOOK:
+CLOCK: [2022-10-13 jeu. 10:18]--[2022-10-13 jeu. 10:27] =>  0:09
 CLOCK: [2022-09-27 mar. 05:52]--[2022-09-27 mar. 06:05] =>  0:13
 CLOCK: [2022-09-26 lun. 08:17]--[2022-09-26 lun. 08:24] =>  0:07
 CLOCK: [2022-09-26 lun. 07:29]--[2022-09-26 lun. 07:56] =>  0:27

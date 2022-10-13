@@ -35,8 +35,14 @@ elasped time in seconds since the start of the program.
 =item get_elasped_str()
   Returns the elasped time in string. It contains hours, minutes and seconds.
 
+=item draw_label()
+  Prints or update the widget label with the string returned by the 
+  get_elasped_str() function.
+
 =back
 
 =head1 KNOWN BUGS
 
 =head1 SEE ALSO
+
+F<BackupProg::UserInterface::Widget> the base class.

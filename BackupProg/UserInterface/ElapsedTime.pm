@@ -37,7 +37,7 @@ sub new() {
 	
 	alarm(1);
     };
-    alarm(1);
+#    alarm(1);
     #sleep(2);
     
     # Already blessed by parent
@@ -61,7 +61,7 @@ sub draw_label(){
     my $lx=1;
     
     $lx = $self->{w} - length($self->{label}) - 1;
-    $self->{win}->addstr(1, $lx, $self->{label});
+    $self->{win}->addstr(0, $lx, $self->{label});
 }
 
 1;
