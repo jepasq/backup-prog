@@ -45,6 +45,12 @@ based on ncurses window with a dirty-flag feature.
  Change the current label and set the dirty flag to 1 (true value) so the
  next refresh() call will draw it.
 
+=item get_label():
+  return the text content of the label.
+
+=item get_window():
+  return the underlying curses window.
+
 =back
 
 =head1 KNOWN BUGS
