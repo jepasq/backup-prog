@@ -13,12 +13,5 @@ backup_prog - GPLv3 - A flexible backup tool written in perl/curses.
    PO is the not translated/translated gettext messages (make nb-messages)
    (8 items by revision)
 
-* v0.0.1-18 (21 Sep. 2022 - 19 Oct. 2022) SLOC ??? PO ??/??
-- (8) Translation improvment
-- More unit test work
-- Fix an equality operator in Widget.pm
-- Add a failing Widget::get_window unit test
-- Improve some translatable strings
-- Improve README section on translation
-- Fix for loop upper test in ActionList#draw_actions
-- Add ActionList#draw_actions POD documentation
+* v0.0.1-19 (19 Oct. 2022 - ???) SLOC ??? PO ??/??
+

@@ -1,3 +1,13 @@
+* v0.0.1-18 (21 Sep. 2022 - 19 Oct. 2022) SLOC 356 PO 31/58
+- Translation improvment
+- More unit test work
+- Fix an equality operator in Widget.pm
+- Add a failing Widget::get_window unit test
+- Improve some translatable strings
+- Improve README section on translation
+- Fix for loop upper test in ActionList#draw_actions
+- Add ActionList#draw_actions POD documentation
+
 * v0.0.1-17 (09 Sep. 2022 - 21 Sep. 2022) SLOC 347 PO 37/49
 - examples/README update
 - First ActionList drawActions implementation
