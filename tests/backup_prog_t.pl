@@ -8,13 +8,23 @@ use BackupProg::UserInterface::Widget qw(:Align :BorderTypes);
 use BackupProg::UserInterface::ActionList;
 use BackupProg::UserInterface::WidgetList;
 
-todo "Waiting for Widget implementation" => sub {
+# Widget unit tests
+todo "Widget can be instantiated" => sub {
     my %woptions= ('x'=>2, 'y'=>0, 'w'=>20, 'h'=>23,
 		   'align' => Center,
 		   'text_y' => 0,
 		   'border' => TopCenterLeft);
     my $w = BackupProg::UserInterface::Widget->new("Menu=Ctrl+T", \%woptions);
 };
+
+todo "Widget's window is accessible" => sub {
+    my %woptions= ('x'=>2, 'y'=>0, 'w'=>20, 'h'=>23,
+		   'align' => Center, 'text_y' => 0,
+		   'border' => TopCenterLeft);
+    my $w = BackupProg::UserInterface::Widget->new("Test", \%woptions);
+    ok($w->get_window()>0, "Can get widget's window");
+};
+
 
 # WidgetList unit tests
 todo "WidgetList should have an len() method" => sub {
@@ -33,15 +43,6 @@ todo "WidgetList should have an append() method" => sub {
     $l->append($w);
     ok($l->len() == 1, "WidgetList len should now be 1");
 };
-
-todo "Widget's window is accessible" => sub {
-    my %woptions= ('x'=>2, 'y'=>0, 'w'=>20, 'h'=>23,
-		   'align' => Center, 'text_y' => 0,
-		   'border' => TopCenterLeft);
-    my $w = BackupProg::UserInterface::Widget->new("Test", \%woptions);
-    ok($w->get_window(), "Can get widget's window");
-};
-
 
 todo "WidgetList has a refresh() method" => sub {
     my %woptions= ('x'=>2, 'y'=>0, 'w'=>20, 'h'=>23,
