@@ -107,6 +107,9 @@ CLOCK: [2022-09-27 mar. 06:05]--[2022-09-27 mar. 06:12] =>  0:07
 CLOCK: [2022-07-14 jeu. 03:33]--[2022-07-14 jeu. 03:55] =>  0:22
 :END:
 I18n for backup instructions :
+
+- [ ] Version shouldn't be translatable from BackupProg/Common/Def.pm:40
+  
 - Please update po/POTFILES for all translatable files 
 - A translator comment is noted as is :
   =# TRANSLATOR : This is a message for You=

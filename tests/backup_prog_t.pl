@@ -25,7 +25,6 @@ todo "Widget's window is accessible" => sub {
     ok($w->get_window()>0, "Can get widget's window");
 };
 
-
 # WidgetList unit tests
 todo "WidgetList should have an len() method" => sub {
     my $l = BackupProg::UserInterface::WidgetList->new();

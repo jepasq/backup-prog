@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BackupProg 0.0.0-7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-14 03:52+0200\n"
-"PO-Revision-Date: 2022-09-29 10:44+0200\n"
+"POT-Creation-Date: 2022-10-19 11:13+0200\n"
+"PO-Revision-Date: 2022-10-19 11:15+0200\n"
 "Last-Translator: Jérôme Pasquier <rainbru@free.fr>\n"
 "Language-Team: French\n"
 "Language: fr\n"
@@ -17,50 +17,54 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.1\n"
+"X-Generator: Poedit 3.1.1\n"
 
-#: backup_prog.pl:41 BackupProg/Common/Config.pm:29
-#: BackupProg/Common/Logger.pm:62
+#: backup_prog.pl:11 BackupProg/Common/Def.pm:39
+#: BackupProg/Parser/ConfigFile.pm:31
+msgid "backup_prog"
+msgstr "backup_prog"
+
+#: backup_prog.pl:25 BackupProg/Common/Config.pm:13
+#: BackupProg/Common/Logger.pm:46
 msgid "backup_prog.log"
 msgstr "backup_prog.log"
 
-#: backup_prog.pl:45
+#: backup_prog.pl:29
 msgid "Error creating Logger : "
 msgstr "Erreur pendant la création du Logger : "
 
-#: backup_prog.pl:45 backup_prog.pl:49 BackupProg/Exception/BadArgument.pm:38
-#: BackupProg/UserInterface/MainWindow.pm:65
+#: backup_prog.pl:29 backup_prog.pl:33 BackupProg/Exception/BadArgument.pm:38
 msgid "\n"
 msgstr "\n"
 
-#: backup_prog.pl:49
+#: backup_prog.pl:33
 msgid "Error opening logfile : "
 msgstr "Erreur pendant l'ouverture du fichier Log : "
 
 #. Trying GNU gettext
-#: backup_prog.pl:64
+#: backup_prog.pl:46
 msgid "Setting up GNU gettext"
 msgstr "Configuration de GNU gettext"
 
-#: backup_prog.pl:66
+#: backup_prog.pl:48
 msgid "BackupProg"
 msgstr "BackupProg"
 
 #. TRANSLATOR : This is a message for You
-#: backup_prog.pl:69
+#: backup_prog.pl:51
 msgid "Welcome to backup_prog\n"
 msgstr "Bienvenue a backup_prog\n"
 
-#: backup_prog.pl:77
+#: backup_prog.pl:59
 msgid "Parsing config file"
 msgstr "Lecture du fichier de configuration"
 
 #. exit 0; # WARNING =======================================================
-#: backup_prog.pl:84
+#: backup_prog.pl:64
 msgid "Should be written in the temp file"
 msgstr ""
 
-#: backup_prog.pl:95
+#: backup_prog.pl:75
 msgid "Catched a MainWindow exception\n"
 msgstr ""
 
@@ -80,149 +84,150 @@ msgstr "null"
 msgid "Booleans"
 msgstr "Booleans"
 
-#: BackupProg/Common/Def.pm:39 BackupProg/Parser/ConfigFile.pm:31
-msgid "backup_prog"
-msgstr "backup_prog"
-
 #: BackupProg/Common/Def.pm:40
-msgid "0.0.1-12"
-msgstr "0.0.1-12"
+msgid "0.0.1-17"
+msgstr "0.0.1-17"
 
 #. LogLevels
-#: BackupProg/Common/Logger.pm:40
+#: BackupProg/Common/Logger.pm:24
 msgid "LL_INFO"
 msgstr "LL_INFO"
 
-#: BackupProg/Common/Logger.pm:41
+#: BackupProg/Common/Logger.pm:25
 msgid "LL_WARN"
 msgstr "LL_WARN"
 
-#: BackupProg/Common/Logger.pm:42
+#: BackupProg/Common/Logger.pm:26
 msgid "LL_ERR"
 msgstr "LL_ERR"
 
-#: BackupProg/Common/Logger.pm:43
+#: BackupProg/Common/Logger.pm:27
 msgid "LL_EXC"
 msgstr "LL_EXC"
 
 #. LogMode (>100 to make error)
-#: BackupProg/Common/Logger.pm:46
+#: BackupProg/Common/Logger.pm:30
 msgid "LM_APPEND"
 msgstr "LM_APPEND"
 
-#: BackupProg/Common/Logger.pm:47
+#: BackupProg/Common/Logger.pm:31
 msgid "LM_NEWFILE"
 msgstr "LM_NEWFILE"
 
-#: BackupProg/Common/Logger.pm:53
+#: BackupProg/Common/Logger.pm:37
 msgid "LogLevels"
 msgstr "LogLevels"
 
-#: BackupProg/Common/Logger.pm:54
+#: BackupProg/Common/Logger.pm:38
 msgid "LogModes"
 msgstr "LogModes"
 
-#: BackupProg/Common/Logger.pm:72
+#: BackupProg/Common/Logger.pm:56
 msgid "LogMode instead of a LogLevel"
 msgstr "LogMode recu a la place d'un LogLevel"
 
-#: BackupProg/Common/Logger.pm:84
+#: BackupProg/Common/Logger.pm:68
 msgid "Logger started"
 msgstr "Logger démarré"
 
-#: BackupProg/Common/Logger.pm:91
+#: BackupProg/Common/Logger.pm:75
 msgid "Opening Logger tmp file\n"
 msgstr "Ouverture du fichier de Logger temporaire\n"
 
-#: BackupProg/Common/Logger.pm:94
+#: BackupProg/Common/Logger.pm:78
 msgid "Logger tmp file is '$tmpname'\n"
 msgstr "Le chichier temporarire du Logger est '$tmpname'\n"
 
-#: BackupProg/Common/Logger.pm:103
+#: BackupProg/Common/Logger.pm:87
 msgid "a"
 msgstr "a"
 
-#: BackupProg/Common/Logger.pm:106 BackupProg/UserInterface/MainWindow.pm:78
+#: BackupProg/Common/Logger.pm:90 BackupProg/UserInterface/MainWindow.pm:37
+#: BackupProg/UserInterface/MainWindow.pm:45
+#: BackupProg/UserInterface/MainWindow.pm:53
+#: BackupProg/UserInterface/MainWindow.pm:59
+#: BackupProg/UserInterface/MainWindow.pm:66
+#: BackupProg/UserInterface/MainWindow.pm:72
 msgid "w"
 msgstr "w"
 
-#: BackupProg/Common/Logger.pm:126
+#: BackupProg/Common/Logger.pm:110
 msgid "Starting '"
 msgstr "Démarrage de '"
 
-#: BackupProg/Common/Logger.pm:126 BackupProg/Common/Logger.pm:128
+#: BackupProg/Common/Logger.pm:110 BackupProg/Common/Logger.pm:112
 msgid "' "
 msgstr "' "
 
-#: BackupProg/Common/Logger.pm:127
+#: BackupProg/Common/Logger.pm:111
 msgid "v"
 msgstr "v"
 
-#: BackupProg/Common/Logger.pm:127 BackupProg/Common/Logger.pm:167
+#: BackupProg/Common/Logger.pm:111 BackupProg/Common/Logger.pm:151
 msgid " "
 msgstr " "
 
-#: BackupProg/Common/Logger.pm:128
+#: BackupProg/Common/Logger.pm:112
 msgid "by '"
 msgstr "par '"
 
-#: BackupProg/Common/Logger.pm:129
+#: BackupProg/Common/Logger.pm:113
 msgid "on '"
 msgstr "le '"
 
-#: BackupProg/Common/Logger.pm:129
+#: BackupProg/Common/Logger.pm:113
 msgid "'\n"
 msgstr "'\n"
 
-#: BackupProg/Common/Logger.pm:131
+#: BackupProg/Common/Logger.pm:115
 msgid "  II = Informative\n"
 msgstr "  II = Information\n"
 
-#: BackupProg/Common/Logger.pm:132
+#: BackupProg/Common/Logger.pm:116
 msgid "  WW = Warning\n"
 msgstr "  WW = Avertissement (warning)\n"
 
-#: BackupProg/Common/Logger.pm:133
+#: BackupProg/Common/Logger.pm:117
 msgid "  EE = Error\n"
 msgstr "  EE = Erreur\n"
 
-#: BackupProg/Common/Logger.pm:134
+#: BackupProg/Common/Logger.pm:118
 msgid "  XX = Exception\n"
-msgstr "XX = Exception\n"
+msgstr " XX = Exception\n"
 
-#: BackupProg/Common/Logger.pm:151
+#: BackupProg/Common/Logger.pm:135
 msgid "II"
 msgstr "II"
 
-#: BackupProg/Common/Logger.pm:152
+#: BackupProg/Common/Logger.pm:136
 msgid "WW"
 msgstr "WW"
 
-#: BackupProg/Common/Logger.pm:153
+#: BackupProg/Common/Logger.pm:137
 msgid "EE"
 msgstr "EE"
 
-#: BackupProg/Common/Logger.pm:154
+#: BackupProg/Common/Logger.pm:138
 msgid "XX"
 msgstr "XX"
 
-#: BackupProg/Common/Logger.pm:162
+#: BackupProg/Common/Logger.pm:146
 msgid "..."
 msgstr "..."
 
-#: BackupProg/Common/Logger.pm:172 BackupProg/Common/Logger.pm:175
+#: BackupProg/Common/Logger.pm:156 BackupProg/Common/Logger.pm:159
 msgid "[$package-$line] $ll $message\n"
 msgstr "[$package-$line] $ll $message\n"
 
-#: BackupProg/Common/Logger.pm:185
+#: BackupProg/Common/Logger.pm:169
 msgid "Configuring Logger with '$l' logfile\n"
 msgstr ""
 
-#: BackupProg/Common/Logger.pm:193
+#: BackupProg/Common/Logger.pm:177
 msgid "=================================\n"
 msgstr "=================================\n"
 
-#: BackupProg/Common/Logger.pm:203
+#: BackupProg/Common/Logger.pm:187
 msgid "$_"
 msgstr ""
 
@@ -360,50 +365,87 @@ msgstr ""
 msgid "$dir/$bas.$ext"
 msgstr ""
 
-#: BackupProg/UserInterface/MainWindow.pm:65
-msgid "We are in MainWindow::new()"
-msgstr "Nous sommes dans MainWindow::new()"
-
-#: BackupProg/UserInterface/MainWindow.pm:68
+#: BackupProg/UserInterface/MainWindow.pm:25
 msgid "Informative message"
 msgstr "Message d'information"
 
-#: BackupProg/UserInterface/MainWindow.pm:69
+#: BackupProg/UserInterface/MainWindow.pm:26
 msgid "Warning message"
 msgstr "Message d'avertissement"
 
-#: BackupProg/UserInterface/MainWindow.pm:70
+#: BackupProg/UserInterface/MainWindow.pm:27
 msgid "Error message"
 msgstr "Message d'erreur"
 
-#. init_pair(1, COLOR_BLACK, COLOR_CYAN);
-#: BackupProg/UserInterface/MainWindow.pm:78
+#: BackupProg/UserInterface/MainWindow.pm:37
+#: BackupProg/UserInterface/MainWindow.pm:45
+#: BackupProg/UserInterface/MainWindow.pm:53
+#: BackupProg/UserInterface/MainWindow.pm:59
+#: BackupProg/UserInterface/MainWindow.pm:66
+#: BackupProg/UserInterface/MainWindow.pm:72
 msgid "x"
 msgstr ""
 
-#: BackupProg/UserInterface/MainWindow.pm:78
+#: BackupProg/UserInterface/MainWindow.pm:37
+#: BackupProg/UserInterface/MainWindow.pm:45
+#: BackupProg/UserInterface/MainWindow.pm:53
+#: BackupProg/UserInterface/MainWindow.pm:59
+#: BackupProg/UserInterface/MainWindow.pm:66
+#: BackupProg/UserInterface/MainWindow.pm:72
 msgid "y"
 msgstr ""
 
-#: BackupProg/UserInterface/MainWindow.pm:78
+#: BackupProg/UserInterface/MainWindow.pm:37
+#: BackupProg/UserInterface/MainWindow.pm:45
+#: BackupProg/UserInterface/MainWindow.pm:53
+#: BackupProg/UserInterface/MainWindow.pm:59
+#: BackupProg/UserInterface/MainWindow.pm:66
+#: BackupProg/UserInterface/MainWindow.pm:72
 msgid "h"
 msgstr ""
 
-#: BackupProg/UserInterface/MainWindow.pm:79
+#: BackupProg/UserInterface/MainWindow.pm:38
+#: BackupProg/UserInterface/MainWindow.pm:46
+#: BackupProg/UserInterface/MainWindow.pm:54
+#: BackupProg/UserInterface/MainWindow.pm:60
+#: BackupProg/UserInterface/MainWindow.pm:67
+#: BackupProg/UserInterface/MainWindow.pm:73
 msgid "align"
 msgstr ""
 
-#: BackupProg/UserInterface/MainWindow.pm:80
+#: BackupProg/UserInterface/MainWindow.pm:39
+#: BackupProg/UserInterface/MainWindow.pm:47
+#: BackupProg/UserInterface/MainWindow.pm:55
+#: BackupProg/UserInterface/MainWindow.pm:61
+#: BackupProg/UserInterface/MainWindow.pm:68
+#: BackupProg/UserInterface/MainWindow.pm:74
 msgid "text_y"
 msgstr ""
 
-#: BackupProg/UserInterface/MainWindow.pm:81
+#: BackupProg/UserInterface/MainWindow.pm:40
+#: BackupProg/UserInterface/MainWindow.pm:48
+#: BackupProg/UserInterface/MainWindow.pm:56
+#: BackupProg/UserInterface/MainWindow.pm:62
+#: BackupProg/UserInterface/MainWindow.pm:69
+#: BackupProg/UserInterface/MainWindow.pm:75
 msgid "border"
 msgstr ""
 
-#: BackupProg/UserInterface/MainWindow.pm:83
-msgid "Essaia"
+#: BackupProg/UserInterface/MainWindow.pm:41
+msgid "Menu=Ctrl+T"
 msgstr ""
+
+#: BackupProg/UserInterface/MainWindow.pm:57
+msgid "mode"
+msgstr ""
+
+#: BackupProg/UserInterface/MainWindow.pm:63
+#, perl-format
+msgid "v%s"
+msgstr ""
+
+#~ msgid "We are in MainWindow::new()"
+#~ msgstr "Nous sommes dans MainWindow::new()"
 
 #~ msgid "in catch block\n"
 #~ msgstr "Dans un block catch\n"
