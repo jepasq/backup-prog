@@ -68,14 +68,31 @@ $log->configure($conf);
 use BackupProg::Parser::ConfigFile;
 my $cf = BackupProg::Parser::ConfigFile->new();
 
+
+$SIG{ALRM} = sub {
+#    my $log = BackupProg::Common::Logger->instance();
+#    $log->LOGI("Another second");
+    print("Another second");
+    
+    alarm(1);
+};
+
+
 try{
     my $mw = BackupProg::UserInterface::MainWindow->new();
+
+    
 }
 catch BackupProg::Exception::BadArgument with{
     print "Catched a MainWindow exception\n";
     my $E = shift;
     $log->LOGX($E);
 };
+
+
+alarm(1);
+sleep(20);
+
 # Close Logger
 $log->close(); 
 

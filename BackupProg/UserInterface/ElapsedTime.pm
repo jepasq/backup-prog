@@ -28,14 +28,14 @@ sub new() {
     #addstr(10, 10, $self->get_elapsed_str());
 
     $self->{label} = '0:00:01'; #$self->get_elapsed_str();
-    my $self = $class->SUPER::new($self->{label}, @args);
+    $self = $class->SUPER::new($self->{label}, @args);
 
-    $SIG{ALRM} = sub {
-	my $log = BackupProg::Common::Logger->instance();
-	$log->LOGI($self->get_elapsed_str());
-	
-	alarm(1);
-    };
+#   Moved to main script for test purpose
+#    $SIG{ALRM} = sub {
+#	my $log = BackupProg::Common::Logger->instance();
+#	$log->LOGI($self->get_elapsed_str());
+#	alarm(1);
+#   };
 #    alarm(1);
     #sleep(2);
     
