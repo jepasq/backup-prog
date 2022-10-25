@@ -18,7 +18,7 @@ sub new() {
 #    $self->{w} = $args{'w'};
     
     # possibly call Parent->new(@args) first
-    my $self = $class->SUPER::new('', @args);
+    my $self = $class->SUPER::new('ELA. 0:00:00', @args);
     $self->SUPER::draw_label();
     
     my $log = BackupProg::Common::Logger->instance();
@@ -27,9 +27,8 @@ sub new() {
 	       $self->SUPER::get_label()."'");
     #addstr(10, 10, $self->get_elapsed_str());
 
-    $self->{label} = $self->get_elapsed_str();
-    $self->{label} = 'ELA. 0:00:00';
-    $self->draw_label();
+    $self->{label} = '0:00:01'; #$self->get_elapsed_str();
+    my $self = $class->SUPER::new($self->{label}, @args);
 
     $SIG{ALRM} = sub {
 	my $log = BackupProg::Common::Logger->instance();
