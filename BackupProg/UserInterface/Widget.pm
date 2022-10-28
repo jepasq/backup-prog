@@ -47,7 +47,6 @@ sub new(){
     $self->{w} = $options{'w'};
 
     $self->{border} = $options{'border'};
-
     $self->{text_y} = $options{'text_y'};
     
     if ($options{'text_y'} < 1) {
@@ -64,9 +63,8 @@ sub new(){
     if ($self->{win}) {
 	$self->{win}->bkgd(COLOR_PAIR(1)||' ');
 	$self->{win}->attrset(COLOR_PAIR(1));
-
-	draw_label($self);
-	draw_border($self);
+	$self->draw_label();
+	$self->draw_border();
 	$self->{win}->refresh();
     }
     return bless $self, $class;
