@@ -13,6 +13,9 @@ use BackupProg::Exception::BadArgument;
 
 use Curses;
 
+use Scalar::Util 'blessed';
+
+
 use constant {
 # Text alignment constants    
     Left   => 101,
@@ -140,8 +143,11 @@ sub get_label(){
 }     
 
 sub get_window() {
-     my $self = shift;
-     return $self->{win};
+    my $self = shift;
+    print blessed( $self->{win} );
+    my $aa = $self->{win};
+    print blessed( $aa );
+    return $aa;
 }
 
 1;
