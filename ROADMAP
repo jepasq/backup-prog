@@ -198,6 +198,7 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
 - Finally, texinfo : in BackupProg.texinfo
 **** TODO Elapsed time widget issues
 :LOGBOOK:
+CLOCK: [2022-11-07 lun. 05:11]--[2022-11-07 lun. 05:46] =>  0:35
 CLOCK: [2022-10-25 mar. 10:27]--[2022-10-25 mar. 10:41] =>  0:14
 CLOCK: [2022-10-25 mar. 09:50]--[2022-10-25 mar. 10:09] =>  0:19
 CLOCK: [2022-10-13 jeu. 10:18]--[2022-10-13 jeu. 10:27] =>  0:09
@@ -229,6 +230,9 @@ CLOCK: [2022-09-07 mer. 04:53]--[2022-09-07 mer. 05:03] =>  0:10
 - [X] Manage to print in label from ElapsedTime
   - [X] Reimplementing draw_label
     Printing label only works when added in the SUPER ctor call.
+- [X] Got a new error =Can't call method "draw_label" on unblessed reference=
+  at /usr/lib/perl5/5.36/site_perl/BackupProg/UserInterface/Widget.pm line 69
+- [ ] Can't see UI anymore
 - [ ] Update each second (see https://stackoverflow.com/a/3753532)
   Can we setup the alarm from outside a module. Not better.
 **** DONE Continue UserInterface classes implementation

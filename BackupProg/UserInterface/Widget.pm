@@ -66,11 +66,13 @@ sub new(){
     if ($self->{win}) {
 	$self->{win}->bkgd(COLOR_PAIR(1)||' ');
 	$self->{win}->attrset(COLOR_PAIR(1));
-	$self->draw_label();
-	$self->draw_border();
 	$self->{win}->refresh();
     }
-    return bless $self, $class;
+    
+    bless $self, $class;
+    $self->draw_label();
+    $self->draw_border();
+    return $self;
 }
 
 sub draw_label(){
