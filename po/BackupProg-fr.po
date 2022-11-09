@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BackupProg 0.0.0-7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-19 11:13+0200\n"
-"PO-Revision-Date: 2022-10-19 11:15+0200\n"
+"POT-Creation-Date: 2022-11-09 11:51+0100\n"
+"PO-Revision-Date: 2022-11-09 12:01+0100\n"
 "Last-Translator: Jérôme Pasquier <rainbru@free.fr>\n"
 "Language-Team: French\n"
 "Language: fr\n"
@@ -62,11 +62,17 @@ msgstr "Lecture du fichier de configuration"
 #. exit 0; # WARNING =======================================================
 #: backup_prog.pl:64
 msgid "Should be written in the temp file"
-msgstr ""
+msgstr "Devrait être écrit dans le fichier temporaire"
 
+#. my $log = BackupProg::Common::Logger->instance();
+#. $log->LOGI("Another second");
 #: backup_prog.pl:75
+msgid "Another second"
+msgstr "Une autre seconde"
+
+#: backup_prog.pl:87
 msgid "Catched a MainWindow exception\n"
-msgstr ""
+msgstr "A attrapé une exception de MainWindow\n"
 
 #: BackupProg/Common/Def.pm:24
 msgid "true"
@@ -85,7 +91,8 @@ msgid "Booleans"
 msgstr "Booleans"
 
 #: BackupProg/Common/Def.pm:40
-msgid "0.0.1-17"
+#, fuzzy
+msgid "0.0.1-18"
 msgstr "0.0.1-17"
 
 #. LogLevels
@@ -229,7 +236,7 @@ msgstr "=================================\n"
 
 #: BackupProg/Common/Logger.pm:187
 msgid "$_"
-msgstr ""
+msgstr "$_"
 
 #: BackupProg/Exception/BaseException.pm:34
 msgid "Empty message"
@@ -283,27 +290,26 @@ msgid "No filename"
 msgstr "Aucun nom de fichier"
 
 #: BackupProg/Exception/OpenFile.pm:36
-#, fuzzy
 msgid "No message"
 msgstr "Aucun message"
 
 #: BackupProg/Exception/OpenFile.pm:46
 #, perl-format
 msgid "  Filename : %s\n"
-msgstr ""
+msgstr "Fichier : %s\n"
 
 #. We use this contant to avoid gettext warnings when updating message catalog
 #: BackupProg/Parser/CommandLine.pm:28
 msgid "EMPTYSTR"
-msgstr ""
+msgstr "CHAINEVIDE"
 
 #: BackupProg/Parser/CommandLine.pm:38
 msgid "parse_before_configfile ():\n"
-msgstr ""
+msgstr "parse_before_configfile ():\n"
 
 #: BackupProg/Parser/CommandLine.pm:46
 msgid "help|?"
-msgstr ""
+msgstr "help|?"
 
 #: BackupProg/Parser/CommandLine.pm:47
 msgid "c|config-file=s"
