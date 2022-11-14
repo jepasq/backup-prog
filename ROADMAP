@@ -2,7 +2,7 @@
 
 * v1.0.0
 ** v0.1.0
-*** v0.0.2
+*** TODO v0.0.3
 **** May add a d-bus interface
 **** Maybe skin handling
 #+BEGIN_EXAMPLE
@@ -197,8 +197,13 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
   =rman -f html backup_prog.1 > backup_prog.1.html=
   **macro "" not recognized -- ignoring**
 - Finally, texinfo : in BackupProg.texinfo
-**** TODO Elapsed time widget issues
+**** Fix ElapsedTime widget update issue
+- [ ] Update each second (see https://stackoverflow.com/a/3753532)
+  Can we setup the alarm from outside a module. Not better.
+*** DONE v0.0.2
+**** DONE Elapsed time widget issues
 :LOGBOOK:
+CLOCK: [2022-11-14 lun. 16:15]--[2022-11-14 lun. 16:18] =>  0:03
 CLOCK: [2022-11-07 lun. 05:11]--[2022-11-07 lun. 05:46] =>  0:35
 CLOCK: [2022-10-25 mar. 10:27]--[2022-10-25 mar. 10:41] =>  0:14
 CLOCK: [2022-10-25 mar. 09:50]--[2022-10-25 mar. 10:09] =>  0:19
@@ -233,9 +238,7 @@ CLOCK: [2022-09-07 mer. 04:53]--[2022-09-07 mer. 05:03] =>  0:10
     Printing label only works when added in the SUPER ctor call.
 - [X] Got a new error =Can't call method "draw_label" on unblessed reference=
   at /usr/lib/perl5/5.36/site_perl/BackupProg/UserInterface/Widget.pm line 69
-- [ ] Can't see UI anymore
-- [ ] Update each second (see https://stackoverflow.com/a/3753532)
-  Can we setup the alarm from outside a module. Not better.
+- [X] Can't see UI anymore
 **** DONE Continue UserInterface classes implementation
 :LOGBOOK:
 CLOCK: [2022-09-05 lun. 02:19]--[2022-09-05 lun. 03:13] =>  0:54

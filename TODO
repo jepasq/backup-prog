@@ -13,8 +13,9 @@ backup_prog - GPLv3 - A flexible backup tool written in perl/curses.
    PO is the not translated/translated gettext messages (make nb-messages)
    (8 items by revision)
 
-* v0.0.1-19 (19 Oct. 2022 - ???) SLOC ??? PO ??/??
-- (5) Fix the UI refresh issue
+* v0.0.2-19 (19 Oct. 2022 - ???) SLOC ??? PO ??/??
+- (6) Bump version to 0.0.2 (5 ROADMAP sections closed)
+- Fix the UI refresh issue
 - Partly fixed bless-relaetd Widget issue
 - More get_window tests
 - Better self call in Widget ctor implementation
