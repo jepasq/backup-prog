@@ -66,12 +66,14 @@ sub new(){
     if ($self->{win}) {
 	$self->{win}->bkgd(COLOR_PAIR(1)||' ');
 	$self->{win}->attrset(COLOR_PAIR(1));
-	$self->{win}->refresh();
     }
     
     bless $self, $class;
     $self->draw_label();
     $self->draw_border();
+    # The following needs to be after label and border drawing, otherwise,
+    # the complete UI is not drawn anymore
+    $self->{win}->refresh();  
     return $self;
 }
 
