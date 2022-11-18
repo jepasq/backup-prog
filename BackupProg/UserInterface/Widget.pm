@@ -98,16 +98,24 @@ sub draw_label(){
 	die("Alignment '".$self->{align}."' not implemented");
     }
 
-    $self->{win}->addstr($ly, $lx, $self->{label});
+    if ($self->{win}) {
+	$self->{win}->addstr($ly, $lx, $self->{label});
+    }
+    else {
+	my $msg="Can't add string '".$self->{label}."'";
+	# print $msg; # Do not die as it occurs also in unit tests
+    }
 }
 
 sub draw_border(){
     my $self = shift;
 
-    if ($self->{border} == TopCenterLeft){
-	box($self->{win}, 0, 0);
+    if ($self->{border} == TopCenterLeft) {
+	if ($self->{win}) { # Only fail in tests
+	    box($self->{win}, 0, 0);
+	}
     }
-    else{
+    else {
 	my $msg="Border '".$self->{border}."' not implemented";
 	throw BackupProg::Exception::BadArgument($msg);
     }
