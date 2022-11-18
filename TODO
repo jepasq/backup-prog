@@ -17,7 +17,7 @@ backup_prog - GPLv3 - A flexible backup tool written in perl/curses.
 - (7) Improve label and box widget handling in unit tests
 - Bump version to 0.0.2 (5 ROADMAP sections closed)
 - Fix the UI refresh issue
-- Partly fixed bless-relaetd Widget issue
+- Partly fixed bless-related Widget issue
 - More get_window tests
 - Better self call in Widget ctor implementation
 - Creating a new parent label works to update label
