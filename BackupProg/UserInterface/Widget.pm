@@ -73,7 +73,9 @@ sub new(){
     $self->draw_border();
     # The following needs to be after label and border drawing, otherwise,
     # the complete UI is not drawn anymore
-    $self->{win}->refresh();  
+    if ($self->{win}) {
+	$self->{win}->refresh();
+    }
     return $self;
 }
 
@@ -126,7 +128,9 @@ sub refresh(){
     if ($self->{dirty}) {
 	$self->draw_border();
 	$self->draw_label();
-	$self->{win}->refresh();
+	if ($self->{win}) {
+	    $self->{win}->refresh();
+	}
     }
     $self->{dirty} = 0;
 }
