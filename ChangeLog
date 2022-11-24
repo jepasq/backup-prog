@@ -1,3 +1,13 @@
+* v0.0.2-19 (19 Oct. 2022 - 24 Nov. 2022) SLOC 388 PO 24/66
+- Add some pre-call tests to Widget::refresh to fix unit tests
+- Improve label and box widget handling in unit tests
+- Bump version to 0.0.2 (5 ROADMAP sections closed)
+- Fix the UI refresh issue
+- Partly fixed bless-related Widget issue
+- More get_window tests
+- Better self call in Widget ctor implementation
+- Creating a new parent label works to update label
+
 * v0.0.1-18 (21 Sep. 2022 - 19 Oct. 2022) SLOC 356 PO 31/58
 - Translation improvment
 - More unit test work
