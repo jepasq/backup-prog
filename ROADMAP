@@ -199,6 +199,9 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
   **macro "" not recognized -- ignoring**
 - Finally, texinfo : in BackupProg.texinfo
 **** Fix ElapsedTime widget update issue
+:LOGBOOK:
+CLOCK: [2022-11-24 jeu. 15:54]--[2022-11-24 jeu. 16:15] =>  0:21
+:END:
 - [ ] Update each second (see https://stackoverflow.com/a/3753532)
   Can we setup the alarm from outside a module. Not better.
 *** DONE v0.0.2
