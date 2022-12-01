@@ -11,4 +11,9 @@ BackupProg/Exception/OpenFile.pm
 BackupProg/Parser/CommandLine.pm
 BackupProg/Parser/ConfigFile.pm
 
+BackupProg/UserInterface/ActionList.pm
+BackupProg/UserInterface/Preferences.pm
+BackupProg/UserInterface/ElapsedTime.pm
+BackupProg/UserInterface/WidgetList.pm
 BackupProg/UserInterface/MainWindow.pm
+BackupProg/UserInterface/Widget.pm

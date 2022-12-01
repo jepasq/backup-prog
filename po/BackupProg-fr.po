@@ -4,12 +4,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Jérôme Pasquier <rainbru@free.fr>, 2009.
 #
+#: backup_prog.pl:47 BackupProg/Parser/CommandLine.pm:28
 msgid ""
 msgstr ""
 "Project-Id-Version: BackupProg 0.0.0-7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-09 11:51+0100\n"
-"PO-Revision-Date: 2022-11-09 12:01+0100\n"
+"POT-Creation-Date: 2022-12-01 06:28+0100\n"
+"PO-Revision-Date: 2022-12-01 06:27+0100\n"
 "Last-Translator: Jérôme Pasquier <rainbru@free.fr>\n"
 "Language-Team: French\n"
 "Language: fr\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2.1\n"
 
 #: backup_prog.pl:11 BackupProg/Common/Def.pm:39
 #: BackupProg/Parser/ConfigFile.pm:31
@@ -74,26 +75,27 @@ msgstr "Une autre seconde"
 msgid "Catched a MainWindow exception\n"
 msgstr "A attrapé une exception de MainWindow\n"
 
-#: BackupProg/Common/Def.pm:24
+#. widget_name, position, size, color_pair_id, borders
+#. According to the Widget.pm constructor
+#: BackupProg/Common/Def.pm:24 BackupProg/UserInterface/Preferences.pm:30
 msgid "true"
 msgstr "vrai"
 
-#: BackupProg/Common/Def.pm:25
+#: BackupProg/Common/Def.pm:25 BackupProg/UserInterface/Preferences.pm:31
 msgid "false"
 msgstr "faux"
 
-#: BackupProg/Common/Def.pm:27
+#: BackupProg/Common/Def.pm:27 BackupProg/UserInterface/Preferences.pm:33
 msgid "null"
 msgstr "null"
 
-#: BackupProg/Common/Def.pm:33
+#: BackupProg/Common/Def.pm:33 BackupProg/UserInterface/Preferences.pm:39
 msgid "Booleans"
 msgstr "Booleans"
 
 #: BackupProg/Common/Def.pm:40
-#, fuzzy
-msgid "0.0.1-18"
-msgstr "0.0.1-17"
+msgid "0.0.1-19"
+msgstr "0.0.1-19"
 
 #. LogLevels
 #: BackupProg/Common/Logger.pm:24
@@ -155,6 +157,7 @@ msgstr "a"
 #: BackupProg/UserInterface/MainWindow.pm:59
 #: BackupProg/UserInterface/MainWindow.pm:66
 #: BackupProg/UserInterface/MainWindow.pm:72
+#: BackupProg/UserInterface/Widget.pm:50 BackupProg/UserInterface/Widget.pm:64
 msgid "w"
 msgstr "w"
 
@@ -171,6 +174,7 @@ msgid "v"
 msgstr "v"
 
 #: BackupProg/Common/Logger.pm:111 BackupProg/Common/Logger.pm:151
+#: BackupProg/UserInterface/Widget.pm:67
 msgid " "
 msgstr " "
 
@@ -228,7 +232,7 @@ msgstr "[$package-$line] $ll $message\n"
 
 #: BackupProg/Common/Logger.pm:169
 msgid "Configuring Logger with '$l' logfile\n"
-msgstr ""
+msgstr "Logger configuré pour le fichier '$l\"\n"
 
 #: BackupProg/Common/Logger.pm:177
 msgid "=================================\n"
@@ -313,35 +317,35 @@ msgstr "help|?"
 
 #: BackupProg/Parser/CommandLine.pm:47
 msgid "c|config-file=s"
-msgstr ""
+msgstr "c|config-file=s"
 
 #: BackupProg/Parser/CommandLine.pm:52
 msgid "config_file = '$config_file'\n"
-msgstr ""
+msgstr "config_file = '$config_file'\n"
 
 #: BackupProg/Parser/CommandLine.pm:56
 msgid "parse ():\n"
-msgstr ""
+msgstr "parse ():\n"
 
 #: BackupProg/Parser/CommandLine.pm:61
 msgid "l|log-file=s"
-msgstr ""
+msgstr "l|log-file=s"
 
 #: BackupProg/Parser/CommandLine.pm:63
 msgid "logfile = '$logfile'\n"
-msgstr ""
+msgstr "fichier de log = '$logfile'\n"
 
 #: BackupProg/Parser/ConfigFile.pm:30
 msgid "/etc"
-msgstr ""
+msgstr "/etc"
 
 #: BackupProg/Parser/ConfigFile.pm:30
 msgid "HOME"
-msgstr ""
+msgstr "HOME"
 
 #: BackupProg/Parser/ConfigFile.pm:30
 msgid "config"
-msgstr ""
+msgstr "config"
 
 #: BackupProg/Parser/ConfigFile.pm:31
 msgid "backup"
@@ -371,6 +375,81 @@ msgstr ""
 msgid "$dir/$bas.$ext"
 msgstr ""
 
+#. possibly call Parent->new(@args) first
+#: BackupProg/UserInterface/ActionList.pm:19
+msgid "Actions:"
+msgstr ""
+
+#. addstr(10, 10, $self->get_elapsed_str());
+#: BackupProg/UserInterface/ActionList.pm:23
+msgid "Just testin'"
+msgstr ""
+
+#: BackupProg/UserInterface/ActionList.pm:41
+msgid "ActionList: (@actions)in len is now "
+msgstr ""
+
+#: BackupProg/UserInterface/ActionList.pm:47
+msgid "Printing ActionList with $action_number items..."
+msgstr ""
+
+#: BackupProg/UserInterface/ActionList.pm:49
+msgid "aze"
+msgstr "aze"
+
+#. If 1, force the drawing of the widget's background with
+#. white space characters. 
+#: BackupProg/UserInterface/Preferences.pm:26
+msgid "force_bce"
+msgstr ""
+
+#. $self->{y} = $args{'y'};
+#. $self->{w} = $args{'w'};
+#. possibly call Parent->new(@args) first
+#: BackupProg/UserInterface/ElapsedTime.pm:21
+msgid "ELA. 0:00:00"
+msgstr ""
+
+#: BackupProg/UserInterface/ElapsedTime.pm:26
+msgid "In ElapsedTime widget constructor. Label is '"
+msgstr ""
+
+#: BackupProg/UserInterface/ElapsedTime.pm:27
+#: BackupProg/UserInterface/Widget.pm:107
+#, fuzzy
+msgid "'"
+msgstr "' "
+
+#. addstr(10, 10, $self->get_elapsed_str());
+#: BackupProg/UserInterface/ElapsedTime.pm:30
+msgid "0:00:01"
+msgstr ""
+
+#: BackupProg/UserInterface/ElapsedTime.pm:50
+#, perl-format
+msgid "Ela. %d:%02d:%02d"
+msgstr ""
+
+#: BackupProg/UserInterface/ElapsedTime.pm:50
+msgid "hours"
+msgstr ""
+
+#: BackupProg/UserInterface/ElapsedTime.pm:51
+msgid "minutes"
+msgstr ""
+
+#: BackupProg/UserInterface/ElapsedTime.pm:52
+msgid "seconds"
+msgstr ""
+
+#: BackupProg/UserInterface/WidgetList.pm:18
+msgid "WidgetList: in constructor"
+msgstr ""
+
+#: BackupProg/UserInterface/WidgetList.pm:38
+msgid "WidgetList: (@widgets)in len is now "
+msgstr ""
+
 #: BackupProg/UserInterface/MainWindow.pm:25
 msgid "Informative message"
 msgstr "Message d'information"
@@ -389,6 +468,7 @@ msgstr "Message d'erreur"
 #: BackupProg/UserInterface/MainWindow.pm:59
 #: BackupProg/UserInterface/MainWindow.pm:66
 #: BackupProg/UserInterface/MainWindow.pm:72
+#: BackupProg/UserInterface/Widget.pm:65
 msgid "x"
 msgstr ""
 
@@ -398,6 +478,7 @@ msgstr ""
 #: BackupProg/UserInterface/MainWindow.pm:59
 #: BackupProg/UserInterface/MainWindow.pm:66
 #: BackupProg/UserInterface/MainWindow.pm:72
+#: BackupProg/UserInterface/Widget.pm:65
 msgid "y"
 msgstr ""
 
@@ -407,15 +488,18 @@ msgstr ""
 #: BackupProg/UserInterface/MainWindow.pm:59
 #: BackupProg/UserInterface/MainWindow.pm:66
 #: BackupProg/UserInterface/MainWindow.pm:72
+#: BackupProg/UserInterface/Widget.pm:64
 msgid "h"
 msgstr ""
 
+#. Shift an hash
 #: BackupProg/UserInterface/MainWindow.pm:38
 #: BackupProg/UserInterface/MainWindow.pm:46
 #: BackupProg/UserInterface/MainWindow.pm:54
 #: BackupProg/UserInterface/MainWindow.pm:60
 #: BackupProg/UserInterface/MainWindow.pm:67
 #: BackupProg/UserInterface/MainWindow.pm:73
+#: BackupProg/UserInterface/Widget.pm:48
 msgid "align"
 msgstr ""
 
@@ -425,6 +509,7 @@ msgstr ""
 #: BackupProg/UserInterface/MainWindow.pm:61
 #: BackupProg/UserInterface/MainWindow.pm:68
 #: BackupProg/UserInterface/MainWindow.pm:74
+#: BackupProg/UserInterface/Widget.pm:53 BackupProg/UserInterface/Widget.pm:55
 msgid "text_y"
 msgstr ""
 
@@ -434,6 +519,7 @@ msgstr ""
 #: BackupProg/UserInterface/MainWindow.pm:62
 #: BackupProg/UserInterface/MainWindow.pm:69
 #: BackupProg/UserInterface/MainWindow.pm:75
+#: BackupProg/UserInterface/Widget.pm:52
 msgid "border"
 msgstr ""
 
@@ -450,14 +536,78 @@ msgstr ""
 msgid "v%s"
 msgstr ""
 
+#: BackupProg/UserInterface/Widget.pm:16
+msgid "blessed"
+msgstr ""
+
+#. Text alignment constants    
+#: BackupProg/UserInterface/Widget.pm:21
+msgid "Left"
+msgstr ""
+
+#: BackupProg/UserInterface/Widget.pm:22
+msgid "Right"
+msgstr ""
+
+#: BackupProg/UserInterface/Widget.pm:23
+msgid "Center"
+msgstr ""
+
+#. Border style constants (see SCREEN.layout file)
+#: BackupProg/UserInterface/Widget.pm:25
+msgid "TopCenterLeft"
+msgstr ""
+
+#. Should be 'backup_prog'
+#: BackupProg/UserInterface/Widget.pm:26
+msgid "TopCenterRight"
+msgstr ""
+
+#. Should be the mode
+#: BackupProg/UserInterface/Widget.pm:27
+msgid "TopLeft"
+msgstr ""
+
+#: BackupProg/UserInterface/Widget.pm:35
+msgid "Align"
+msgstr ""
+
+#: BackupProg/UserInterface/Widget.pm:36
+msgid "BorderTypes"
+msgstr ""
+
+#: BackupProg/UserInterface/Widget.pm:57
+msgid ""
+"The Widget's 'text_y' property is lesser than 1. The label may be masked by "
+"the widget's border (Widget's label is '"
+msgstr ""
+
+#: BackupProg/UserInterface/Widget.pm:59
+msgid ")"
+msgstr ""
+
+#: BackupProg/UserInterface/Widget.pm:100
+msgid "Alignment '"
+msgstr ""
+
+#: BackupProg/UserInterface/Widget.pm:100
+#: BackupProg/UserInterface/Widget.pm:121
+msgid "' not implemented"
+msgstr ""
+
+#: BackupProg/UserInterface/Widget.pm:107
+msgid "Can't add string '"
+msgstr ""
+
+#: BackupProg/UserInterface/Widget.pm:121
+msgid "Border '"
+msgstr ""
+
 #~ msgid "We are in MainWindow::new()"
 #~ msgstr "Nous sommes dans MainWindow::new()"
 
 #~ msgid "in catch block\n"
 #~ msgstr "Dans un block catch\n"
-
-#~ msgid "aze"
-#~ msgstr "aze"
 
 #~ msgid "The first message in Logger with var $test"
 #~ msgstr "Le premier message du Logger avec la variable $test"

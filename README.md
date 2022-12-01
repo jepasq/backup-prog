@@ -6,8 +6,8 @@ A flexible TUI backup tool written in perl/curses.
 
 On arch-based distributions :
 
-	sudo pacman -S  m4 make perl-curses perl-locale-gettext  \
-		perl-class-singleton perl-switch perl-datetime       \
+	sudo pacman -S m4 make perl-curses perl-locale-gettext \
+		perl-class-singleton perl-switch perl-datetime     \
 		perl-data-dump perl-test2-suite perl-libintl-perl
 
 This will download nearly 1Tb of new packages on a brand new system.

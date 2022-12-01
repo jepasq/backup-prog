@@ -8,10 +8,11 @@ backup_prog - GPLv3 - A flexible backup tool written in perl/curses.
 - -b/--batch    non-interactive mode
 
 === ChangeLog ===
-   Please update version in BackupProg/Common/Def.pm and version.all
+   Please update version in BackupProg/Common/Def.pm and version.all and
+     update translated message.
    SLOC is the Physical result of sloc on '.'
    PO is the not translated/translated gettext messages (make nb-messages)
    (8 items by revision)
 
 * v0.0.2-20 (24 Nov. 2022 - ???) SLOC ??? PO ??/??
-
+- (1) Update french messages catalog
