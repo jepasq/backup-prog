@@ -200,12 +200,15 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
   =rman -f html backup_prog.1 > backup_prog.1.html=
   **macro "" not recognized -- ignoring**
 - Finally, texinfo : in BackupProg.texinfo
-**** Fix ElapsedTime widget update issue
+**** TODO Fix ElapsedTime widget update issue
 :LOGBOOK:
+CLOCK: [2022-12-13 mar. 01:33]--[2022-12-13 mar. 01:52] =>  0:19
 CLOCK: [2022-11-24 jeu. 15:54]--[2022-11-24 jeu. 16:15] =>  0:21
 :END:
 - [ ] Update each second (see https://stackoverflow.com/a/3753532)
   Can we setup the alarm from outside a module. Not better.
+  Testing in example/alarm.pl : =alarm 1= doesn't pause for a full second
+  
 *** DONE v0.0.2
 **** DONE Elapsed time widget issues
 :LOGBOOK:

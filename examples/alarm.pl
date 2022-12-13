@@ -2,7 +2,6 @@
 use strict;
 use warnings;
 
-
 =pod
 # From https://www.perlmonks.org/?node_id=783615
 my @time=(4,12,16,8);
@@ -24,9 +23,11 @@ my @time=(4,12,16,8);
 print "Start at $count\n";
 LABELME: foreach my $t (@time)
 {
-    $SIG{ALRM} = sub {print "Now $count\n"; next LABELME};
-    sleep(1);
-    alarm(0);
-    $count += $t;
-    print "done with $t\n";
+    eval {
+	$SIG{ALRM} = sub {print "Now $count\n"; next LABELME};
+	#sleep(1);
+	alarm 1;
+	$count += 1;
+	print "done with $t. Count is now $count\n";
+    }
 }
