@@ -169,6 +169,7 @@ I18n for backup instructions :
    widget creation
 **** TODO May implement unit tests
 :LOGBOOK:
+CLOCK: [2022-12-21 mer. 02:26]--[2022-12-21 mer. 02:52] =>  0:26
 CLOCK: [2022-11-24 jeu. 16:30]--[2022-11-24 jeu. 16:35] =>  0:05
 CLOCK: [2022-11-18 ven. 03:18]--[2022-11-18 ven. 03:37] =>  0:19
 CLOCK: [2022-11-02 mer. 07:53]--[2022-11-02 mer. 08:05] =>  0:12
@@ -211,6 +212,8 @@ CLOCK: [2022-11-24 jeu. 15:54]--[2022-11-24 jeu. 16:15] =>  0:21
   Can we setup the alarm from outside a module. Not better.
   Testing in example/alarm.pl : =alarm 1= doesn't pause for a full second
 - [ ] Now, maybe remove this sleep thing. Remove the alarm one as part of a
+  Currently, the time.pl seems to be a good solution, without alarm nor
+  sleep, it could work.
 *** DONE v0.0.2
 **** DONE Elapsed time widget issues
 :LOGBOOK:
