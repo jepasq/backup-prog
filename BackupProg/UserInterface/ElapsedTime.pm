@@ -8,6 +8,9 @@ use BackupProg::UserInterface::Widget;
 use DateTime;
 use Curses;
 
+use Time::HiRes qw(time);
+use POSIX qw(strftime);
+
 our @ISA = qw(BackupProg::UserInterface::Widget);
 
 
@@ -30,6 +33,9 @@ sub new() {
     $self->{label} = '0:00:01'; #$self->get_elapsed_str();
     $self = $class->SUPER::new($self->{label}, @args);
 
+    $self->{lastseconds}  = -1;
+
+    
 #   Moved to main script for test purpose
 #    $SIG{ALRM} = sub {
 #	my $log = BackupProg::Common::Logger->instance();
@@ -61,6 +67,19 @@ sub draw_label(){
     
     $lx = $self->{w} - length($self->{label}) - 1;
     $self->{win}->addstr(0, $lx, $self->{label});
+}
+
+# Update each tick from the MainWindow's endless loop
+sub update() {
+    my $self = shift;
+    
+    my $date = strftime "%S", localtime;
+    if ($date != $self->{lastseconds}) {
+	$self->{lastseconds} = $date;
+	print ".";
+	$self->draw_label();
+    }
+
 }
 
 1;

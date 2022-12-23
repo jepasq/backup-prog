@@ -77,10 +77,12 @@ sub new(){
 
     
     #    addstr(1, 1, "aze");
-    #    refresh();
-
+    while (1) {
+        #refresh();    # Makes the screen empty
+	$et->update();
+	
+    }
     #getch();
-    sleep 5;
     endwin();  # Restore the screen at the end of the program
 }
 1;
