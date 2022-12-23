@@ -203,6 +203,7 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
 - Finally, texinfo : in BackupProg.texinfo
 **** TODO Fix ElapsedTime widget update issue
 :LOGBOOK:
+CLOCK: [2022-12-23 ven. 03:53]--[2022-12-23 ven. 04:16] =>  0:23
 CLOCK: [2022-12-16 ven. 03:36]--[2022-12-16 ven. 03:51] =>  0:15
 CLOCK: [2022-12-16 ven. 03:07]--[2022-12-16 ven. 03:22] =>  0:15
 CLOCK: [2022-12-13 mar. 01:33]--[2022-12-13 mar. 01:52] =>  0:19
@@ -211,9 +212,13 @@ CLOCK: [2022-11-24 jeu. 15:54]--[2022-11-24 jeu. 16:15] =>  0:21
 - [X] Update each second (see https://stackoverflow.com/a/3753532)
   Can we setup the alarm from outside a module. Not better.
   Testing in example/alarm.pl : =alarm 1= doesn't pause for a full second
-- [ ] Now, maybe remove this sleep thing. Remove the alarm one as part of a
+- [X] Now, maybe remove this sleep thing. Remove the alarm one as part of a
   Currently, the time.pl seems to be a good solution, without alarm nor
   sleep, it could work.
+- [ ] Maybe a new way from examples/time.pl
+  - [ ] We will need a endless loop in MainWindow
+  - [ ] A ElapsedTime update function that use the second compare thing to
+    update text every second
 *** DONE v0.0.2
 **** DONE Elapsed time widget issues
 :LOGBOOK:
