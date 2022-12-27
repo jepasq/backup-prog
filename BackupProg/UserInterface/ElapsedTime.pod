@@ -25,7 +25,6 @@ elasped time in seconds since the start of the program.
        'align' => Center, 'text_y' => 0,
        'border' => TopCenterLeft).
 
-
 =back
 
 =head1 METHODS
@@ -38,6 +37,12 @@ elasped time in seconds since the start of the program.
 =item draw_label()
   Prints or update the widget label with the string returned by the 
   get_elasped_str() function.
+
+=item update()
+  Must be called for each ticks from the parent widget (certainly a
+  F<BackupProg::UserInterface::MainWindow> instance). It will compare actual
+  time with last printed one and update ELA label if needed.
+
 
 =back
 

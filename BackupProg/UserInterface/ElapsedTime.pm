@@ -25,7 +25,7 @@ sub new() {
     $self->SUPER::draw_label();
     
     my $log = BackupProg::Common::Logger->instance();
-    $self->{sttime} = DateTime->now();
+    $self->{sttime} = DateTime->now;
     $log->LOGI("In ElapsedTime widget constructor. Label is '".
 	       $self->SUPER::get_label()."'");
     #addstr(10, 10, $self->get_elapsed_str());
@@ -35,15 +35,6 @@ sub new() {
 
     $self->{lastseconds}  = -1;
 
-    
-#   Moved to main script for test purpose
-#    $SIG{ALRM} = sub {
-#	my $log = BackupProg::Common::Logger->instance();
-#	$log->LOGI($self->get_elapsed_str());
-#	alarm(1);
-#   };
-#    alarm(1);
-    #sleep(2);
     
     # Already blessed by parent
     return $self;
@@ -78,8 +69,8 @@ sub update() {
 	$self->{lastseconds} = $date;
 	print ".";
 	$self->draw_label();
+	addstr(10, 10, $self->get_elapsed_str());
     }
-
 }
 
 1;
