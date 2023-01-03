@@ -203,6 +203,7 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
 - Finally, texinfo : in BackupProg.texinfo
 **** TODO Fix ElapsedTime widget update issue
 :LOGBOOK:
+CLOCK: [2023-01-03 mar. 06:40]--[2023-01-03 mar. 07:06] =>  0:26
 CLOCK: [2022-12-27 mar. 05:40]--[2022-12-27 mar. 06:05] =>  0:25
 CLOCK: [2022-12-23 ven. 04:26]--[2022-12-23 ven. 04:53] =>  0:27
 CLOCK: [2022-12-23 ven. 03:53]--[2022-12-23 ven. 04:16] =>  0:23
@@ -221,6 +222,8 @@ CLOCK: [2022-11-24 jeu. 15:54]--[2022-11-24 jeu. 16:15] =>  0:21
   - [X] We will need a endless loop in MainWindow
   - [ ] A ElapsedTime update function that use the second compare thing to
     update text every second
+  - [ ] ElapsedTime's sttime (DateTime->now) is never set
+    Try with a global variable instead
   - [ ] Now, how to get key event in the MainWindow endless loop  
 *** DONE v0.0.2
 **** DONE Elapsed time widget issues

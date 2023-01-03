@@ -43,7 +43,16 @@ sub new() {
 sub get_elapsed_str() {
     my $self = shift;
 
-    my $elapse = DateTime->now - $self->{sttime};
+    my $elapse = DateTime::Duration->new();
+    
+    if ($self->{sttime}) {
+	$elapse = DateTime->now - $self->{sttime};
+	
+    }
+    else {
+	$self->{sttime} = DateTime->now
+    }
+    
     my $stt = sprintf("Ela. %d:%02d:%02d", $elapse->in_units('hours'),
 		      $elapse->in_units('minutes'),
 		      $elapse->in_units('seconds'));
