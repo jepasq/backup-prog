@@ -55,7 +55,6 @@ todo "WidgetList has a refresh() method" => sub {
     ok($l->refresh());
 };
 
-
 # ActionList unit tests
 todo "ActionList should have an len() method" => sub {
     my $l = BackupProg::UserInterface::ActionList->new();
