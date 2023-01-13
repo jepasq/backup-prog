@@ -169,6 +169,7 @@ I18n for backup instructions :
    widget creation
 **** TODO May implement unit tests
 :LOGBOOK:
+CLOCK: [2023-01-13 ven. 07:44]--[2023-01-13 ven. 08:03] =>  0:19
 CLOCK: [2022-12-21 mer. 02:26]--[2022-12-21 mer. 02:52] =>  0:26
 CLOCK: [2022-11-24 jeu. 16:30]--[2022-11-24 jeu. 16:35] =>  0:05
 CLOCK: [2022-11-18 ven. 03:18]--[2022-11-18 ven. 03:37] =>  0:19
@@ -189,6 +190,11 @@ CLOCK: [2022-07-18 lun. 06:19]--[2022-07-18 lun. 06:38] =>  0:19
   Subroutine refresh redefined at /usr/lib/perl5/5.36/site_perl/BackupProg/UserInterface/Widget.pm
 - [ ] Unit tests should create a log file
 - [ ] WidgetList unit tests should go in another file ?
+  - [ ] Currently  trying with tests/WidgetListTest.pm but must be installed
+    but we don't have any Makefile here so we can't install it
+    - later use in tests is commented
+  - [ ] Maybe through Test2::Suite ?
+  
 **** TODO Mainpage and pod work
 :LOGBOOK:
 CLOCK: [2022-08-17 mer. 13:14]--[2022-08-17 mer. 13:28] =>  0:14

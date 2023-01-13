@@ -8,6 +8,7 @@ use BackupProg::UserInterface::Widget qw(:Align :BorderTypes);
 use BackupProg::UserInterface::ActionList;
 use BackupProg::UserInterface::WidgetList;
 
+
 # Widget unit tests
 todo "Widget can be instantiated" => sub {
     my %woptions= ('x'=>2, 'y'=>0, 'w'=>20, 'h'=>23,
@@ -71,6 +72,9 @@ todo "ActionList should have an append() method" => sub {
     $l->append("Here is a new action");
     ok($l->len() == 1, "ActionList len should now be 1");
 };
+
+#use FindBin;
+#use WidgetListTest "./";
 
 done_testing();
 
