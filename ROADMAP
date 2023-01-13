@@ -203,6 +203,7 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
 - Finally, texinfo : in BackupProg.texinfo
 **** TODO Fix ElapsedTime widget update issue
 :LOGBOOK:
+CLOCK: [2023-01-13 ven. 04:16]--[2023-01-13 ven. 04:31] =>  0:15
 CLOCK: [2023-01-09 lun. 08:48]--[2023-01-09 lun. 09:12] =>  0:24
 CLOCK: [2023-01-03 mar. 06:40]--[2023-01-03 mar. 07:06] =>  0:26
 CLOCK: [2022-12-27 mar. 05:40]--[2022-12-27 mar. 06:05] =>  0:25
@@ -219,13 +220,13 @@ CLOCK: [2022-11-24 jeu. 15:54]--[2022-11-24 jeu. 16:15] =>  0:21
 - [X] Now, maybe remove this sleep thing. Remove the alarm one as part of a
   Currently, the time.pl seems to be a good solution, without alarm nor
   sleep, it could work.
-- [-] Maybe a new way from examples/time.pl
+- [X] Maybe a new way from examples/time.pl
   - [X] We will need a endless loop in MainWindow
-  - [ ] A ElapsedTime update function that use the second compare thing to
-    update text every second
-  - [ ] ElapsedTime's sttime (DateTime->now) is never set
+  - [X] ElapsedTime's sttime (DateTime->now) is never set
     Try with a global variable instead
-  - [ ] Now, how to get key event in the MainWindow endless loop  
+  - [X] Now, how to get key event in the MainWindow endless loop  
+- [ ] A ElapsedTime update function that use the second compare thing to
+    update text every second
 *** DONE v0.0.2
 **** DONE Elapsed time widget issues
 :LOGBOOK:

@@ -13,6 +13,7 @@ use POSIX qw(strftime);
 
 our @ISA = qw(BackupProg::UserInterface::Widget);
 
+my $selfStttime = 0;
 
 sub new() {
     my ($class, @args) = @_;
@@ -25,10 +26,10 @@ sub new() {
     $self->SUPER::draw_label();
     
     my $log = BackupProg::Common::Logger->instance();
-    $self->{sttime} = DateTime->now;
+    $selfStttime = DateTime->now;
     $log->LOGI("In ElapsedTime widget constructor. Label is '".
 	       $self->SUPER::get_label()."'");
-    #addstr(10, 10, $self->get_elapsed_str());
+    addstr(10, 10, $self->get_elapsed_str());
 
     $self->{label} = '0:00:01'; #$self->get_elapsed_str();
     $self = $class->SUPER::new($self->{label}, @args);
@@ -45,17 +46,18 @@ sub get_elapsed_str() {
 
     my $elapse = DateTime::Duration->new();
     
-    if ($self->{sttime}) {
-	$elapse = DateTime->now - $self->{sttime};
+    if ($selfStttime) {
+	$elapse = DateTime->now - $selfStttime;
 	
     }
     else {
-	$self->{sttime} = DateTime->now
+	$selfStttime = DateTime->now
     }
     
     my $stt = sprintf("Ela. %d:%02d:%02d", $elapse->in_units('hours'),
 		      $elapse->in_units('minutes'),
 		      $elapse->in_units('seconds'));
+    return $stt;
 }
 
 sub draw_label(){
