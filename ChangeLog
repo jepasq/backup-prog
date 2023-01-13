@@ -1,3 +1,13 @@
+* v0.0.2-20 (24 Nov. 2022 - 13 Jan. 2023) SLOC 410 PO 77/44
+- Start a test with separated WidgetList test file
+- ElapsedTime's sttime is now a global var
+- Add basic POD file for MainWindow
+- Test sttime before printing it in ElaspedTime widget
+- Add a MainWindow endless loop used to update elapsed time
+- time.pl uses a endless while loop
+- Add time.pl in examples directory
+- Update french messages catalog
+
 * v0.0.2-19 (19 Oct. 2022 - 24 Nov. 2022) SLOC 388 PO 24/66
 - Add some pre-call tests to Widget::refresh to fix unit tests
 - Improve label and box widget handling in unit tests
