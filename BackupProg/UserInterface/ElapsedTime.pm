@@ -81,6 +81,8 @@ sub update() {
 	print ".";
 	$self->draw_label();
 	addstr(10, 10, $self->get_elapsed_str());
+    } else {
+	addstr(10, 10, "ElapsedTime err.");
     }
 }
 

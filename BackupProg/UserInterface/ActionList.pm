@@ -10,6 +10,7 @@ use Curses;
 
 our @ISA = qw(BackupProg::UserInterface::Widget);
 
+# The list of to-be-printed actions
 our @actions=();
 
 sub new() {
