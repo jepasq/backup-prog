@@ -210,6 +210,7 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
 - Finally, texinfo : in BackupProg.texinfo
 **** TODO Fix ElapsedTime widget update issue
 :LOGBOOK:
+CLOCK: [2023-02-02 jeu. 02:25]--[2023-02-02 jeu. 02:56] =>  0:31
 CLOCK: [2023-01-13 ven. 04:16]--[2023-01-13 ven. 04:31] =>  0:15
 CLOCK: [2023-01-09 lun. 08:48]--[2023-01-09 lun. 09:12] =>  0:24
 CLOCK: [2023-01-03 mar. 06:40]--[2023-01-03 mar. 07:06] =>  0:26
@@ -234,6 +235,8 @@ CLOCK: [2022-11-24 jeu. 15:54]--[2022-11-24 jeu. 16:15] =>  0:21
   - [X] Now, how to get key event in the MainWindow endless loop  
 - [ ] A ElapsedTime update function that use the second compare thing to
     update text every second
+    - Tried to make Widget::window a file variable but failed because
+      ElapsedWidget should have called SUPER::get_window() to set its own
 *** DONE v0.0.2
 **** DONE Elapsed time widget issues
 :LOGBOOK:

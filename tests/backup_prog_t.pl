@@ -23,7 +23,9 @@ todo "Widget's window is accessible" => sub {
 		   'align' => Center, 'text_y' => 0,
 		   'border' => TopCenterLeft);
     my $w = BackupProg::UserInterface::Widget->new("Test", \%woptions);
-    ok($w->get_window()>0, "Can get widget's window");
+    my $win = $w->get_window();
+    # Here we have an error if win is unitialized
+    ok($win>0, "Can get widget's window");
 };
 
 # WidgetList unit tests

@@ -36,7 +36,6 @@ sub new() {
 
     $self->{lastseconds}  = -1;
 
-    
     # Already blessed by parent
     return $self;
 }

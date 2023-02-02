@@ -17,10 +17,6 @@ sub new(){
     $self->{log} = BackupProg::Common::Logger->instance();
     $self->{log}->LOGI("WidgetList: in constructor");
 
-    
-    # The list
-    $self->{widgets} = ();
-
     bless $self, $class;
     return $self;
 }
