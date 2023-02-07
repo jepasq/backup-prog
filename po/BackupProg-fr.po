@@ -4,13 +4,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Jérôme Pasquier <rainbru@free.fr>, 2009.
 #
-#: backup_prog.pl:47 BackupProg/Parser/CommandLine.pm:28
 msgid ""
 msgstr ""
 "Project-Id-Version: BackupProg 0.0.0-7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-01 06:28+0100\n"
-"PO-Revision-Date: 2022-12-01 06:27+0100\n"
+"POT-Creation-Date: 2023-02-07 08:52+0100\n"
+"PO-Revision-Date: 2023-02-07 09:24+0100\n"
 "Last-Translator: Jérôme Pasquier <rainbru@free.fr>\n"
 "Language-Team: French\n"
 "Language: fr\n"
@@ -18,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.2.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: backup_prog.pl:11 BackupProg/Common/Def.pm:39
 #: BackupProg/Parser/ConfigFile.pm:31
@@ -94,7 +93,8 @@ msgid "Booleans"
 msgstr "Booleans"
 
 #: BackupProg/Common/Def.pm:40
-msgid "0.0.1-19"
+#, fuzzy
+msgid "0.0.1-20"
 msgstr "0.0.1-19"
 
 #. LogLevels
@@ -300,7 +300,7 @@ msgstr "Aucun message"
 #: BackupProg/Exception/OpenFile.pm:46
 #, perl-format
 msgid "  Filename : %s\n"
-msgstr "Fichier : %s\n"
+msgstr " Fichier : %s\n"
 
 #. We use this contant to avoid gettext warnings when updating message catalog
 #: BackupProg/Parser/CommandLine.pm:28
@@ -376,29 +376,29 @@ msgid "$dir/$bas.$ext"
 msgstr ""
 
 #. possibly call Parent->new(@args) first
-#: BackupProg/UserInterface/ActionList.pm:19
+#: BackupProg/UserInterface/ActionList.pm:20
 msgid "Actions:"
-msgstr ""
+msgstr "Actions:"
 
 #. addstr(10, 10, $self->get_elapsed_str());
-#: BackupProg/UserInterface/ActionList.pm:23
+#: BackupProg/UserInterface/ActionList.pm:24
 msgid "Just testin'"
 msgstr ""
 
-#: BackupProg/UserInterface/ActionList.pm:41
+#: BackupProg/UserInterface/ActionList.pm:42
 msgid "ActionList: (@actions)in len is now "
 msgstr ""
 
-#: BackupProg/UserInterface/ActionList.pm:47
+#: BackupProg/UserInterface/ActionList.pm:48
 msgid "Printing ActionList with $action_number items..."
 msgstr ""
 
-#: BackupProg/UserInterface/ActionList.pm:49
+#: BackupProg/UserInterface/ActionList.pm:50
 msgid "aze"
 msgstr "aze"
 
 #. If 1, force the drawing of the widget's background with
-#. white space characters. 
+#. white space characters.
 #: BackupProg/UserInterface/Preferences.pm:26
 msgid "force_bce"
 msgstr ""
@@ -406,47 +406,58 @@ msgstr ""
 #. $self->{y} = $args{'y'};
 #. $self->{w} = $args{'w'};
 #. possibly call Parent->new(@args) first
-#: BackupProg/UserInterface/ElapsedTime.pm:21
+#: BackupProg/UserInterface/ElapsedTime.pm:25
 msgid "ELA. 0:00:00"
-msgstr ""
+msgstr "ELA. 0:00:00 "
 
-#: BackupProg/UserInterface/ElapsedTime.pm:26
+#: BackupProg/UserInterface/ElapsedTime.pm:30
 msgid "In ElapsedTime widget constructor. Label is '"
 msgstr ""
 
-#: BackupProg/UserInterface/ElapsedTime.pm:27
+#: BackupProg/UserInterface/ElapsedTime.pm:31
 #: BackupProg/UserInterface/Widget.pm:107
 #, fuzzy
 msgid "'"
 msgstr "' "
 
-#. addstr(10, 10, $self->get_elapsed_str());
-#: BackupProg/UserInterface/ElapsedTime.pm:30
+#: BackupProg/UserInterface/ElapsedTime.pm:34
 msgid "0:00:01"
 msgstr ""
 
-#: BackupProg/UserInterface/ElapsedTime.pm:50
+#: BackupProg/UserInterface/ElapsedTime.pm:56
 #, perl-format
 msgid "Ela. %d:%02d:%02d"
 msgstr ""
 
-#: BackupProg/UserInterface/ElapsedTime.pm:50
+#: BackupProg/UserInterface/ElapsedTime.pm:56
 msgid "hours"
 msgstr ""
 
-#: BackupProg/UserInterface/ElapsedTime.pm:51
+#: BackupProg/UserInterface/ElapsedTime.pm:57
 msgid "minutes"
 msgstr ""
 
-#: BackupProg/UserInterface/ElapsedTime.pm:52
+#: BackupProg/UserInterface/ElapsedTime.pm:58
 msgid "seconds"
 msgstr ""
+
+#: BackupProg/UserInterface/ElapsedTime.pm:77
+msgid "%S"
+msgstr "%S"
+
+#: BackupProg/UserInterface/ElapsedTime.pm:80
+msgid "."
+msgstr "."
+
+#: BackupProg/UserInterface/ElapsedTime.pm:84
+msgid "ElapsedTime err."
+msgstr "Erreur ElapsedTime."
 
 #: BackupProg/UserInterface/WidgetList.pm:18
 msgid "WidgetList: in constructor"
 msgstr ""
 
-#: BackupProg/UserInterface/WidgetList.pm:38
+#: BackupProg/UserInterface/WidgetList.pm:34
 msgid "WidgetList: (@widgets)in len is now "
 msgstr ""
 
@@ -470,7 +481,7 @@ msgstr "Message d'erreur"
 #: BackupProg/UserInterface/MainWindow.pm:72
 #: BackupProg/UserInterface/Widget.pm:65
 msgid "x"
-msgstr ""
+msgstr "x"
 
 #: BackupProg/UserInterface/MainWindow.pm:37
 #: BackupProg/UserInterface/MainWindow.pm:45
@@ -480,7 +491,7 @@ msgstr ""
 #: BackupProg/UserInterface/MainWindow.pm:72
 #: BackupProg/UserInterface/Widget.pm:65
 msgid "y"
-msgstr ""
+msgstr "y"
 
 #: BackupProg/UserInterface/MainWindow.pm:37
 #: BackupProg/UserInterface/MainWindow.pm:45
@@ -490,7 +501,7 @@ msgstr ""
 #: BackupProg/UserInterface/MainWindow.pm:72
 #: BackupProg/UserInterface/Widget.pm:64
 msgid "h"
-msgstr ""
+msgstr "h"
 
 #. Shift an hash
 #: BackupProg/UserInterface/MainWindow.pm:38
@@ -501,7 +512,7 @@ msgstr ""
 #: BackupProg/UserInterface/MainWindow.pm:73
 #: BackupProg/UserInterface/Widget.pm:48
 msgid "align"
-msgstr ""
+msgstr "alignement"
 
 #: BackupProg/UserInterface/MainWindow.pm:39
 #: BackupProg/UserInterface/MainWindow.pm:47
@@ -511,7 +522,7 @@ msgstr ""
 #: BackupProg/UserInterface/MainWindow.pm:74
 #: BackupProg/UserInterface/Widget.pm:53 BackupProg/UserInterface/Widget.pm:55
 msgid "text_y"
-msgstr ""
+msgstr "text_y"
 
 #: BackupProg/UserInterface/MainWindow.pm:40
 #: BackupProg/UserInterface/MainWindow.pm:48
@@ -521,7 +532,7 @@ msgstr ""
 #: BackupProg/UserInterface/MainWindow.pm:75
 #: BackupProg/UserInterface/Widget.pm:52
 msgid "border"
-msgstr ""
+msgstr "bordure"
 
 #: BackupProg/UserInterface/MainWindow.pm:41
 msgid "Menu=Ctrl+T"
@@ -540,7 +551,7 @@ msgstr ""
 msgid "blessed"
 msgstr ""
 
-#. Text alignment constants    
+#. Text alignment constants
 #: BackupProg/UserInterface/Widget.pm:21
 msgid "Left"
 msgstr ""
