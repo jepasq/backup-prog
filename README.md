@@ -14,7 +14,9 @@ This will download nearly 1Tb of new packages on a brand new system.
 
 ## Installation
 
-`backup-prog` needs to be installed before correctly running.
+`backup-prog` needs to be installed before correctly running but before 
+copying files, you may want to tune destination directory according to your
+filesystem.
 
 ### Destination
 
@@ -22,10 +24,16 @@ The modules destination is defined in the *m4/CommonRules.m4* file
 as `MOD_TARGET` variable. The executable script will be installed 
 as the name stored in the variable `EXE_TARGET`.
 
-To install backup_prog :
-- call `gen-makefiles.sh`
+### Linking or copying
+
+Installation is based on *m4*-powered generated Makefiles.
+
+To install *backup_prog*, follow these steps :
+- call `gen-makefiles.sh` to write newly-generated Makefiles.
 - `make links` for development installation (use symbolic links)
 - `make install` for production (will copy files).
+
+Please note that the *manpage* is always copied, never linked.
 
 ## Unit tests
 
@@ -34,6 +42,9 @@ This package is shipped with unit tests written using perl's
 be called after a simple call to `./gen-makefiles.sh` :
 
 	make check
+	
+Installation may be needed on some systems for the test script to find
+the developpement modules.	
 
 ## POD documentation
 
