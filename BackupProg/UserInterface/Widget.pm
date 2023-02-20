@@ -15,7 +15,6 @@ use Curses;
 
 use Scalar::Util 'blessed';
 
-
 use constant {
 # Text alignment constants    
     Left   => 101,
@@ -106,6 +105,8 @@ sub draw_label(){
     else {
 	my $msg="Can't add string '".$self->{label}."'";
 	# print $msg; # Do not die as it occurs also in unit tests
+	my $log = BackupProg::Common::Logger->instance();
+	$log->LOGW($log)
     }
 }
 
