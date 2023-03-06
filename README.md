@@ -26,7 +26,7 @@ as the name stored in the variable `EXE_TARGET`.
 
 ### Linking or copying
 
-Installation is based on *m4*-powered generated Makefiles.
+System-wide Installation is based on *m4*-powered generated Makefiles.
 
 To install *backup_prog*, follow these steps :
 - call `gen-makefiles.sh` to write newly-generated Makefiles.
@@ -34,6 +34,8 @@ To install *backup_prog*, follow these steps :
 - `make install` for production (will copy files).
 
 Please note that the *manpage* is always copied, never linked.
+The installation is always system-wide (i.e. for all users), not only for
+the installer user.
 
 ## Unit tests
 
