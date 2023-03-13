@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: BackupProg 0.0.0-7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-07 08:52+0100\n"
-"PO-Revision-Date: 2023-02-07 09:24+0100\n"
+"PO-Revision-Date: 2023-03-13 07:40+0100\n"
 "Last-Translator: Jérôme Pasquier <rainbru@free.fr>\n"
 "Language-Team: French\n"
 "Language: fr\n"
@@ -93,9 +93,8 @@ msgid "Booleans"
 msgstr "Booleans"
 
 #: BackupProg/Common/Def.pm:40
-#, fuzzy
 msgid "0.0.1-20"
-msgstr "0.0.1-19"
+msgstr "0.0.1-20"
 
 #. LogLevels
 #: BackupProg/Common/Logger.pm:24
@@ -272,7 +271,7 @@ msgstr ""
 "================\n"
 
 #: BackupProg/Exception/BaseException.pm:60
-#, fuzzy, perl-format
+#, perl-format
 msgid ""
 "\n"
 "  Message  : %s\n"
@@ -353,19 +352,19 @@ msgstr "backup"
 
 #: BackupProg/Parser/ConfigFile.pm:32
 msgid "rc"
-msgstr ""
+msgstr "rc"
 
 #: BackupProg/Parser/ConfigFile.pm:32
 msgid "hourly.rc"
-msgstr ""
+msgstr "hourly.rc"
 
 #: BackupProg/Parser/ConfigFile.pm:32
 msgid "weekly.rc"
-msgstr ""
+msgstr "weekly.rc"
 
 #: BackupProg/Parser/ConfigFile.pm:32
 msgid "daily.rc"
-msgstr ""
+msgstr "daily.rc"
 
 #: BackupProg/Parser/ConfigFile.pm:32
 msgid "complete.rc"
@@ -408,7 +407,7 @@ msgstr ""
 #. possibly call Parent->new(@args) first
 #: BackupProg/UserInterface/ElapsedTime.pm:25
 msgid "ELA. 0:00:00"
-msgstr "ELA. 0:00:00 "
+msgstr "ELA. 0:00:00"
 
 #: BackupProg/UserInterface/ElapsedTime.pm:30
 msgid "In ElapsedTime widget constructor. Label is '"
@@ -416,9 +415,8 @@ msgstr ""
 
 #: BackupProg/UserInterface/ElapsedTime.pm:31
 #: BackupProg/UserInterface/Widget.pm:107
-#, fuzzy
 msgid "'"
-msgstr "' "
+msgstr "'"
 
 #: BackupProg/UserInterface/ElapsedTime.pm:34
 msgid "0:00:01"
@@ -599,20 +597,20 @@ msgstr ""
 
 #: BackupProg/UserInterface/Widget.pm:100
 msgid "Alignment '"
-msgstr ""
+msgstr "Alignement '"
 
 #: BackupProg/UserInterface/Widget.pm:100
 #: BackupProg/UserInterface/Widget.pm:121
 msgid "' not implemented"
-msgstr ""
+msgstr "' non implémenté"
 
 #: BackupProg/UserInterface/Widget.pm:107
 msgid "Can't add string '"
-msgstr ""
+msgstr "Ne peut ajouter la chaîne '"
 
 #: BackupProg/UserInterface/Widget.pm:121
 msgid "Border '"
-msgstr ""
+msgstr "Bordure '"
 
 #~ msgid "We are in MainWindow::new()"
 #~ msgstr "Nous sommes dans MainWindow::new()"

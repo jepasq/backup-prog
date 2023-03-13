@@ -102,6 +102,7 @@ file      = /var/log/backup_prog.hourly
 </Hourly or any other opened markup>
 **** Make and improve translation
 :LOGBOOK:
+CLOCK: [2023-03-13 lun. 07:37]--[2023-03-13 lun. 07:46] =>  0:09
 CLOCK: [2023-02-07 mar. 09:14]--[2023-02-07 mar. 09:24] =>  0:10
 CLOCK: [2022-12-01 jeu. 06:14]--[2022-12-01 jeu. 06:29] =>  0:15
 CLOCK: [2022-11-09 mer. 11:53]--[2022-11-09 mer. 12:01] =>  0:08
