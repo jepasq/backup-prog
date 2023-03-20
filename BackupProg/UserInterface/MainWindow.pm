@@ -78,7 +78,9 @@ sub new(){
     
     #    addstr(1, 1, "aze");
     while (1) {
-        #refresh();    # Makes the screen empty
+	# Makes the screen empty : must be removed when the "Elapsed err."
+	# error is fixed
+        refresh();    
 	$et->update();
 	
     }

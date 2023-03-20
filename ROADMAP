@@ -213,6 +213,7 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
 - Finally, texinfo : in BackupProg.texinfo
 **** TODO Fix ElapsedTime widget update issue
 :LOGBOOK:
+CLOCK: [2023-03-20 lun. 05:35]--[2023-03-20 lun. 05:50] =>  0:15
 CLOCK: [2023-02-20 lun. 03:42]--[2023-02-20 lun. 03:59] =>  0:17
 CLOCK: [2023-02-02 jeu. 02:25]--[2023-02-02 jeu. 02:56] =>  0:31
 CLOCK: [2023-01-13 ven. 04:16]--[2023-01-13 ven. 04:31] =>  0:15
@@ -241,6 +242,8 @@ CLOCK: [2022-11-24 jeu. 15:54]--[2022-11-24 jeu. 16:15] =>  0:21
     update text every second
     - Tried to make Widget::window a file variable but failed because
       ElapsedWidget should have called SUPER::get_window() to set its own
+    - [ ] We actually have a "Elasped err." error message from ElapsedTime
+      widget. Fix this before commenting =refresh();= in MainWindow.pm
 *** DONE v0.0.2
 **** DONE Elapsed time widget issues
 :LOGBOOK:

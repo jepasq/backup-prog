@@ -17,9 +17,6 @@ my $selfStttime = 0;
 
 sub new() {
     my ($class, @args) = @_;
-
-#    $self->{y} = $args{'y'};
-#    $self->{w} = $args{'w'};
     
     # possibly call Parent->new(@args) first
     my $self = $class->SUPER::new('ELA. 0:00:00', @args);
