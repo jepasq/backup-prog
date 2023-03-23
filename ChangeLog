@@ -1,3 +1,13 @@
+* v0.0.2-21 (13 Jan. 2023 - 23 Mar. 2023) SLOC 409 PO 28/98
+- Switch to hardcoded position in ElaspedTime::update
+- Fix a str comparison error in ElapsedTime::update
+- Calling refresh in endless loop to show ElapsedTime widget err.
+- Improve some translatable strings
+- Widget win test uses logger if not found
+- Improve the README's installation section
+- Improve existing unit tests and remove unused WidgetList::widgets
+- Add a printed error if ElapsedTime's lastseconds is not set
+
 * v0.0.2-20 (24 Nov. 2022 - 13 Jan. 2023) SLOC 410 PO 77/44
 - Start a test with separated WidgetList test file
 - ElapsedTime's sttime is now a global var
