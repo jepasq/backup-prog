@@ -80,8 +80,8 @@ sub new(){
     while (1) {
 	# Makes the screen empty : must be removed when the "Elapsed err."
 	# error is fixed
-        refresh();    
 	$et->update();
+        refresh();    
 	
     }
     #getch();

@@ -26,7 +26,7 @@ sub new() {
     $selfStttime = DateTime->now;
     $log->LOGI("In ElapsedTime widget constructor. Label is '".
 	       $self->SUPER::get_label()."'");
-    addstr(10, 10, $self->get_elapsed_str());
+    #addstr(10, 10, $self->get_elapsed_str());
 
     $self->{label} = '0:00:01'; #$self->get_elapsed_str();
     $self = $class->SUPER::new($self->{label}, @args);
@@ -74,9 +74,8 @@ sub update() {
     my $date = strftime "%S", localtime;
     if ($date ne $self->{lastseconds}) {
 	$self->{lastseconds} = $date;
-	print ".";
 	$self->draw_label();
-	addstr(10, 10, $self->get_elapsed_str());
+	addstr(3, 73, $self->get_elapsed_str());
     } else {
 #	addstr(10, 10, "ElapsedTime err.");
     }
