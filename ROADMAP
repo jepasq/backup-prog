@@ -211,8 +211,11 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
   =rman -f html backup_prog.1 > backup_prog.1.html=
   **macro "" not recognized -- ignoring**
 - Finally, texinfo : in BackupProg.texinfo
-**** TODO Fix ElapsedTime widget update issue
+**** TODO Print back ElapsedTime content
+- [ ] Commenting =refresh();= in MainWindow.pm hide ElapsedTime text
+**** DONE Fix ElapsedTime widget update issue
 :LOGBOOK:
+CLOCK: [2023-03-29 mer. 10:26]--[2023-03-29 mer. 10:27] =>  0:01
 CLOCK: [2023-03-23 jeu. 05:05]--[2023-03-23 jeu. 05:22] =>  0:17
 CLOCK: [2023-03-23 jeu. 04:47]--[2023-03-23 jeu. 05:01] =>  0:14
 CLOCK: [2023-03-20 lun. 05:35]--[2023-03-20 lun. 05:50] =>  0:15
@@ -244,9 +247,9 @@ CLOCK: [2022-11-24 jeu. 15:54]--[2022-11-24 jeu. 16:15] =>  0:21
     update text every second
   - Tried to make Widget::window a file variable but failed because
     ElapsedWidget should have called SUPER::get_window() to set its own
-- [ ] We actually have a "Elasped err." error message from ElapsedTime
-  widget. Fix this before commenting =refresh();= in MainWindow.pm
-- [ ] Print ElapsedTime at the right position. Done,  hardcoded but can't
+- [X] We actually have a "Elasped err." error message from ElapsedTime
+  widget.
+- [X] Print ElapsedTime at the right position. Done,  hardcoded but can't
   see the string if refresh is removed.  
 *** DONE v0.0.2
 **** DONE Elapsed time widget issues
