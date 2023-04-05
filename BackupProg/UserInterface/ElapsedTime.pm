@@ -74,8 +74,9 @@ sub update() {
     my $date = strftime "%S", localtime;
     if ($date ne $self->{lastseconds}) {
 	$self->{lastseconds} = $date;
+	$self->{label} = $self->get_elapsed_str();
 	$self->draw_label();
-	addstr(3, 73, $self->get_elapsed_str());
+#	addstr(3, 73, $self->get_elapsed_str());
     } else {
 #	addstr(10, 10, "ElapsedTime err.");
     }

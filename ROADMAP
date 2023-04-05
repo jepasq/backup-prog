@@ -212,7 +212,11 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
   **macro "" not recognized -- ignoring**
 - Finally, texinfo : in BackupProg.texinfo
 **** TODO Print back ElapsedTime content
+:LOGBOOK:
+CLOCK: [2023-04-05 mer. 11:16]--[2023-04-05 mer. 11:40] =>  0:24
+:END:
 - [ ] Commenting =refresh();= in MainWindow.pm hide ElapsedTime text
+  We may try to print in a window instead of using =addstr()= global fun.
 **** DONE Fix ElapsedTime widget update issue
 :LOGBOOK:
 CLOCK: [2023-03-29 mer. 10:26]--[2023-03-29 mer. 10:27] =>  0:01
