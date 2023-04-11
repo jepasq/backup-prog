@@ -15,4 +15,5 @@ backup_prog - GPLv3 - A flexible backup tool written in perl/curses.
    (8 items by revision)
 
 * v0.0.2-22 (23 Mar. 2023 - ???) SLOC ??? PO ??/??
-- (1) Close the ElapsedTime print issue ROADMAP section
+- (2) Update some translatable messages
+- Close the ElapsedTime print issue ROADMAP section

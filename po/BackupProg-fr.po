@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BackupProg 0.0.0-7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-07 08:52+0100\n"
-"PO-Revision-Date: 2023-03-13 07:40+0100\n"
+"POT-Creation-Date: 2023-04-11 09:24+0200\n"
+"PO-Revision-Date: 2023-04-11 09:41+0200\n"
 "Last-Translator: Jérôme Pasquier <rainbru@free.fr>\n"
 "Language-Team: French\n"
 "Language: fr\n"
@@ -156,7 +156,7 @@ msgstr "a"
 #: BackupProg/UserInterface/MainWindow.pm:59
 #: BackupProg/UserInterface/MainWindow.pm:66
 #: BackupProg/UserInterface/MainWindow.pm:72
-#: BackupProg/UserInterface/Widget.pm:50 BackupProg/UserInterface/Widget.pm:64
+#: BackupProg/UserInterface/Widget.pm:49 BackupProg/UserInterface/Widget.pm:63
 msgid "w"
 msgstr "w"
 
@@ -173,7 +173,7 @@ msgid "v"
 msgstr "v"
 
 #: BackupProg/Common/Logger.pm:111 BackupProg/Common/Logger.pm:151
-#: BackupProg/UserInterface/Widget.pm:67
+#: BackupProg/UserInterface/Widget.pm:66
 msgid " "
 msgstr " "
 
@@ -368,11 +368,11 @@ msgstr "daily.rc"
 
 #: BackupProg/Parser/ConfigFile.pm:32
 msgid "complete.rc"
-msgstr ""
+msgstr "complete.rc"
 
 #: BackupProg/Parser/ConfigFile.pm:39
 msgid "$dir/$bas.$ext"
-msgstr ""
+msgstr "$dir/$bas.$ext"
 
 #. possibly call Parent->new(@args) first
 #: BackupProg/UserInterface/ActionList.pm:20
@@ -382,11 +382,11 @@ msgstr "Actions:"
 #. addstr(10, 10, $self->get_elapsed_str());
 #: BackupProg/UserInterface/ActionList.pm:24
 msgid "Just testin'"
-msgstr ""
+msgstr "Just un test"
 
 #: BackupProg/UserInterface/ActionList.pm:42
 msgid "ActionList: (@actions)in len is now "
-msgstr ""
+msgstr "ActionList: (@actions) la longueur est maintenant "
 
 #: BackupProg/UserInterface/ActionList.pm:48
 msgid "Printing ActionList with $action_number items..."
@@ -400,60 +400,51 @@ msgstr "aze"
 #. white space characters.
 #: BackupProg/UserInterface/Preferences.pm:26
 msgid "force_bce"
-msgstr ""
+msgstr "force_bce"
 
-#. $self->{y} = $args{'y'};
-#. $self->{w} = $args{'w'};
 #. possibly call Parent->new(@args) first
-#: BackupProg/UserInterface/ElapsedTime.pm:25
+#: BackupProg/UserInterface/ElapsedTime.pm:22
 msgid "ELA. 0:00:00"
 msgstr "ELA. 0:00:00"
 
-#: BackupProg/UserInterface/ElapsedTime.pm:30
+#: BackupProg/UserInterface/ElapsedTime.pm:27
 msgid "In ElapsedTime widget constructor. Label is '"
 msgstr ""
 
-#: BackupProg/UserInterface/ElapsedTime.pm:31
-#: BackupProg/UserInterface/Widget.pm:107
+#: BackupProg/UserInterface/ElapsedTime.pm:28
+#: BackupProg/UserInterface/Widget.pm:106
 msgid "'"
 msgstr "'"
 
-#: BackupProg/UserInterface/ElapsedTime.pm:34
+#. addstr(10, 10, $self->get_elapsed_str());
+#: BackupProg/UserInterface/ElapsedTime.pm:31
 msgid "0:00:01"
-msgstr ""
+msgstr "0:00:01"
 
-#: BackupProg/UserInterface/ElapsedTime.pm:56
+#: BackupProg/UserInterface/ElapsedTime.pm:53
 #, perl-format
 msgid "Ela. %d:%02d:%02d"
 msgstr ""
 
-#: BackupProg/UserInterface/ElapsedTime.pm:56
+#: BackupProg/UserInterface/ElapsedTime.pm:53
 msgid "hours"
-msgstr ""
+msgstr "heures"
 
-#: BackupProg/UserInterface/ElapsedTime.pm:57
+#: BackupProg/UserInterface/ElapsedTime.pm:54
 msgid "minutes"
-msgstr ""
+msgstr "minutes"
 
-#: BackupProg/UserInterface/ElapsedTime.pm:58
+#: BackupProg/UserInterface/ElapsedTime.pm:55
 msgid "seconds"
-msgstr ""
+msgstr "secondes"
 
-#: BackupProg/UserInterface/ElapsedTime.pm:77
+#: BackupProg/UserInterface/ElapsedTime.pm:74
 msgid "%S"
 msgstr "%S"
 
-#: BackupProg/UserInterface/ElapsedTime.pm:80
-msgid "."
-msgstr "."
-
-#: BackupProg/UserInterface/ElapsedTime.pm:84
-msgid "ElapsedTime err."
-msgstr "Erreur ElapsedTime."
-
 #: BackupProg/UserInterface/WidgetList.pm:18
 msgid "WidgetList: in constructor"
-msgstr ""
+msgstr "WidgetList: dans le constructeur"
 
 #: BackupProg/UserInterface/WidgetList.pm:34
 msgid "WidgetList: (@widgets)in len is now "
@@ -477,7 +468,7 @@ msgstr "Message d'erreur"
 #: BackupProg/UserInterface/MainWindow.pm:59
 #: BackupProg/UserInterface/MainWindow.pm:66
 #: BackupProg/UserInterface/MainWindow.pm:72
-#: BackupProg/UserInterface/Widget.pm:65
+#: BackupProg/UserInterface/Widget.pm:64
 msgid "x"
 msgstr "x"
 
@@ -487,7 +478,7 @@ msgstr "x"
 #: BackupProg/UserInterface/MainWindow.pm:59
 #: BackupProg/UserInterface/MainWindow.pm:66
 #: BackupProg/UserInterface/MainWindow.pm:72
-#: BackupProg/UserInterface/Widget.pm:65
+#: BackupProg/UserInterface/Widget.pm:64
 msgid "y"
 msgstr "y"
 
@@ -497,7 +488,7 @@ msgstr "y"
 #: BackupProg/UserInterface/MainWindow.pm:59
 #: BackupProg/UserInterface/MainWindow.pm:66
 #: BackupProg/UserInterface/MainWindow.pm:72
-#: BackupProg/UserInterface/Widget.pm:64
+#: BackupProg/UserInterface/Widget.pm:63
 msgid "h"
 msgstr "h"
 
@@ -508,7 +499,7 @@ msgstr "h"
 #: BackupProg/UserInterface/MainWindow.pm:60
 #: BackupProg/UserInterface/MainWindow.pm:67
 #: BackupProg/UserInterface/MainWindow.pm:73
-#: BackupProg/UserInterface/Widget.pm:48
+#: BackupProg/UserInterface/Widget.pm:47
 msgid "align"
 msgstr "alignement"
 
@@ -518,7 +509,7 @@ msgstr "alignement"
 #: BackupProg/UserInterface/MainWindow.pm:61
 #: BackupProg/UserInterface/MainWindow.pm:68
 #: BackupProg/UserInterface/MainWindow.pm:74
-#: BackupProg/UserInterface/Widget.pm:53 BackupProg/UserInterface/Widget.pm:55
+#: BackupProg/UserInterface/Widget.pm:52 BackupProg/UserInterface/Widget.pm:54
 msgid "text_y"
 msgstr "text_y"
 
@@ -528,7 +519,7 @@ msgstr "text_y"
 #: BackupProg/UserInterface/MainWindow.pm:62
 #: BackupProg/UserInterface/MainWindow.pm:69
 #: BackupProg/UserInterface/MainWindow.pm:75
-#: BackupProg/UserInterface/Widget.pm:52
+#: BackupProg/UserInterface/Widget.pm:51
 msgid "border"
 msgstr "bordure"
 
@@ -538,79 +529,86 @@ msgstr ""
 
 #: BackupProg/UserInterface/MainWindow.pm:57
 msgid "mode"
-msgstr ""
+msgstr "mode"
 
 #: BackupProg/UserInterface/MainWindow.pm:63
 #, perl-format
 msgid "v%s"
-msgstr ""
+msgstr "v%s"
 
 #: BackupProg/UserInterface/Widget.pm:16
 msgid "blessed"
 msgstr ""
 
 #. Text alignment constants
-#: BackupProg/UserInterface/Widget.pm:21
+#: BackupProg/UserInterface/Widget.pm:20
 msgid "Left"
 msgstr ""
 
-#: BackupProg/UserInterface/Widget.pm:22
+#: BackupProg/UserInterface/Widget.pm:21
 msgid "Right"
 msgstr ""
 
-#: BackupProg/UserInterface/Widget.pm:23
+#: BackupProg/UserInterface/Widget.pm:22
 msgid "Center"
 msgstr ""
 
 #. Border style constants (see SCREEN.layout file)
-#: BackupProg/UserInterface/Widget.pm:25
+#: BackupProg/UserInterface/Widget.pm:24
 msgid "TopCenterLeft"
-msgstr ""
+msgstr "TopCenterLeft"
 
 #. Should be 'backup_prog'
-#: BackupProg/UserInterface/Widget.pm:26
+#: BackupProg/UserInterface/Widget.pm:25
 msgid "TopCenterRight"
-msgstr ""
+msgstr "TopCenterRight"
 
 #. Should be the mode
-#: BackupProg/UserInterface/Widget.pm:27
+#: BackupProg/UserInterface/Widget.pm:26
 msgid "TopLeft"
 msgstr ""
 
-#: BackupProg/UserInterface/Widget.pm:35
+#: BackupProg/UserInterface/Widget.pm:34
 msgid "Align"
-msgstr ""
+msgstr "Alignement"
 
-#: BackupProg/UserInterface/Widget.pm:36
+#: BackupProg/UserInterface/Widget.pm:35
 msgid "BorderTypes"
 msgstr ""
 
-#: BackupProg/UserInterface/Widget.pm:57
+#: BackupProg/UserInterface/Widget.pm:56
 msgid ""
 "The Widget's 'text_y' property is lesser than 1. The label may be masked by "
 "the widget's border (Widget's label is '"
 msgstr ""
+"La propriété 'text_y' du Widget est inférieur a 1. The label peut être "
+"masqué par sa bordure (Le label est '"
 
-#: BackupProg/UserInterface/Widget.pm:59
+#: BackupProg/UserInterface/Widget.pm:58
 msgid ")"
-msgstr ""
+msgstr ")"
 
-#: BackupProg/UserInterface/Widget.pm:100
+#: BackupProg/UserInterface/Widget.pm:99
 msgid "Alignment '"
 msgstr "Alignement '"
 
-#: BackupProg/UserInterface/Widget.pm:100
-#: BackupProg/UserInterface/Widget.pm:121
+#: BackupProg/UserInterface/Widget.pm:99 BackupProg/UserInterface/Widget.pm:122
 msgid "' not implemented"
 msgstr "' non implémenté"
 
-#: BackupProg/UserInterface/Widget.pm:107
+#: BackupProg/UserInterface/Widget.pm:106
 msgid "Can't add string '"
 msgstr "Ne peut ajouter la chaîne '"
 
-#: BackupProg/UserInterface/Widget.pm:121
+#: BackupProg/UserInterface/Widget.pm:122
 msgid "Border '"
 msgstr "Bordure '"
+
+#~ msgid "."
+#~ msgstr "."
+
+#~ msgid "ElapsedTime err."
+#~ msgstr "Erreur ElapsedTime."
 
 #~ msgid "We are in MainWindow::new()"
 #~ msgstr "Nous sommes dans MainWindow::new()"
