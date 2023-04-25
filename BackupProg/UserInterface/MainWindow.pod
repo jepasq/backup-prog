@@ -2,18 +2,25 @@
 
 =head1 NAME
 
-F<BackupProg::UserInterface::MainWidget> is a the central widget,
-based on an ncurses window. It contains all other widgets.
+F<BackupProg::UserInterface::MainWidget>
 
 =head1 SYNOPSIS
 
 =head1 DESCRIPTION
 
+F<BackupProg::UserInterface::MainWidget> is a the central widget,
+based on an ncurses window. It contains all other widgets.
+
 =head1 CONSTANTS
+
+None
 
 =head1 EXPORTED TAGS
 
 =head1 CONSTRUCTOR
+
+Calling the constructor makes the widget enter a endless while loop that
+will perform needed actions.
 
 =over 4
 
@@ -26,5 +33,7 @@ based on an ncurses window. It contains all other widgets.
 =back
 
 =head1 KNOWN BUGS
+
+Actually, a bug prevents elapsedTime widget printing.
 
 =head1 SEE ALSO

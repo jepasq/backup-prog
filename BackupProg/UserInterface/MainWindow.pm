@@ -15,12 +15,7 @@ use BackupProg::UserInterface::ElapsedTime;
 use BackupProg::UserInterface::ActionList;
 use Curses;
 
-
-#use BackupProg::Exception::BadArgument;
-
 sub new(){
-    #print __"We are in MainWindow::new()", "\n";
-    
     my $log = BackupProg::Common::Logger->instance();
     $log->LOGI("Informative message");
     $log->LOGW("Warning message");
@@ -80,8 +75,9 @@ sub new(){
     while (1) {
 	# Makes the screen empty : must be removed when the "Elapsed err."
 	# error is fixed
-        refresh();    
+
 	$et->update();
+#        refresh();    # Black screen if uncommented
 	
     }
     #getch();
