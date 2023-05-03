@@ -15,6 +15,8 @@ use BackupProg::UserInterface::ElapsedTime;
 use BackupProg::UserInterface::ActionList;
 use Curses;
 
+use IO::Handle;
+
 sub new(){
     my $log = BackupProg::Common::Logger->instance();
     $log->LOGI("Informative message");
@@ -70,6 +72,9 @@ sub new(){
 		   'border' => TopCenterLeft);
     my $al = BackupProg::UserInterface::ActionList->new(\%woptions6);
 
+
+    my $stdin = new IO::Handle;
+    $stdin->fdopen( fileno( STDIN ), "r" ) || die "Cannot open STDIN";
     
     #    addstr(1, 1, "aze");
     while (1) {
@@ -78,7 +83,11 @@ sub new(){
 
 	$et->update();
 #        refresh();    # Black screen if uncommented
-	
+	while ( my $char = $stdin->getc() ) {
+	    print "Open menu..." if ( ord( $char ) == 20 ); # Ctrl+T
+	    #print "ord: " . ord($char) . "\n";
+	}
+#	my $ch = getch();
     }
     #getch();
     endwin();  # Restore the screen at the end of the program

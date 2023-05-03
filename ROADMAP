@@ -170,6 +170,15 @@ I18n for backup instructions :
 - UserInterface::Mainwindow->new($conf)
    skin parsing
    widget creation
+**** TODO Mainpage must handle menu
+:LOGBOOK:
+CLOCK: [2023-05-03 mer. 10:07]--[2023-05-03 mer. 10:19] =>  0:12
+:END:
+With Ctrl+T keys
+- [X] Try to add event handling statement in MainWindow main loop
+- [ ] Maybe a new UserInterface module ?
+
+  
 **** TODO May implement unit tests
 :LOGBOOK:
 CLOCK: [2023-01-27 ven. 07:36]--[2023-01-27 ven. 07:52] =>  0:16
