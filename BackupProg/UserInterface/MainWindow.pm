@@ -9,6 +9,7 @@ use Error qw(:try);
 use BackupProg::Common::Logger;
 use BackupProg::Common::Def;
 use BackupProg::UserInterface::Preferences;
+use BackupProg::UserInterface::MainMenu;
 use BackupProg::UserInterface::Widget qw(:Align :BorderTypes);
 use BackupProg::UserInterface::WidgetList;
 use BackupProg::UserInterface::ElapsedTime;
@@ -75,6 +76,9 @@ sub new(){
 
     my $stdin = new IO::Handle;
     $stdin->fdopen( fileno( STDIN ), "r" ) || die "Cannot open STDIN";
+
+
+    my $menu = BackupProg::UserInterface::MainMenu->new();
     
     #    addstr(1, 1, "aze");
     while (1) {
@@ -86,6 +90,7 @@ sub new(){
 	while ( my $char = $stdin->getc() ) {
 	    print "Open menu..." if ( ord( $char ) == 20 ); # Ctrl+T
 	    #print "ord: " . ord($char) . "\n";
+	    # $menu->show();
 	}
 #	my $ch = getch();
     }
