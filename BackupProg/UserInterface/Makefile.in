@@ -4,6 +4,6 @@ include(`CommonRules.m4')
 BP_GEN_HEADER()
 BP_GEN_SUBDIRS()
 BP_GEN_MOD_SOURCES(`BackupProg/UserInterface',
-	`ActionList ElapsedTime MainWindow Preferences Widget WidgetList' )
+	`ActionList ElapsedTime MainMenu MainWindow Preferences Widget WidgetList' )
 BP_GEN_MOD_RULES()
 BP_GEN_CLEAN_RULES()
