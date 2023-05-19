@@ -29,6 +29,10 @@ will perform needed actions.
 
 =over 4
 
+=item show()
+
+Show the menu and enter the menu's event handling loop.
+
 =back
 
 =head1 KNOWN BUGS
