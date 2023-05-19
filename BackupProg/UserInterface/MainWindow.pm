@@ -88,9 +88,12 @@ sub new(){
 	$et->update();
 #        refresh();    # Black screen if uncommented
 	while ( my $char = $stdin->getc() ) {
-	    print "Open menu..." if ( ord( $char ) == 20 ); # Ctrl+T
-	    #print "ord: " . ord($char) . "\n";
-	    # $menu->show();
+	    if ( ord( $char ) == 20 ) {
+		# Ctrl+T
+		$menu->show();
+	    } else {
+		print "ord: " . ord($char) . "\n";
+	    }
 	}
 #	my $ch = getch();
     }

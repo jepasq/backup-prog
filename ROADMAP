@@ -172,6 +172,7 @@ I18n for backup instructions :
    widget creation
 **** TODO Mainpage must handle menu
 :LOGBOOK:
+CLOCK: [2023-05-19 ven. 02:31]--[2023-05-19 ven. 02:44] =>  0:13
 CLOCK: [2023-05-12 ven. 12:28]--[2023-05-12 ven. 12:36] =>  0:08
 CLOCK: [2023-05-12 ven. 11:27]--[2023-05-12 ven. 11:34] =>  0:07
 CLOCK: [2023-05-03 mer. 10:07]--[2023-05-03 mer. 10:19] =>  0:12
@@ -179,7 +180,7 @@ CLOCK: [2023-05-03 mer. 10:07]--[2023-05-03 mer. 10:19] =>  0:12
 With Ctrl+T keys
 - [X] Try to add event handling statement in MainWindow main loop
 - [X] Maybe a new UserInterface module ?
-- [ ] Instantiate it in MainWindow ctor
+- [X] Instantiate it in MainWindow ctor
 - [ ] add a show() function called when 
 **** TODO May implement unit tests
 :LOGBOOK:
