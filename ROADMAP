@@ -4,6 +4,7 @@
 ** v0.1.0
 *** TODO v0.0.3
 **** May add a d-bus interface
+- May use =d-feet= to check for created iface.
 **** Maybe skin handling
 #+BEGIN_EXAMPLE
 # INHERITS : Skin files with extension will not be read (let us create 
@@ -172,6 +173,7 @@ I18n for backup instructions :
    widget creation
 **** TODO Mainpage must handle menu
 :LOGBOOK:
+CLOCK: [2023-05-30 mar. 04:23]--[2023-05-30 mar. 04:47] =>  0:24
 CLOCK: [2023-05-19 ven. 02:31]--[2023-05-19 ven. 02:44] =>  0:13
 CLOCK: [2023-05-12 ven. 12:28]--[2023-05-12 ven. 12:36] =>  0:08
 CLOCK: [2023-05-12 ven. 11:27]--[2023-05-12 ven. 11:34] =>  0:07
@@ -183,6 +185,7 @@ With Ctrl+T keys
 - [X] Instantiate it in MainWindow ctor
 - [X] add a show() function
 - [ ] Must create a window and add a sleep of several seconds
+ =Undefined subroutine &BackupProg::UserInterface::MainMenu::newwin=
 - [ ] Must add a MainMenu loop and exit with ESC  
 **** TODO May implement unit tests
 :LOGBOOK:
