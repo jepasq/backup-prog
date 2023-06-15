@@ -173,6 +173,7 @@ I18n for backup instructions :
    widget creation
 **** TODO Mainpage must handle menu
 :LOGBOOK:
+CLOCK: [2023-06-15 jeu. 04:59]--[2023-06-15 jeu. 06:02] =>  1:03
 CLOCK: [2023-05-30 mar. 04:23]--[2023-05-30 mar. 04:47] =>  0:24
 CLOCK: [2023-05-19 ven. 02:31]--[2023-05-19 ven. 02:44] =>  0:13
 CLOCK: [2023-05-12 ven. 12:28]--[2023-05-12 ven. 12:36] =>  0:08
@@ -186,6 +187,7 @@ With Ctrl+T keys
 - [X] add a show() function
 - [ ] Must create a window and add a sleep of several seconds
  =Undefined subroutine &BackupProg::UserInterface::MainMenu::newwin=
+ - See the working newwin example
 - [ ] Must add a MainMenu loop and exit with ESC  
 **** TODO May implement unit tests
 :LOGBOOK:
@@ -228,7 +230,7 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
 - [ ] manpage : test in html with `make man2html'
   =rman -f html backup_prog.1 > backup_prog.1.html=
   **macro "" not recognized -- ignoring**
-- Finally, texinfo : in BackupProg.texinfo
+- Finally, texinfo : in BackupProg.texinfoi
 **** TODO Print back ElapsedTime content
 :LOGBOOK:
 CLOCK: [2023-04-25 mar. 10:59]--[2023-04-25 mar. 11:24] =>  0:25

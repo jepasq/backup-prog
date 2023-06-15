@@ -1,4 +1,4 @@
-use strict;
+#use strict;
 
 use Curses;
 
@@ -18,7 +18,7 @@ sub show(){
     # y is the label_y value
     my $self = shift;
     print "Showing menu\n";
-
+    
     my $x = 5;
     my $y = 5;
     my $h = 10;
