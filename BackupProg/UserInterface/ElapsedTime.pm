@@ -26,7 +26,7 @@ sub new() {
     $selfStttime = DateTime->now;
     $log->LOGI("In ElapsedTime widget constructor. Label is '".
 	       $self->SUPER::get_label()."'");
-    #addstr(10, 10, $self->get_elapsed_str());
+    addstr(10, 10, $self->get_elapsed_str());
 
     $self->{label} = '0:00:01'; #$self->get_elapsed_str();
     $self = $class->SUPER::new($self->{label}, @args);
@@ -65,6 +65,8 @@ sub draw_label(){
     
     $lx = $self->{w} - length($self->{label}) - 1;
     $self->{win}->addstr(0, $lx, $self->{label});
+    addstr(0, $lx, "");
+    print $self->{label};
 }
 
 # Update each tick from the MainWindow's endless loop
@@ -78,7 +80,8 @@ sub update() {
 	$self->draw_label();
 #	addstr(3, 73, $self->get_elapsed_str());
     } else {
-#	addstr(10, 10, "ElapsedTime err.");
+	addstr(0, 5, "");
+	print $self->{label};
     }
 }
 

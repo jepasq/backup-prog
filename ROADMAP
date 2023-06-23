@@ -233,11 +233,12 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
 - Finally, texinfo : in BackupProg.texinfoi
 **** TODO Print back ElapsedTime content
 :LOGBOOK:
+CLOCK: [2023-06-23 ven. 09:02]--[2023-06-23 ven. 09:25] =>  0:23
 CLOCK: [2023-04-25 mar. 10:59]--[2023-04-25 mar. 11:24] =>  0:25
 CLOCK: [2023-04-05 mer. 11:16]--[2023-04-05 mer. 11:40] =>  0:24
 :END:
-- [ ] Commenting =refresh();= in MainWindow.pm hide ElapsedTime text
-  We may try to print in a window instead of using =addstr()= global fun.
+- [ ] Commenting =refresh();= in *MainWindow.pm* hide ElapsedTime text
+  We may try to print in a window instead of using =addstr()= global function
 **** DONE Fix ElapsedTime widget update issue
 :LOGBOOK:
 CLOCK: [2023-03-29 mer. 10:26]--[2023-03-29 mer. 10:27] =>  0:01

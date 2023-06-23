@@ -79,15 +79,13 @@ sub new(){
 
 
     my $menu = BackupProg::UserInterface::MainMenu->new();
-    
-    #    addstr(1, 1, "aze");
     while (1) {
 	# Makes the screen empty : must be removed when the "Elapsed err."
 	# error is fixed
 
-	$et->update();
 #        refresh();    # Black screen if uncommented
 	while ( my $char = $stdin->getc() ) {
+	    $et->update();
 	    if ( ord( $char ) == 20 ) {
 		# Ctrl+T
 		$menu->show();
