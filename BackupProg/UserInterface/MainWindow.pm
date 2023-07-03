@@ -84,15 +84,15 @@ sub new(){
 	# error is fixed
 
 #        refresh();    # Black screen if uncommented
-	while ( my $char = $stdin->getc() ) {
-	    $et->update();
-	    if ( ord( $char ) == 20 ) {
-		# Ctrl+T
-		$menu->show();
-	    } else {
-		print "ord: " . ord($char) . "\n";
-	    }
+	$et->update();
+	my $char = $stdin->getc();
+	if ( ord( $char ) == 20 ) {
+	    # Ctrl+T
+	    $menu->show();
+	} else {
+	    print "ord: " . ord($char) . "\n";
 	}
+    
 #	my $ch = getch();
     }
     #getch();

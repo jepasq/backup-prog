@@ -62,10 +62,12 @@ sub draw_label(){
 
     my $ly=$self->{y};
     my $lx=1;
+
     
     $lx = $self->{w} - length($self->{label}) - 1;
     $self->{win}->addstr(0, $lx, $self->{label});
     addstr(0, $lx, "");
+    print "\e[3;77H"; # Cursor Home {ROW;COLUMN}
     print $self->{label};
 }
 
@@ -81,7 +83,8 @@ sub update() {
 #	addstr(3, 73, $self->get_elapsed_str());
     } else {
 	addstr(0, 5, "");
-	print $self->{label};
+	#print $self->{label};
+	$self->draw_label();
     }
 }
 
