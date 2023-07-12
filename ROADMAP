@@ -244,6 +244,14 @@ CLOCK: [2023-04-05 mer. 11:16]--[2023-04-05 mer. 11:40] =>  0:24
 - [X] May try cursor positionning using VT100 escape sequence
 - [ ] Seems it's waitin for a user's initeraction
   Should auto-update now. I think it's the MainWindow#update's $stdin->getc
+  Maybe with
+#+BEGIN_EXAMPLE
+    my $nb_stdin = new IO::Select( *STDIN );
+while ( 1 )
+{
+  if ( $nb_stdin -> can_read(0) )
+#+END_EXAMPLE  
+  From https://www.perlmonks.org/?node_id=1044899 (second example)
 - [ ] Maybe keep the pressed char ord print in a new box (or a new widget)  
 **** DONE Fix ElapsedTime widget update issue
 :LOGBOOK:
