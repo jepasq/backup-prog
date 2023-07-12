@@ -90,7 +90,8 @@ sub new(){
 	    # Ctrl+T
 	    $menu->show();
 	} else {
-	    print "ord: " . ord($char) . "\n";
+	    print "\e[15;4H"; # Cursor Home {ROW;COLUMN}
+	    print "KEY pressed ord: " . ord($char) . "\n";
 	}
     
 #	my $ch = getch();

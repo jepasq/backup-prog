@@ -233,6 +233,7 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
 - Finally, texinfo : in BackupProg.texinfoi
 **** TODO Print back ElapsedTime content
 :LOGBOOK:
+CLOCK: [2023-07-12 mer. 14:11]--[2023-07-12 mer. 14:21] =>  0:10
 CLOCK: [2023-07-03 lun. 10:53]--[2023-07-03 lun. 11:13] =>  0:20
 CLOCK: [2023-06-23 ven. 09:02]--[2023-06-23 ven. 09:25] =>  0:23
 CLOCK: [2023-04-25 mar. 10:59]--[2023-04-25 mar. 11:24] =>  0:25
@@ -242,7 +243,8 @@ CLOCK: [2023-04-05 mer. 11:16]--[2023-04-05 mer. 11:40] =>  0:24
   We may try to print in a window instead of using =addstr()= global function
 - [X] May try cursor positionning using VT100 escape sequence
 - [ ] Seems it's waitin for a user's initeraction
-  Should auto-update now
+  Should auto-update now. I think it's the MainWindow#update's $stdin->getc
+- [ ] Maybe keep the pressed char ord print in a new box (or a new widget)  
 **** DONE Fix ElapsedTime widget update issue
 :LOGBOOK:
 CLOCK: [2023-03-29 mer. 10:26]--[2023-03-29 mer. 10:27] =>  0:01
