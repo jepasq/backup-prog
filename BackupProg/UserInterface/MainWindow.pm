@@ -16,7 +16,9 @@ use BackupProg::UserInterface::ElapsedTime;
 use BackupProg::UserInterface::ActionList;
 use Curses;
 
-use IO::Handle;
+#use IO::Handle;
+use IO::Select;
+
 
 sub new(){
     my $log = BackupProg::Common::Logger->instance();
@@ -74,25 +76,26 @@ sub new(){
     my $al = BackupProg::UserInterface::ActionList->new(\%woptions6);
 
 
-    my $stdin = new IO::Handle;
-    $stdin->fdopen( fileno( STDIN ), "r" ) || die "Cannot open STDIN";
-
+    my $stdin = new IO::Select( *STDIN );
 
     my $menu = BackupProg::UserInterface::MainMenu->new();
     while (1) {
 	# Makes the screen empty : must be removed when the "Elapsed err."
 	# error is fixed
 
-#        refresh();    # Black screen if uncommented
-	$et->update();
-	my $char = $stdin->getc();
-	if ( ord( $char ) == 20 ) {
-	    # Ctrl+T
-	    $menu->show();
+	if ( $stdin -> can_read(0) ) {
+	    my $char = <STDIN>;
+	    if ( ord( $char ) == 20 ) {
+		# Ctrl+T
+		$menu->show();
+	    } else {
+		print "\e[15;4H"; # Cursor Home {ROW;COLUMN}
+		print "KEY pressed ord: " . ord($char) . "\n";
+	    }
 	} else {
-	    print "\e[15;4H"; # Cursor Home {ROW;COLUMN}
-	    print "KEY pressed ord: " . ord($char) . "\n";
+	    $et->update();
 	}
+	
     
 #	my $ch = getch();
     }
