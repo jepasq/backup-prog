@@ -24,6 +24,13 @@ The modules destination is defined in the *m4/CommonRules.m4* file
 as `MOD_TARGET` variable. The executable script will be installed 
 as the name stored in the variable `EXE_TARGET`.
 
+To know where these files must be installed, you can use the
+`perl --version` command from a terminal. Then, modify
+
+	MOD_TARGET=/usr/lib/perl5/5.36/site_perl/$1/
+
+the *5.36* part with your system's version.
+
 ### Linking or copying
 
 System-wide Installation is based on *m4*-powered generated Makefiles.
