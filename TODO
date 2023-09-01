@@ -14,12 +14,4 @@ backup_prog - GPLv3 - A flexible backup tool written in perl/curses.
    PO is the not translated/translated gettext messages (make nb-messages)
    (8 items by revision)
 
-* v0.0.2-23 (19 May 2023 - ???) SLOC ??? PO ??/???
-- (8) Add Key class and pod files
-- Update MOD_TARGET documentation in README's installation section
-- Now auto-update ElapsedTime widget using IO::Select
-- Move pressed char ord print below the action text
-- Correctly move ElapsedTime printed text using VT 100 escape sequence
-- Trying to fix ElapsedTime isuue using print()
-- Add a working newwin example
-- Trying to build a newwin in MainMenu
+* v0.0.2-24 (01 Sep. 2023 - ???) SLOC ??? PO ??/???

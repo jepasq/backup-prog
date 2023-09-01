@@ -249,6 +249,7 @@ CLOCK: [2023-04-05 mer. 11:16]--[2023-04-05 mer. 11:40] =>  0:24
   Should auto-update now. I think it's the MainWindow#update's $stdin->getc
 - [ ] Maybe keep the pressed char ord print in a new box (or a new widget)
   Key.pm package created
+  - [ ] May use gettext
 - [ ] It works and auto-update but it takes most of the CPU (>90%)
 **** DONE Fix ElapsedTime widget update issue
 :LOGBOOK:
