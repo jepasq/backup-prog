@@ -41,7 +41,7 @@ sub new(){
 
     $self->{dirty} = 1;
     $self->{label}= shift;
-    
+
     my (%options) = %{(shift)}; # Shift an hash
 
     $self->{align} = $options{'align'};

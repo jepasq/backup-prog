@@ -234,6 +234,7 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
 - Finally, texinfo : in BackupProg.texinfoi
 **** TODO Print back ElapsedTime content
 :LOGBOOK:
+CLOCK: [2023-09-01 ven. 09:07]--[2023-09-01 ven. 09:20] =>  0:13
 CLOCK: [2023-08-03 jeu. 03:58]--[2023-08-03 jeu. 04:08] =>  0:10
 CLOCK: [2023-07-12 mer. 14:11]--[2023-07-12 mer. 14:21] =>  0:10
 CLOCK: [2023-07-03 lun. 10:53]--[2023-07-03 lun. 11:13] =>  0:20
@@ -246,8 +247,9 @@ CLOCK: [2023-04-05 mer. 11:16]--[2023-04-05 mer. 11:40] =>  0:24
 - [X] May try cursor positionning using VT100 escape sequence
 - [X] Seems it's waitin for a user's interaction
   Should auto-update now. I think it's the MainWindow#update's $stdin->getc
+- [ ] Maybe keep the pressed char ord print in a new box (or a new widget)
+  Key.pm package created
 - [ ] It works and auto-update but it takes most of the CPU (>90%)
-- [ ] Maybe keep the pressed char ord print in a new box (or a new widget)  
 **** DONE Fix ElapsedTime widget update issue
 :LOGBOOK:
 CLOCK: [2023-03-29 mer. 10:26]--[2023-03-29 mer. 10:27] =>  0:01

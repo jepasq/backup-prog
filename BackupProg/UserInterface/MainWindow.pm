@@ -8,6 +8,7 @@ use Error qw(:try);
 
 use BackupProg::Common::Logger;
 use BackupProg::Common::Def;
+use BackupProg::UserInterface::Key;
 use BackupProg::UserInterface::Preferences;
 use BackupProg::UserInterface::MainMenu;
 use BackupProg::UserInterface::Widget qw(:Align :BorderTypes);
@@ -18,7 +19,6 @@ use Curses;
 
 #use IO::Handle;
 use IO::Select;
-
 
 sub new(){
     my $log = BackupProg::Common::Logger->instance();
@@ -79,6 +79,8 @@ sub new(){
     my $stdin = new IO::Select( *STDIN );
 
     my $menu = BackupProg::UserInterface::MainMenu->new();
+    my $k = BackupProg::UserInterface::Key->new();
+
     while (1) {
 	# Makes the screen empty : must be removed when the "Elapsed err."
 	# error is fixed
@@ -89,8 +91,7 @@ sub new(){
 		# Ctrl+T
 		$menu->show();
 	    } else {
-		print "\e[15;4H"; # Cursor Home {ROW;COLUMN}
-		print "KEY pressed ord: " . ord($char) . "\n";
+		$k->update($char);
 	    }
 	} else {
 	    $et->update();

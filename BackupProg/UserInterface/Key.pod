@@ -1,0 +1,35 @@
+=pod
+
+=head1 NAME
+
+F<BackupProg::UserInterface::Key> is a basic key indicator that prints ord()
+value of the pressed key.
+
+=head1 SYNOPSIS
+
+=head1 DESCRIPTION
+
+=head1 CONSTANTS
+
+=head1 EXPORTED TAGS
+
+=head1 CONSTRUCTOR
+
+=over 4
+
+=item No parameters.
+
+=back
+
+=head1 METHODS
+
+=over 4
+
+=item update(F<char>):
+ Update the current printed value.
+
+=back
+
+=head1 KNOWN BUGS
+
+=head1 SEE ALSO
