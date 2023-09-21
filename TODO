@@ -15,3 +15,4 @@ backup_prog - GPLv3 - A flexible backup tool written in perl/curses.
    (8 items by revision)
 
 * v0.0.2-24 (01 Sep. 2023 - ???) SLOC ??? PO ??/???
+- (1) First test to configure github action
