@@ -245,6 +245,8 @@ CLOCK: [2022-07-18 lun. 06:19]--[2022-07-18 lun. 06:38] =>  0:19
 - [X] Must work again
   Subroutine refresh redefined at /usr/lib/perl5/5.36/site_perl/BackupProg/UserInterface/Widget.pm
 - [ ] Configure github actions to run unit tests
+  - [ ] Must call gen-makefiles script first
+  - [ ] Do we need to install  
 - [ ] Unit tests should create a log file
 - [ ] WidgetList unit tests should go in another file ?
   - [ ] Currently  trying with tests/WidgetListTest.pm but must be installed

@@ -18,5 +18,8 @@ jobs:
         packages: libcurses-perl liblocale-gettext-perl libdatetime-perl
         version: 1.0
 
+    - name: Generate Makefiles
+      run: ./gen-makefiles.sh
+
     - name: Run check
       run: make check
