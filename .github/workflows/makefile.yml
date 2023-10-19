@@ -21,5 +21,8 @@ jobs:
     - name: Generate Makefiles
       run: ./gen-makefiles.sh
 
+    - name: Install
+      run: make install
+
     - name: Run check
       run: make check
