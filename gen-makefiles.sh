@@ -1,7 +1,8 @@
 #!/bin/sh
 PWD=`pwd`
 VERSION=`cat version.all`
-M4="m4 --include=$PWD/m4/ --define=BP_VERSION=$VERSION"
+PERLV=`perl -e 'print substr $^V, 1'`  # In the form of x.yy.z, only numbers
+M4="m4 --include=$PWD/m4/ --define=BP_VERSION=$VERSION --define=PERLV=$PERLV"
 IN=Makefile.in
 OUT=Makefile
 SUBDIRS=". \

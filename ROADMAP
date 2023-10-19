@@ -222,7 +222,7 @@ CLOCK: [2023-04-05 mer. 11:16]--[2023-04-05 mer. 11:40] =>  0:24
   Key.pm package created
   - [ ] May use gettext
 - [ ] It works and auto-update but it takes most of the CPU (>90%)
-**** TODO May implement unit tests
+**** TODO May implement unit tests and run CI
 :LOGBOOK:
 CLOCK: [2023-01-27 ven. 07:36]--[2023-01-27 ven. 07:52] =>  0:16
 CLOCK: [2023-01-13 ven. 07:44]--[2023-01-13 ven. 08:03] =>  0:19
@@ -247,13 +247,14 @@ CLOCK: [2022-07-18 lun. 06:19]--[2022-07-18 lun. 06:38] =>  0:19
 - [-] Configure github actions to run unit tests
   - [X] Must call gen-makefiles script first
   - [ ] Do we need to install : it seems, yes
+    But it fails because the perl version is certainely not the same.
+    - I think I correctly defined PERLV in m4, must use it now
 - [ ] Unit tests should create a log file
 - [ ] WidgetList unit tests should go in another file ?
   - [ ] Currently  trying with tests/WidgetListTest.pm but must be installed
     but we don't have any Makefile here so we can't install it
     - later use in tests is commented
   - [ ] Maybe through Test2::Suite ?
-  
 **** DONE Fix ElapsedTime widget update issue
 :LOGBOOK:
 CLOCK: [2023-03-29 mer. 10:26]--[2023-03-29 mer. 10:27] =>  0:01
