@@ -1,7 +1,8 @@
 #!/bin/sh
 PWD=`pwd`
 VERSION=`cat version.all`
-PERLV=`perl -e 'print substr $^V, 1'`  # In the form of x.yy.z, only numbers
+# In the form of x.yy, only numbers (4 removes trailing .0 string)
+PERLV=`perl -e 'print substr $^V, 1,4'`  
 M4="m4 --include=$PWD/m4/ --define=BP_VERSION=$VERSION --define=PERLV=$PERLV"
 IN=Makefile.in
 OUT=Makefile
