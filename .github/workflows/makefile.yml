@@ -18,6 +18,9 @@ jobs:
         packages: libcurses-perl liblocale-gettext-perl libdatetime-perl libtest2-suite-perl
         version: 1.0
 
+    - name: perlPathVerbose
+      run: perl -V
+        
     - name: Generate Makefiles
       run: ./gen-makefiles.sh
 
