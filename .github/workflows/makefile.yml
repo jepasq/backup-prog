@@ -19,7 +19,7 @@ jobs:
         version: 1.0
 
     - name: perlPathVerbose
-      run: perl -V
+      run: ./utils/install_dir.pl verbose
         
     - name: Generate Makefiles
       run: ./gen-makefiles.sh

@@ -224,6 +224,7 @@ CLOCK: [2023-04-05 mer. 11:16]--[2023-04-05 mer. 11:40] =>  0:24
 - [ ] It works and auto-update but it takes most of the CPU (>90%)
 **** TODO May implement unit tests and run CI
 :LOGBOOK:
+CLOCK: [2023-11-02 jeu. 03:31]--[2023-11-02 jeu. 03:46] =>  0:15
 CLOCK: [2023-10-27 ven. 03:24]--[2023-10-27 ven. 03:55] =>  0:31
 CLOCK: [2023-01-27 ven. 07:36]--[2023-01-27 ven. 07:52] =>  0:16
 CLOCK: [2023-01-13 ven. 07:44]--[2023-01-13 ven. 08:03] =>  0:19
@@ -245,12 +246,15 @@ CLOCK: [2022-07-18 lun. 06:19]--[2022-07-18 lun. 06:38] =>  0:19
 - [X] Added a Widget::get_window test and function but fail
 - [X] Must work again
   Subroutine refresh redefined at /usr/lib/perl5/5.36/site_perl/BackupProg/UserInterface/Widget.pm
+- [ ] Create a little util script to select an install dir compatible with
+  Now, may try to use it to find full perl instal path
 - [-] Configure github actions to run unit tests
   - [X] Must call gen-makefiles script first
   - [ ] Do we need to install : it seems, yes
     But it fails because the perl version is certainely not the same.
     - I think I correctly defined PERLV in m4 ansd use it in common install rule
-      
+      We now have INC in actions so, try to find a way to find lib path
+      maybe print @INC[0]
 - [ ] Unit tests should create a log file
 - [ ] WidgetList unit tests should go in another file ?
   - [ ] Currently  trying with tests/WidgetListTest.pm but must be installed
