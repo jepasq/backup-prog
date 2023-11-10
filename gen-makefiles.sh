@@ -2,8 +2,8 @@
 PWD=`pwd`
 VERSION=`cat version.all`
 # In the form of x.yy, only numbers (4 removes trailing .0 string)
-PERLV=`perl -e 'print substr $^V, 1,4'`  
-M4="m4 --include=$PWD/m4/ --define=BP_VERSION=$VERSION --define=PERLV=$PERLV"
+PERLDIR=`perl utils/install_dir.pl`  
+M4="m4 --include=$PWD/m4/ --define=BP_VERSION=$VERSION --define=PERLD=$PERLDIR"
 IN=Makefile.in
 OUT=Makefile
 SUBDIRS=". \
