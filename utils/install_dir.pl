@@ -22,7 +22,10 @@ sub printdir {
 	if (-d $dirname) {
 	    print ("This directory exists");
 	} else {
-	    print ("This directory does NOT exist");
+	    print ("This directory does NOT exist. Creating it!");
+	    my @args = ("mkdir", "-p", $dirname);
+	    system(@args) == 0
+		or die ("Cannot create directory '$dirname' : $?");
 	}
     }
 }
