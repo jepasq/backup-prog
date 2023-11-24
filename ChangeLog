@@ -1,3 +1,13 @@
+* v0.0.2-24 (01 Sep. 2023 - 24 Nov. 2023) SLOC 544 PO 11/113
+- Try to create @INC directory if it doesn't exist
+- utils/install_dir.pl check for found directory existence
+- Generated makefiles now use @INC dir found by utils/ script
+- Add an util script to determine install path
+- Common m4-generated install rule uses PERLV
+- Get perl version from command line for gen-makefiles.sh
+- Add libtest2-suite-perl to actions dependencies trying to fix CI
+- First test to configure github action
+
 * v0.0.2-23 (19 May 2023 - 01 Sep. 2023) SLOC 490 PO 11/113
 - Add Key class and pod files
 - Update MOD_TARGET documentation in README's installation section
