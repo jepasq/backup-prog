@@ -27,9 +27,9 @@ sub printdir {
 	    system(@args) == 0
 		or die ("Cannot create directory '$dirname' : $?");
 	    if (-d $dirname) {
-		print("(It worked")
+		print("(It worked)")
 	    } else {
-		print("(it DIDN'T work")
+		print("(it DIDN'T work)")
 	    }
 	}
     }
