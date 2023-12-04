@@ -15,4 +15,4 @@ backup_prog - GPLv3 - A flexible backup tool written in perl/curses.
    (8 items by revision)
 
 * v0.0.2-25 (24 Nov. 2023 - ???) SLOC ??? PO ??/???
-
+- (1) Try to create ICN dir as root and check for its creation

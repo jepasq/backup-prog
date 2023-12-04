@@ -224,6 +224,7 @@ CLOCK: [2023-04-05 mer. 11:16]--[2023-04-05 mer. 11:40] =>  0:24
 - [ ] It works and auto-update but it takes most of the CPU (>90%)
 **** TODO May implement unit tests and run CI
 :LOGBOOK:
+CLOCK: [2023-12-04 lun. 08:15]--[2023-12-04 lun. 08:20] =>  0:05
 CLOCK: [2023-11-24 ven. 05:50]--[2023-11-24 ven. 05:54] =>  0:04
 CLOCK: [2023-11-10 ven. 05:21]--[2023-11-10 ven. 05:52] =>  0:31
 CLOCK: [2023-11-10 ven. 04:54]--[2023-11-10 ven. 05:16] =>  0:22
