@@ -253,15 +253,16 @@ CLOCK: [2022-07-18 lun. 06:19]--[2022-07-18 lun. 06:38] =>  0:19
   Note: PERLV define in gen-makefiles replaced with PERLD
   - [X] Should test the utils script returned dir exist
   - [X] If it doesn't, Try top create it
-- [ ] Create a little util script to select an install dir compatible with
+- [X] Create a little util script to select an install dir compatible with
   Now, may try to use it to find full perl instal path
-- [-] Configure github actions to run unit tests
+- [X] Configure github actions to run unit tests
   - [X] Must call gen-makefiles script first
-  - [ ] Do we need to install : it seems, yes
+  - [X] Do we need to install : it seems, yes
     But it fails because the perl version is certainely not the same.
     - I think I correctly defined PERLV in m4 ansd use it in common install rule
       We now have INC in actions so, try to find a way to find lib path
       maybe print @INC[0]
+- [ ] We need the msgfmt binary      
 - [ ] Unit tests should create a log file
 - [ ] WidgetList unit tests should go in another file ?
   - [ ] Currently  trying with tests/WidgetListTest.pm but must be installed
