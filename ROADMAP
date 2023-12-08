@@ -248,11 +248,11 @@ CLOCK: [2022-07-18 lun. 06:19]--[2022-07-18 lun. 06:38] =>  0:19
 - [X] Add a check rule to the Makefile
 - [X] Start with the Widget thing (refresh and force_refresh)
 - [X] Added a Widget::get_window test and function but fail
-- [-] Must work again
+- [X] Must work again
   Subroutine refresh redefined at /usr/lib/perl5/5.36/site_perl/BackupProg/UserInterface/Widget.pm
   Note: PERLV define in gen-makefiles replaced with PERLD
   - [X] Should test the utils script returned dir exist
-  - [ ] If it doesn't, Try top create it
+  - [X] If it doesn't, Try top create it
 - [ ] Create a little util script to select an install dir compatible with
   Now, may try to use it to find full perl instal path
 - [-] Configure github actions to run unit tests

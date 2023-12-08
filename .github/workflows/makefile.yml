@@ -25,7 +25,7 @@ jobs:
       run: ./gen-makefiles.sh
 
     - name: Install
-      run: make install
+      run: sudo make install
 
     - name: Run check
       run: make check
