@@ -222,7 +222,17 @@ CLOCK: [2023-04-05 mer. 11:16]--[2023-04-05 mer. 11:40] =>  0:24
   Key.pm package created
   - [ ] May use gettext
 - [ ] It works and auto-update but it takes most of the CPU (>90%)
-**** TODO May implement unit tests and run CI
+**** TODO More unit tests and CI work
+- [ ] =make: *** No rule to make target 'BackupProg.texinfo', needed=
+   by 'texinfo-info'.  Stop.
+   
+- [ ] Unit tests should create a log file
+- [ ] WidgetList unit tests should go in another file ?
+  - [ ] Currently  trying with tests/WidgetListTest.pm but must be installed
+    but we don't have any Makefile here so we can't install it
+    - later use in tests is commented
+  - [ ] Maybe through Test2::Suite ?
+**** DONE May implement unit tests and run CI
 :LOGBOOK:
 CLOCK: [2023-12-04 lun. 08:15]--[2023-12-04 lun. 08:20] =>  0:05
 CLOCK: [2023-11-24 ven. 05:50]--[2023-11-24 ven. 05:54] =>  0:04
@@ -262,13 +272,7 @@ CLOCK: [2022-07-18 lun. 06:19]--[2022-07-18 lun. 06:38] =>  0:19
     - I think I correctly defined PERLV in m4 ansd use it in common install rule
       We now have INC in actions so, try to find a way to find lib path
       maybe print @INC[0]
-- [ ] We need the msgfmt binary      
-- [ ] Unit tests should create a log file
-- [ ] WidgetList unit tests should go in another file ?
-  - [ ] Currently  trying with tests/WidgetListTest.pm but must be installed
-    but we don't have any Makefile here so we can't install it
-    - later use in tests is commented
-  - [ ] Maybe through Test2::Suite ?
+- [X] We need the msgfmt binary
 **** DONE Fix ElapsedTime widget update issue
 :LOGBOOK:
 CLOCK: [2023-03-29 mer. 10:26]--[2023-03-29 mer. 10:27] =>  0:01
