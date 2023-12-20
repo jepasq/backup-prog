@@ -223,8 +223,13 @@ CLOCK: [2023-04-05 mer. 11:16]--[2023-04-05 mer. 11:40] =>  0:24
   - [ ] May use gettext
 - [ ] It works and auto-update but it takes most of the CPU (>90%)
 **** TODO More unit tests and CI work
-- [ ] =make: *** No rule to make target 'BackupProg.texinfo', needed=
+:LOGBOOK:
+CLOCK: [2023-12-20 mer. 11:55]--[2023-12-20 mer. 12:19] =>  0:24
+:END:
+- [-] =make: *** No rule to make target 'BackupProg.texinfo', needed=
    by 'texinfo-info'.  Stop.
+  - [X] This fie is missing. Create it.
+  - [ ] The file is based on an example remove this GNU sample references
    
 - [ ] Unit tests should create a log file
 - [ ] WidgetList unit tests should go in another file ?
