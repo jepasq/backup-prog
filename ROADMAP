@@ -222,7 +222,7 @@ CLOCK: [2023-04-05 mer. 11:16]--[2023-04-05 mer. 11:40] =>  0:24
   Key.pm package created
   - [ ] May use gettext
 - [ ] It works and auto-update but it takes most of the CPU (>90%)
-**** TODO More unit tests and CI work
+**** TODO More unit tests and CI work (the install step fails)
 :LOGBOOK:
 CLOCK: [2023-12-20 mer. 11:55]--[2023-12-20 mer. 12:19] =>  0:24
 :END:
@@ -230,7 +230,10 @@ CLOCK: [2023-12-20 mer. 11:55]--[2023-12-20 mer. 12:19] =>  0:24
    by 'texinfo-info'.  Stop.
   - [X] This fie is missing. Create it.
   - [ ] The file is based on an example remove this GNU sample references
-   
+
+- [ ] =mv BackupProg.xml docbook/=
+  mv: cannot move 'BackupProg.xml' to 'docbook/': Not a directory
+
 - [ ] Unit tests should create a log file
 - [ ] WidgetList unit tests should go in another file ?
   - [ ] Currently  trying with tests/WidgetListTest.pm but must be installed

@@ -44,17 +44,6 @@ Please note that the *manpage* is always copied, never linked.
 The installation is always system-wide (i.e. for all users), not only for
 the installer user.
 
-## Unit tests
-
-This package is shipped with unit tests written using perl's 
-[test2](https://metacpan.org/pod/Test2) module. It can 
-be called after a simple call to `./gen-makefiles.sh` :
-
-	make check
-	
-Installation may be needed on some systems for the test script to find
-the developpement modules.	
-
 ## POD documentation
 
 The POD documentation, in .pod files is not installed, because it is
@@ -78,9 +67,16 @@ on debian while on arch (package is from *AUR*) :
 
 ## Unit tests
 
-After Makefile generation (call to `./gen-makefiles.sh`), running current
-unit tests is done running `make check`. It is a work in progress. Some of
+This package is shipped with unit tests written using perl's 
+[test2](https://metacpan.org/pod/Test2) module. It can 
+be called after a simple call to `./gen-makefiles.sh` :
+
+	make check
+	
+Installation may be needed on some systems for the test script to find
+the developpement modules. It is a work in progress. Some of
 these tests are outdated.
+
 
 ## Translation
 
