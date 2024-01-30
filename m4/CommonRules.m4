@@ -183,6 +183,7 @@ texinfo-html: $(INFO).texinfo
 # Make a .xml file compliant with the docbook format
 texinfo-docbook:
 	makeinfo --docbook $(INFO).texinfo
+	mkdir docbook/
 	mv $(INFO).xml docbook/
 
 install-info: texinfo-info texinfo-html texinfo-docbook
