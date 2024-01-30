@@ -187,10 +187,11 @@ texinfo-docbook:
 	mv $(INFO).xml docbook/
 
 install-info: texinfo-info texinfo-html texinfo-docbook
-	install-info $(INFO).info
+	gzip -c $(INFO).info > $(INFO).info.gz
+	install-info --info-dir=/usr/share/info/ $(INFO).info.gz
 
 uninstall-info:
-	install-info --remove $(INFO).info
+	install-info --delete $(INFO).info
 ])dnl
 define([BP_GEN_CHECK_RULE],[dnl
 check:
