@@ -9,17 +9,10 @@ backup_prog - GPLv3 - A flexible backup tool written in perl/curses.
 
 === ChangeLog ===
    Please update version in BackupProg/Common/Def.pm, version.all,
-     BackupProg.texinfo and update translated message. 
+     BackupProg.texinfo, regenerate Makefile and update translated message. 
    SLOC is the Physical result of sloc on '.'
    PO is the not translated/translated gettext messages (make nb-messages)
    (8 items by revision)
 
-* v0.0.2-25 (24 Nov. 2023 - ???) SLOC ??? PO ??/???
-- (8) Improve README on two logs production
-- Compress info file with gzip before installing it
-- Manually create docbook/ directory trying to fix install rule on CI
-- Merge two README sections about unit tests
-- Add a partly sample texinfo file trying to fix CI install step
-- Close a new CI-related ROADMAP section
-- Add getext package to CI to install missing msgfmt binary
-- Try to create ICN dir as root and check for its creation
+* v0.0.2-26 (08 Feb. 2024 - ???) SLOC ??? PO ??/???
+

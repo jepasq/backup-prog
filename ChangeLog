@@ -1,3 +1,13 @@
+* v0.0.2-25 (24 Nov. 2023 - 08 Feb. 2024) SLOC 549 PO 11/113
+- Improve README on two logs production
+- Compress info file with gzip before installing it
+- Manually create docbook/ directory trying to fix install rule on CI
+- Merge two README sections about unit tests
+- Add a partly sample texinfo file trying to fix CI install step
+- Close a new CI-related ROADMAP section
+- Add getext package to CI to install missing msgfmt binary
+- Try to create ICN dir as root and check for its creation
+
 * v0.0.2-24 (01 Sep. 2023 - 24 Nov. 2023) SLOC 544 PO 11/113
 - Try to create @INC directory if it doesn't exist
 - utils/install_dir.pl check for found directory existence
