@@ -173,6 +173,7 @@ I18n for backup instructions :
    widget creation
 **** TODO Mainpage must handle menu
 :LOGBOOK:
+CLOCK: [2024-02-08 jeu. 15:33]--[2024-02-08 jeu. 16:07] =>  0:34
 CLOCK: [2023-06-15 jeu. 04:59]--[2023-06-15 jeu. 06:02] =>  1:03
 CLOCK: [2023-05-30 mar. 04:23]--[2023-05-30 mar. 04:47] =>  0:24
 CLOCK: [2023-05-19 ven. 02:31]--[2023-05-19 ven. 02:44] =>  0:13
@@ -185,9 +186,12 @@ With Ctrl+T keys
 - [X] Maybe a new UserInterface module ?
 - [X] Instantiate it in MainWindow ctor
 - [X] add a show() function
+- [X] Trying to add log message From MainMenu (yes, added to backup_prog.log)
+- [ ] We're using 2 log files, a /tmp one and backup_prog.log
+  Must clarify in README if changed
 - [ ] Must create a window and add a sleep of several seconds
  =Undefined subroutine &BackupProg::UserInterface::MainMenu::newwin=
- - See the working newwin example
+  - See the working newwin example
 - [ ] Must add a MainMenu loop and exit with ESC  
 **** TODO Mainpage and pod work
 :LOGBOOK:

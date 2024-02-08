@@ -77,7 +77,6 @@ Installation may be needed on some systems for the test script to find
 the developpement modules. It is a work in progress. Some of
 these tests are outdated.
 
-
 ## Translation
 
 Translatable files must be listed in *po/POTFILES*.
@@ -91,3 +90,9 @@ To edit pofiles, you can check and install `poedit` :
 Then, you just need to edit you language file, for example for french user :
 
 	poedit po/BackupProg-fr.po
+
+## Log file
+
+The execution creates two log files : 
+* One in the `/tmp` directory;
+* The second, in the execution directory, called `backup_prog.log`.

@@ -81,6 +81,7 @@ sub new(){
     my $menu = BackupProg::UserInterface::MainMenu->new();
     my $k = BackupProg::UserInterface::Key->new();
 
+    $log->LOGI("Starting main event loop");
     while (1) {
 	# Makes the screen empty : must be removed when the "Elapsed err."
 	# error is fixed
@@ -89,6 +90,7 @@ sub new(){
 	    my $char = <STDIN>;
 	    if ( ord( $char ) == 20 ) {
 		# Ctrl+T
+		$log->LOGI("Show menu");
 		$menu->show();
 	    } else {
 		$k->update($char);
