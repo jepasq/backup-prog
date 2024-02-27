@@ -233,6 +233,10 @@ CLOCK: [2024-01-30 mar. 16:59]--[2024-01-30 mar. 17:01] =>  0:02
 CLOCK: [2024-01-22 lun. 19:30]--[2024-01-22 lun. 19:40] =>  0:10
 CLOCK: [2023-12-20 mer. 11:55]--[2023-12-20 mer. 12:19] =>  0:24
 :END:
+- [X] Must update github actions due to node 0.16 EOL (CI warning)
+  Trying to switch checkout@v3 to v4
+- [X] Can't locate Switch.pm on CI
+
 - [-] =make: *** No rule to make target 'BackupProg.texinfo', needed=
    by 'texinfo-info'.  Stop.
   - [X] This fie is missing. Create it.
@@ -242,9 +246,6 @@ CLOCK: [2023-12-20 mer. 11:55]--[2023-12-20 mer. 12:19] =>  0:24
     install-info: No dir file specified; try --help for more information.
   - [ ] The file is based on an example remove this GNU sample references
     Try to find a way to test it : =texinfo2dvi= or =2pdf= fail with an error
-
-- [ ] Must update github actions due to node 0.16 EOL (CI warning)
-  Trying to switch checkout@v3 to v4
 
 - [ ] =install-info: warning: no info dir entry in `BackupProg.info.gz'=
   

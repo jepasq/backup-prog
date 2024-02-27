@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v4
     - uses: awalsh128/cache-apt-pkgs-action@latest
       with:
-        packages: libcurses-perl liblocale-gettext-perl libdatetime-perl libtest2-suite-perl gettext
+        packages: libcurses-perl  libswitch-perl liblocale-gettext-perl libdatetime-perl libtest2-suite-perl gettext
         version: 1.0
 
     - name: perlPathVerbose
