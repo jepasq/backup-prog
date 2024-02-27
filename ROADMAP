@@ -243,9 +243,10 @@ CLOCK: [2023-12-20 mer. 11:55]--[2023-12-20 mer. 12:19] =>  0:24
   - [ ] The file is based on an example remove this GNU sample references
     Try to find a way to test it : =texinfo2dvi= or =2pdf= fail with an error
 
-- [ ] =install-info: warning: no info dir entry in `BackupProg.info.gz'=
-
 - [ ] Must update github actions due to node 0.16 EOL (CI warning)
+  Trying to switch checkout@v3 to v4
+
+- [ ] =install-info: warning: no info dir entry in `BackupProg.info.gz'=
   
 - [ ] =mv BackupProg.xml docbook/=
   mv: cannot move 'BackupProg.xml' to 'docbook/': Not a directory
