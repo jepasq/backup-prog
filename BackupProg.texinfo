@@ -8,7 +8,7 @@ Copyright @copyright{} -2023 github@@jepasq.
 @end copying
 
 @titlepage
-@title Sample Title
+@title BackupProg info manual
 @page
 @vskip 0pt plus 1filll
 @insertcopying
