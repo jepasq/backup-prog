@@ -14,3 +14,12 @@ backup_prog.1.html
 po/messages.mo
 po/BackupProg-fr.pot
 po/*.mo
+
+# Files created using texi2pdf
+manual/BackupProg.aux
+manual/BackupProg.cp
+manual/BackupProg.cps
+manual/BackupProg.log
+manual/BackupProg.pdf
+manual/BackupProg.toc
+

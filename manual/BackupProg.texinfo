@@ -4,7 +4,7 @@
 @copying
 A flexible backup tool written in perl/curses.
 
-Copyright @copyright{} -2023 github@@jepasq.
+Copyright @copyright{} -2024 github@@jepasq.
 @end copying
 
 @titlepage
@@ -17,24 +17,24 @@ Copyright @copyright{} -2023 github@@jepasq.
 @contents
 
 @node Top
-@top GNU Sample
+@top Backup prog manual
 
-This manual is for GNU Sample
+This manual is for Backup prog
 (version @value{VERSION}, @value{UPDATED}).
 
 @menu
-* First Chapter::    The first chapter is the
+* Introduction::    The first chapter is the
                       only chapter in this sample.
 * Index::            Complete index.
 @end menu
 
-
-@node First Chapter
-@chapter First Chapter
+@node Introduction
+@chapter Introduction
 
 @cindex chapter, first
-This is the first chapter.
-@cindex index entry, another
+@t backup-prog is a flexible terminal-based backup tool written in perl/curses.
+
+@cindex introduction, description
 
 Here is a numbered list.
 
@@ -46,13 +46,10 @@ This is the first item.
 This is the second item.
 @end enumerate
 
-
-
 @node First Section
 @section First Section
 
 First section of first chapter.
-
 
 @node Second Section
 @section Second Section

@@ -96,3 +96,13 @@ Then, you just need to edit you language file, for example for french user :
 The execution creates two log files : 
 * One in the `/tmp` directory;
 * The second, in the execution directory, called `backup_prog.log`.
+
+## Texinfo manual
+
+Manual in *textinfo* format can be found in `manual/` directory. You
+can test it or read ot in PDF format using `texi2pdf` command line tool. To
+be able to use it, on arch, you must install the **core/texinfo** package.
+
+	texi2pdf BackupProg.texinfo
+	
+You can then open the *BackupProg.pdf* file using `okular` or `evince`.

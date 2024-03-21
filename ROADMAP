@@ -228,6 +228,7 @@ CLOCK: [2023-04-05 mer. 11:16]--[2023-04-05 mer. 11:40] =>  0:24
 - [ ] It works and auto-update but it takes most of the CPU (>90%)
 **** TODO More unit tests and CI work (the install step fails)
 :LOGBOOK:
+CLOCK: [2024-03-21 jeu. 07:21]--[2024-03-21 jeu. 07:32] =>  0:11
 CLOCK: [2024-03-21 jeu. 06:58]--[2024-03-21 jeu. 07:06] =>  0:08
 CLOCK: [2024-03-11 lun. 03:06]--[2024-03-11 lun. 03:11] =>  0:05
 CLOCK: [2024-01-30 mar. 17:18]--[2024-01-30 mar. 17:54] =>  0:36
@@ -240,7 +241,8 @@ CLOCK: [2023-12-20 mer. 11:55]--[2023-12-20 mer. 12:19] =>  0:24
 - [X] Can't locate Switch.pm on CI
 
 - [ ] Move texinfo manual to manual/
-
+  We may need to modify m4 rules now, especialy the install one
+  
 - [-] =make: *** No rule to make target 'BackupProg.texinfo', needed=
    by 'texinfo-info'.  Stop.
   - [X] This fie is missing. Create it.
