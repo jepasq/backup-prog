@@ -15,5 +15,6 @@ backup_prog - GPLv3 - A flexible backup tool written in perl/curses.
    (8 items by revision)
 
 * v0.0.2-26 (08 Feb. 2024 - ???) SLOC ??? PO ??/???
-- (2) Add texinfo.tex file from GNU Texinfo distribution
+- (3) Fix bad texinfo.tex file and move to manual directory
+- Add texinfo.tex file from GNU Texinfo distribution
 - Upgrade checkout action from v3 to v4 trynig to fix a node 0.16 warning
