@@ -1,0 +1,6 @@
+dnl Please call the 'gen-makefiles.sh' script  to process this file
+dnl
+include(`CommonRules.m4')
+BP_GEN_HEADER()
+BP_GEN_INFO_RULES()
+BP_GEN_CLEAN_RULES()
