@@ -203,10 +203,10 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
      See template in doc/POD_TEMPLATE
      Remove NYI mark from manpage when implemented
      To preview a pod-based documentation =perldoc -t file.pod=
+- [X]  Finally, texinfo : in BackupProg.texinfo
 - [ ] manpage : test in html with `make man2html'
   =rman -f html backup_prog.1 > backup_prog.1.html=
   **macro "" not recognized -- ignoring**
-- Finally, texinfo : in BackupProg.texinfoi
 **** TODO Print back ElapsedTime content
 :LOGBOOK:
 CLOCK: [2023-09-01 ven. 09:07]--[2023-09-01 ven. 09:20] =>  0:13
@@ -264,6 +264,14 @@ CLOCK: [2023-12-20 mer. 11:55]--[2023-12-20 mer. 12:19] =>  0:24
     but we don't have any Makefile here so we can't install it
     - later use in tests is commented
   - [ ] Maybe through Test2::Suite ?
+**** TODO manual/texinfo.tex makes my github stats spurious
+:LOGBOOK:
+CLOCK: [2024-04-03 mer. 08:01]--[2024-04-03 mer. 08:24] =>  0:23
+:END:
+- [ ] It has 11954 SLOC and it's shown in tha gh profile as my
+  most used programing language
+  - [ ] Either link it from system package or Compress it using gz
+    First try to compress it and see if it works on CI (added gunzip rule to m4)
 **** DONE May implement unit tests and run CI
 :LOGBOOK:
 CLOCK: [2023-12-04 lun. 08:15]--[2023-12-04 lun. 08:20] =>  0:05

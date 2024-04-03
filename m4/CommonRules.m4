@@ -187,8 +187,9 @@ texinfo-docbook:
 	mv $(INFO).xml docbook/
 
 install-info: texinfo-info texinfo-html texinfo-docbook
-	gzip -c $(INFO).info > $(INFO).info.gz
-	install-info --info-dir=/usr/share/info/ $(INFO).info.gz
+	gunzip -c manual/texinfo.tex.gz -> manual/texinfo.tex
+	gzip -c manual/$(INFO).info > manual/$(INFO).info.gz
+	install-info --info-dir=/usr/share/info/ manual/$(INFO).info.gz
 
 uninstall-info:
 	install-info --delete $(INFO).info
