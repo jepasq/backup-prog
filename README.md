@@ -1,10 +1,11 @@
 # backup-prog.pl
 
-A flexible TUI backup tool written in perl/curses.
+A flexible [TUI](https://en.wikipedia.org/wiki/Text-based_user_interface) 
+backup tool written in **perl**/*curses*.
 
 ## Dependencies
 
-On arch-based distributions :
+On *arch*-based distributions :
 
 	sudo pacman -S m4 make perl-curses perl-locale-gettext \
 		perl-class-singleton perl-switch perl-datetime     \
@@ -29,7 +30,8 @@ To know where these files must be installed, you can use the
 
 	MOD_TARGET=/usr/lib/perl5/5.36/site_perl/$1/
 
-the *5.36* part with your system's version.
+the *5.36* part with your system's version. You can get it running the
+`perl --version` command.
 
 ### Linking or copying
 
@@ -53,7 +55,8 @@ you can follow `doc/POD_TEMPLATE` example and to view the result :
 	perldoc -t <filename>.pod
 
 To be able to run rhe `man2html` rule of the top-level *Makefile*, you will
-need to install `rman` binary which is part of the *polyglotman* suite :
+need to install `rman` binary which is part of the 
+[polyglotman](https://polyglotman.sourceforge.net/) suite :
 
 	sudo apt-get install rman 
 
