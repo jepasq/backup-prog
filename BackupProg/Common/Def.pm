@@ -37,7 +37,7 @@ sub new{
     my $self = bless { }, $class;
 
     $self->{ PROGNAME } = "backup_prog";
-    $self->{ VERSION }  = "0.0.1-25";
+    $self->{ VERSION }  = "0.0.1-26";
     $self->{ DATE }     = get_today();
     $self->{ USER }     = getlogin();
 
