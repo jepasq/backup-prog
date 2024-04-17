@@ -243,7 +243,10 @@ CLOCK: [2023-12-20 mer. 11:55]--[2023-12-20 mer. 12:19] =>  0:24
 
 - [ ] Move texinfo manual to manual/
   We may need to modify m4 rules now, especialy the install one
-  
+
+- [ ] Install CI task currently fails because a rule in / depends on the
+  'BackupProg.texinfo' file  
+
 - [-] =make: *** No rule to make target 'BackupProg.texinfo', needed=
    by 'texinfo-info'.  Stop.
   - [X] This fie is missing. Create it.
@@ -265,7 +268,7 @@ CLOCK: [2023-12-20 mer. 11:55]--[2023-12-20 mer. 12:19] =>  0:24
     but we don't have any Makefile here so we can't install it
     - later use in tests is commented
   - [ ] Maybe through Test2::Suite ?
-**** TODO manual/texinfo.tex makes my github stats spurious
+**** DONE manual/texinfo.tex makes my github stats spurious
 :LOGBOOK:
 CLOCK: [2024-04-03 mer. 08:40]--[2024-04-03 mer. 08:54] =>  0:14
 CLOCK: [2024-04-03 mer. 08:01]--[2024-04-03 mer. 08:24] =>  0:23
@@ -275,8 +278,6 @@ CLOCK: [2024-04-03 mer. 08:01]--[2024-04-03 mer. 08:24] =>  0:23
   - [X] Either link it from system package or Compress it using gz
     First try to compress it and see if it works on CI (added gunzip rule to m4)
 - [X] Must generate texinfo-related Makefile and rules in manual/
-- [ ] Install CI task currently fails because a rule in / depends on the
-  'BackupProg.texinfo' file  
 **** DONE May implement unit tests and run CI
 :LOGBOOK:
 CLOCK: [2023-12-04 lun. 08:15]--[2023-12-04 lun. 08:20] =>  0:05
