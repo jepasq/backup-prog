@@ -257,7 +257,9 @@ CLOCK: [2023-12-20 mer. 11:55]--[2023-12-20 mer. 12:19] =>  0:24
   - [X] because a rule in / depends on the 'BackupProg.texinfo' file
   - [ ] install-info rule doesn't exist (from m4/CommonRules.m4)
     Move from root dir to manual dir
-
+    Now the install step works and CI fails at the test step but can
+    we be sure the 
+    
 - [ ] =install-info: warning: no info dir entry in `BackupProg.info.gz'=
   
 - [ ] =mv BackupProg.xml docbook/=

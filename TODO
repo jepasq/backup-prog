@@ -15,4 +15,5 @@ backup_prog - GPLv3 - A flexible backup tool written in perl/curses.
    (8 items by revision)
 
 * v0.0.2-27 (17 Apr. 2024 - ???) SLOC ??? PO ??/???
-- (1) Move m4-generated install-info rule to manual/ for CI
+- (2) Make toor Makefile call manual/ install and uninstall rules
+- Move m4-generated install-info rule to manual/ for CI
