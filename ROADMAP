@@ -229,6 +229,7 @@ CLOCK: [2023-04-05 mer. 11:16]--[2023-04-05 mer. 11:40] =>  0:24
 - [ ] It works and auto-update but it takes most of the CPU (>90%)
 **** TODO More unit tests and CI work (the install step fails)
 :LOGBOOK:
+CLOCK: [2024-05-13 lun. 14:09]--[2024-05-13 lun. 14:19] =>  0:10
 CLOCK: [2024-03-21 jeu. 07:21]--[2024-03-21 jeu. 07:32] =>  0:11
 CLOCK: [2024-03-21 jeu. 06:58]--[2024-03-21 jeu. 07:06] =>  0:08
 CLOCK: [2024-03-11 lun. 03:06]--[2024-03-11 lun. 03:11] =>  0:05
@@ -240,22 +241,22 @@ CLOCK: [2023-12-20 mer. 11:55]--[2023-12-20 mer. 12:19] =>  0:24
 - [X] Must update github actions due to node 0.16 EOL (CI warning)
   Trying to switch checkout@v3 to v4
 - [X] Can't locate Switch.pm on CI
-
-- [ ] Move texinfo manual to manual/
-  We may need to modify m4 rules now, especialy the install one
-
-- [ ] Install CI task currently fails because a rule in / depends on the
-  'BackupProg.texinfo' file  
-
-- [-] =make: *** No rule to make target 'BackupProg.texinfo', needed=
+- [X] =make: *** No rule to make target 'BackupProg.texinfo', needed=
    by 'texinfo-info'.  Stop.
   - [X] This fie is missing. Create it.
   - [X] Trying to create =docbook/= dir in m4/CommonRules.m4
     Must be check in CI : seems to work
   - [X] =install-info BackupProg.info= in m4/CommonRules.m4
     install-info: No dir file specified; try --help for more information.
-  - [ ] The file is based on an example remove this GNU sample references
+  - [X] The file is based on an example remove this GNU sample references
     Try to find a way to test it : =texinfo2dvi= or =2pdf= fail with an error
+- [X] Move texinfo manual to manual/
+  We may need to modify m4 rules now, especialy the install one
+
+- [-] Install CI task currently fails
+  - [X] because a rule in / depends on the 'BackupProg.texinfo' file
+  - [ ] install-info rule doesn't exist (from m4/CommonRules.m4)
+    Move from root dir to manual dir
 
 - [ ] =install-info: warning: no info dir entry in `BackupProg.info.gz'=
   

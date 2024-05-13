@@ -94,8 +94,8 @@ clean-man2html:
 man2html:
 	$(MAN2HTML) $(MAN).1 > $(MAN).1.html
 
-install: install-modules install-exe install-mo install-man install-info
-uninstall: uninstall-exe uninstall-modules uninstall-man uninstall-info
+install: install-modules install-exe install-mo install-man
+uninstall: uninstall-exe uninstall-modules uninstall-man
 
 ])dnl
 define([BP_GEN_MOD_RULES],[dnl
@@ -193,6 +193,9 @@ install-info: texinfo-info texinfo-html texinfo-docbook
 
 uninstall-info:
 	install-info --delete $(INFO).info
+
+install:
+	install-info uninstall-info
 ])dnl
 define([BP_GEN_CHECK_RULE],[dnl
 check:
