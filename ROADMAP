@@ -227,7 +227,19 @@ CLOCK: [2023-04-05 mer. 11:16]--[2023-04-05 mer. 11:40] =>  0:24
   Key.pm package created
   - [ ] May use gettext
 - [ ] It works and auto-update but it takes most of the CPU (>90%)
-**** TODO More unit tests and CI work (the install step fails)
+**** TODO More unit tests and CI work (the install step fails) (x2)
+- [ ] =install-info: warning: no info dir entry in `BackupProg.info.gz'=
+  
+- [ ] =mv BackupProg.xml docbook/=
+  mv: cannot move 'BackupProg.xml' to 'docbook/': Not a directory
+
+- [ ] Unit tests should create a log file
+- [ ] WidgetList unit tests should go in another file ?
+  - [ ] Currently  trying with tests/WidgetListTest.pm but must be installed
+    but we don't have any Makefile here so we can't install it
+    - later use in tests is commented
+  - [ ] Maybe through Test2::Suite ?
+**** DONE More unit tests and CI work (the install step fails) (x1)
 :LOGBOOK:
 CLOCK: [2024-05-13 lun. 14:09]--[2024-05-13 lun. 14:19] =>  0:10
 CLOCK: [2024-03-21 jeu. 07:21]--[2024-03-21 jeu. 07:32] =>  0:11
@@ -252,25 +264,16 @@ CLOCK: [2023-12-20 mer. 11:55]--[2023-12-20 mer. 12:19] =>  0:24
     Try to find a way to test it : =texinfo2dvi= or =2pdf= fail with an error
 - [X] Move texinfo manual to manual/
   We may need to modify m4 rules now, especialy the install one
-
-- [-] Install CI task currently fails
+- [X] Install CI task currently fails
   - [X] because a rule in / depends on the 'BackupProg.texinfo' file
-  - [ ] install-info rule doesn't exist (from m4/CommonRules.m4)
+  - [X] install-info rule doesn't exist (from m4/CommonRules.m4)
     Move from root dir to manual dir
     Now the install step works and CI fails at the test step but can
-    we be sure the 
+    we be sure the
+  - [X] Now fails due to undefined info flags : generate from version.info.in ?
+    =BackupProg.texinfo:23: warning: undefined flag: VERSION=
+    =BackupProg.texinfo:23: warning: undefined flag: UPDATED=
     
-- [ ] =install-info: warning: no info dir entry in `BackupProg.info.gz'=
-  
-- [ ] =mv BackupProg.xml docbook/=
-  mv: cannot move 'BackupProg.xml' to 'docbook/': Not a directory
-
-- [ ] Unit tests should create a log file
-- [ ] WidgetList unit tests should go in another file ?
-  - [ ] Currently  trying with tests/WidgetListTest.pm but must be installed
-    but we don't have any Makefile here so we can't install it
-    - later use in tests is commented
-  - [ ] Maybe through Test2::Suite ?
 **** DONE manual/texinfo.tex makes my github stats spurious
 :LOGBOOK:
 CLOCK: [2024-04-03 mer. 08:40]--[2024-04-03 mer. 08:54] =>  0:14

@@ -1,5 +1,9 @@
 \input texinfo
-@settitle BackupProg v0.0.2-25
+
+@set VERSION v0.002-25
+@set UPDATED 28 May 2024
+
+@settitle BackupProg @value{VERSION}
 
 @copying
 A flexible backup tool written in perl/curses.
