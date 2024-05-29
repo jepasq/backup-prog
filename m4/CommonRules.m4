@@ -193,7 +193,7 @@ texinfo-docbook:
 	mv $(INFO).xml docbook/
 
 install-info: texinfo-info texinfo-html texinfo-docbook
-	gunzip -c exinfo.tex.gz > texinfo.tex
+	gunzip -c texinfo.tex.gz > texinfo.tex
 	gzip -c $(INFO).info > $(INFO).info.gz
 	install-info --info-dir=/usr/share/info/ manual/$(INFO).info.gz
 
