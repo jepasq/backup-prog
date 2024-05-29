@@ -195,7 +195,7 @@ texinfo-docbook:
 install-info: texinfo-info texinfo-html texinfo-docbook
 	gunzip -c texinfo.tex.gz > texinfo.tex
 	gzip -c $(INFO).info > $(INFO).info.gz
-	install-info --info-dir=/usr/share/info/ manual/$(INFO).info.gz
+	install-info --info-dir=/usr/share/info/ $(INFO).info.gz
 
 uninstall-info:
 	install-info --delete $(INFO).info
