@@ -228,7 +228,15 @@ CLOCK: [2023-04-05 mer. 11:16]--[2023-04-05 mer. 11:40] =>  0:24
   - [ ] May use gettext
 - [ ] It works and auto-update but it takes most of the CPU (>90%)
 **** TODO More unit tests and CI work (the install step fails) (x2)
-- [ ] =install-info: warning: no info dir entry in `BackupProg.info.gz'=
+:LOGBOOK:
+CLOCK: [2024-05-29 mer. 15:48]--[2024-05-29 mer. 15:59] =>  0:11
+:END:
+
+See https://www.gnu.org/software/texinfo/manual/texinfo/html_node/Command-List.html
+
+- [X] =install-info: warning: no info dir entry in `BackupProg.info.gz'=
+- [X] =BackupProg.texinfo:39: @t expected braces=
+  
   
 - [ ] =mv BackupProg.xml docbook/=
   mv: cannot move 'BackupProg.xml' to 'docbook/': Not a directory

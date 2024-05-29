@@ -36,7 +36,7 @@ This manual is for Backup prog
 @chapter Introduction
 
 @cindex chapter, first
-@t backup-prog is a flexible terminal-based backup tool written in perl/curses.
+@t{backup-prog} is a flexible terminal-based backup tool written in perl/curses.
 
 @cindex introduction, description
 
