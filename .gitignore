@@ -23,3 +23,5 @@ manual/BackupProg.log
 manual/BackupProg.pdf
 manual/BackupProg.toc
 
+# Log files
+backup_prog-tests.log

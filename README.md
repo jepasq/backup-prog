@@ -80,6 +80,12 @@ Installation may be needed on some systems for the test script to find
 the developpement modules. It is a work in progress. Some of
 these tests are outdated.
 
+The execution of the tests creates a log file defined in the `m4/CommonRules.m4`
+file as *TESTS_LOGFILE*. By default, this file can be viewed using the
+following command :
+
+	less backup_prog-tests.log
+
 ## Translation
 
 Translatable files must be listed in *po/POTFILES*.

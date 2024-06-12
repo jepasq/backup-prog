@@ -229,6 +229,7 @@ CLOCK: [2023-04-05 mer. 11:16]--[2023-04-05 mer. 11:40] =>  0:24
 - [ ] It works and auto-update but it takes most of the CPU (>90%)
 **** TODO More unit tests and CI work (the install step fails) (x2)
 :LOGBOOK:
+CLOCK: [2024-06-12 mer. 18:43]--[2024-06-12 mer. 18:52] =>  0:09
 CLOCK: [2024-05-29 mer. 16:18]--[2024-05-29 mer. 16:31] =>  0:13
 CLOCK: [2024-05-29 mer. 15:48]--[2024-05-29 mer. 15:59] =>  0:11
 :END:
@@ -238,11 +239,10 @@ See https://www.gnu.org/software/texinfo/manual/texinfo/html_node/Command-List.h
 - [X] =install-info: warning: no info dir entry in `BackupProg.info.gz'=
 - [X] =BackupProg.texinfo:39: @t expected braces=
 - [X] =gzip: exinfo.tex.gz: No such file or directory=  
-  
+- [X] Unit tests should create a log file
+
 - [ ] =mv BackupProg.xml docbook/=
   mv: cannot move 'BackupProg.xml' to 'docbook/': Not a directory
-
-- [ ] Unit tests should create a log file
 - [ ] WidgetList unit tests should go in another file ?
   - [ ] Currently  trying with tests/WidgetListTest.pm but must be installed
     but we don't have any Makefile here so we can't install it
