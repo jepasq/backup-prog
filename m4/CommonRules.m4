@@ -22,7 +22,6 @@ MANDIR=/usr/share/man
 MAN=backup_prog
 MAN2HTML=rman -f html
 INFO=BackupProg
-TESTS_LOGFILE=backup_prog-tests.log
 ])
 define([BP_GEN_SUBDIRS],[dnl
 SUBDIRS=$1
@@ -204,9 +203,7 @@ uninstall-info:
 ])dnl
 define([BP_GEN_CHECK_RULE],[dnl
 check:
-	@echo "Writing logs in '$(TESTS_LOGFILE)'"
-	@./tests/backup_prog_t.pl 2>$(TESTS_LOGFILE)
-	@cat $(TESTS_LOGFILE)
+	@prove tests/*.t
 ])dnl
 changequote(`,')dnl
 

@@ -229,6 +229,7 @@ CLOCK: [2023-04-05 mer. 11:16]--[2023-04-05 mer. 11:40] =>  0:24
 - [ ] It works and auto-update but it takes most of the CPU (>90%)
 **** TODO More unit tests and CI work (the install step fails) (x2)
 :LOGBOOK:
+CLOCK: [2024-07-11 jeu. 05:37]--[2024-07-11 jeu. 05:44] =>  0:07
 CLOCK: [2024-06-12 mer. 18:43]--[2024-06-12 mer. 18:52] =>  0:09
 CLOCK: [2024-05-29 mer. 16:18]--[2024-05-29 mer. 16:31] =>  0:13
 CLOCK: [2024-05-29 mer. 15:48]--[2024-05-29 mer. 15:59] =>  0:11
@@ -240,6 +241,8 @@ See https://www.gnu.org/software/texinfo/manual/texinfo/html_node/Command-List.h
 - [X] =BackupProg.texinfo:39: @t expected braces=
 - [X] =gzip: exinfo.tex.gz: No such file or directory=  
 - [X] Unit tests should create a log file
+
+- [ ] Now use prove to run tests
 
 - [ ] =mv BackupProg.xml docbook/=
   mv: cannot move 'BackupProg.xml' to 'docbook/': Not a directory
