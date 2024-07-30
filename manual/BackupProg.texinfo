@@ -1,6 +1,6 @@
 \input texinfo
 
-@set VERSION v0.002-25
+@set VERSION v0.002-27
 @set UPDATED 28 May 2024
 
 @settitle BackupProg @value{VERSION}

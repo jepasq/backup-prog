@@ -15,12 +15,5 @@ backup_prog - GPLv3 - A flexible backup tool written in perl/curses.
    PO is the not translated/translated gettext messages (make nb-messages)
    (8 items by revision)
 
-* v0.0.2-27 (17 Apr. 2024 - ???) SLOC ??? PO ??/???
-- (8) Restore test execution to run prove on saved output
-- Now uses prove to run unit tests and remove TESTS_LOGFILE var
-- Unit tests execution creates a log file
-- Fix filename to unzip in m4 CommonRules
-- Add mandatory braces to textinfo t command in manual
-- Define VERSION and UPDATED in tex file and close related ROADMAP section
-- Make root Makefile call manual/ install and uninstall rules
-- Move m4-generated install-info rule to manual/ for CI
+* v0.0.2-28 (30 Jul.. 2024 - ???) SLOC ??? PO ??/???
+
