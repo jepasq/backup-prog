@@ -10,7 +10,8 @@ use BackupProg::UserInterface::WidgetList;
 
 
 # Widget unit tests
-todo "Widget can be instantiated" => sub {
+## todo "Widget can be instantiated" => 
+sub {
     my %woptions= ('x'=>2, 'y'=>0, 'w'=>20, 'h'=>23,
 		   'align' => Center,
 		   'text_y' => 0,
@@ -50,4 +51,4 @@ todo "ActionList should have an append() method" => sub {
 #use WidgetListTest "./";
 
 done_testing();
-
+runtests()

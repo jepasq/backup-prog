@@ -25,3 +25,5 @@ manual/BackupProg.toc
 
 # Log files
 backup_prog-tests.log
+# log output/prove input
+test-results.tap

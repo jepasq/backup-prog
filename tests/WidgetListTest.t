@@ -1,3 +1,4 @@
+#							-*-perl-*-
 package WidgetListTest;
 
 # WidgetList unit tests
