@@ -29,3 +29,7 @@ jobs:
 
     - name: Run check
       run: make check
+
+    - name: Print unit tests logs
+      run: cat backup_prog-tests.log
+      
