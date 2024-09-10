@@ -43,6 +43,8 @@ MOD_SRC= $2
 MOD_TARGET=PERLD/$1
 ])dnl
 define([BP_GEN_EXE_RULES],[dnl
+default: check
+
 link-modules:
 	@for d in $(SUBDIRS); do (cd $$d; $(MAKE) link-modules ); done
 

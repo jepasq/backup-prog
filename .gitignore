@@ -27,3 +27,10 @@ manual/BackupProg.toc
 backup_prog-tests.log
 # log output/prove input
 test-results.tap
+
+# More manual files
+manual/BackupProg.info
+manual/BackupProg.info.gz
+manual/BackupProg_html/
+manual/docbook/
+manual/texinfo.tex
