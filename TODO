@@ -16,5 +16,6 @@ backup_prog - GPLv3 - A flexible backup tool written in perl/curses.
    (8 items by revision)
 
 * v0.0.2-28 (30 Jul.. 2024 - ???) SLOC ??? PO ??/???
-- (2) Add Makefile default rule (was running install)
+- (3) Start to add new rules in tests/Makefile.in
+- Add Makefile default rule (was running install)
 - Print unit tests logs in CI

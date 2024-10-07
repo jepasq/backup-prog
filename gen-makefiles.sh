@@ -12,7 +12,8 @@ SUBDIRS=". \
     BackupProg/Exception \
     BackupProg/Parser \
     BackupProg/UserInterface \
-    manual"
+    manual \
+    tests"
 
 wm4=`m4 --help`
 wm4_es=$?
