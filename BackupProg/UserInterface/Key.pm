@@ -6,7 +6,7 @@ use BackupProg::Common::Logger;
 
 sub new(){
     my $log = BackupProg::Common::Logger->instance();
-    $log->LOGI("Informative message");
+    $log->LOGI("UserInterface::Key widget instantiated");
 }
 
 sub update(){

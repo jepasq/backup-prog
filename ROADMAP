@@ -224,7 +224,7 @@ CLOCK: [2023-04-05 mer. 11:16]--[2023-04-05 mer. 11:40] =>  0:24
 - [X] Seems it's waitin for a user's interaction
   Should auto-update now. I think it's the MainWindow#update's $stdin->getc
 - [ ] Maybe keep the pressed char ord print in a new box (or a new widget)
-  Key.pm package created
+  Key.pm package created but doesn't work
   - [ ] May use gettext
 - [ ] It works and auto-update but it takes most of the CPU (>90%)
 **** TODO More unit tests and CI work (the install step fails) (x2)
@@ -252,6 +252,7 @@ See https://www.gnu.org/software/texinfo/manual/texinfo/html_node/Command-List.h
   - [X] It seems it reads program output to print some stats
     This seems to be the tests output
   - [ ] Now, the m4 part in m4/TestsTules.m4 : should install listed .t files ?
+    What is the dfference between CommonRules.m4's check and Tests one
     
 - [ ] =mv BackupProg.xml docbook/=
   mv: cannot move 'BackupProg.xml' to 'docbook/': Not a directory
