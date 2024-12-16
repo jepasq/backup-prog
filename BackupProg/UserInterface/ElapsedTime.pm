@@ -75,14 +75,13 @@ sub update() {
     my $self = shift;
     
     my $date = strftime "%S", localtime;
-    if ($date ne $self->{lastseconds}) {
+    if ($date ne $self->{lastseconds}) { # TODO: Seems it doesn't work
 	$self->{lastseconds} = $date;
 	$self->{label} = $self->get_elapsed_str();
 	$self->draw_label();
-#	addstr(3, 73, $self->get_elapsed_str());
+	#	addstr(3, 73, $self->get_elapsed_str());
     } else {
-	#print $self->{label};
-	$self->draw_label();
+#	$self->draw_label();
     }
 }
 

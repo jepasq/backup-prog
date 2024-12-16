@@ -75,7 +75,6 @@ sub new(){
 		   'border' => TopCenterLeft);
     my $al = BackupProg::UserInterface::ActionList->new(\%woptions6);
 
-
     my $stdin = new IO::Select( *STDIN );
 
     my $menu = BackupProg::UserInterface::MainMenu->new();
@@ -83,9 +82,6 @@ sub new(){
 
     $log->LOGI("Starting main event loop");
     while (1) {
-	# Makes the screen empty : must be removed when the "Elapsed err."
-	# error is fixed
-
 	if ( $stdin -> can_read(0) ) {
 	    my $char = <STDIN>;
 	    if ( ord( $char ) == 20 ) {
@@ -95,14 +91,9 @@ sub new(){
 	    } else {
 		$k->update($char);
 	    }
-	} else {
-	    $et->update();
 	}
-	
-    
-#	my $ch = getch();
+	$et->update();
     }
-    #getch();
-    endwin();  # Restore the screen at the end of the program
+    endwin();
 }
 1;
