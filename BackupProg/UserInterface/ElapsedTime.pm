@@ -63,6 +63,8 @@ sub draw_label(){
     my $ly=$self->{y};
     my $lx=1;
 
+    my $log = BackupProg::Common::Logger->instance();
+    $log->LOGI("drawing new label : '". $self->{label} ."'");
     
     $lx = $self->{w} - length($self->{label}) - 1;
     $self->{win}->addstr(0, $lx, $self->{label});
@@ -75,13 +77,16 @@ sub update() {
     my $self = shift;
     
     my $date = strftime "%S", localtime;
+    
     if ($date ne $self->{lastseconds}) { # TODO: Seems it doesn't work
+	my $log = BackupProg::Common::Logger->instance();
+	$log->LOGI("Updating : '". $date ."' is ne '".$self->{lastseconds}."'");
 	$self->{lastseconds} = $date;
 	$self->{label} = $self->get_elapsed_str();
 	$self->draw_label();
-	#	addstr(3, 73, $self->get_elapsed_str());
+	# addstr(3, 73, $self->get_elapsed_str());
     } else {
-#	$self->draw_label();
+	# $self->draw_label();
     }
 }
 
