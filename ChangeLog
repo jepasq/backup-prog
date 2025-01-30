@@ -1,3 +1,13 @@
+* v0.0.2-28 (30 Jul. 2024 - 30 Jan. 2025) SLOC 831 PO 11/113
+- Improve BP_GEN_TESTS_RULE usage and documentation
+- More log messages added to debug ElapsedTime drawing process
+- Slightly improve main endless loop
+- Improve UserInterface::Key widget instantiation message
+- Create docbook/ dir with -p flag to avoid install errors
+- Start to add new rules in tests/Makefile.in
+- Add Makefile default rule (was running install)
+- Print unit tests logs in CI
+
 * v0.0.2-27 (17 Apr. 2024 - 30 Jul.. 2024) SLOC 467 PO 11/113
 - Restore test execution to run prove on saved output
 - Now uses prove to run unit tests and remove TESTS_LOGFILE var
