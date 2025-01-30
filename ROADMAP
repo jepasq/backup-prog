@@ -232,6 +232,7 @@ CLOCK: [2023-04-05 mer. 11:16]--[2023-04-05 mer. 11:40] =>  0:24
 - [ ] It works and auto-update but it takes most of the CPU (>90%)
 **** TODO More unit tests and CI work (the install step fails) (x2)
 :LOGBOOK:
+CLOCK: [2025-01-30 jeu. 11:06]--[2025-01-30 jeu. 11:49] =>  0:43
 CLOCK: [2024-10-22 mar. 11:32]--[2024-10-22 mar. 11:37] =>  0:05
 CLOCK: [2024-10-07 lun. 14:20]--[2024-10-07 lun. 14:30] =>  0:10
 CLOCK: [2024-09-10 mar. 09:59]--[2024-09-10 mar. 10:27] =>  0:28
@@ -248,17 +249,16 @@ See https://www.gnu.org/software/texinfo/manual/texinfo/html_node/Command-List.h
 - [X] =BackupProg.texinfo:39: @t expected braces=
 - [X] =gzip: exinfo.tex.gz: No such file or directory=  
 - [X] Unit tests should create a log file
-
+- [X] =mv BackupProg.xml docbook/=
+  mv: cannot move 'BackupProg.xml' to 'docbook/': Not a directory
+    
 - [-] Now use prove to run tests
   We have some 'Dubious' errors. Maybe migrate to the TAP protocol,
   see https://metacpan.org/pod/Test::Harness for more
   - [X] It seems it reads program output to print some stats
     This seems to be the tests output
   - [ ] Now, the m4 part in m4/TestsTules.m4 : should install listed .t files ?
-    What is the dfference between CommonRules.m4's check and Tests one
     
-- [ ] =mv BackupProg.xml docbook/=
-  mv: cannot move 'BackupProg.xml' to 'docbook/': Not a directory
 - [ ] WidgetList unit tests should go in another file ?
   - [ ] Currently  trying with tests/WidgetListTest.pm but must be installed
     but we don't have any Makefile here so we can't install it
