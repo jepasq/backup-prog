@@ -28,10 +28,10 @@ sub new() {
 	       $self->SUPER::get_label()."'");
     addstr(10, 10, $self->get_elapsed_str());
 
-    $self->{label} = '0:00:01'; #$self->get_elapsed_str();
     $self = $class->SUPER::new($self->{label}, @args);
 
     $self->{lastseconds}  = -1;
+#    $self->{label} = $self->get_elapsed_str();
 
     # Already blessed by parent
     return $self;
@@ -64,12 +64,13 @@ sub draw_label(){
     my $lx=1;
 
     my $log = BackupProg::Common::Logger->instance();
-    $log->LOGI("drawing new label : '". $self->{label} ."'");
+    $log->LOGI("drawing new label : '". $self->{label} ."' at pos " . $ly . 'x'
+	. $lx);
     
     $lx = $self->{w} - length($self->{label}) - 1;
-    $self->{win}->addstr(0, $lx, $self->{label});
-    print "\e[3;77H"; # Cursor Home {ROW;COLUMN}
-    print $self->{label};
+    $self->{win}->addstr($ly, $lx, $self->{label});
+  #  print "\e[3;77H"; # Cursor Home {ROW;COLUMN}
+  #  print $self->{label};
 }
 
 # Update each tick from the MainWindow's endless loop

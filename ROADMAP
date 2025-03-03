@@ -210,6 +210,7 @@ CLOCK: [2022-07-18 lun. 04:06]--[2022-07-18 lun. 04:21] =>  0:15
   **macro "" not recognized -- ignoring**
 **** TODO Print back ElapsedTime content
 :LOGBOOK:
+CLOCK: [2025-03-03 lun. 09:20]--[2025-03-03 lun. 09:37] =>  0:17
 CLOCK: [2025-01-06 lun. 10:23]--[2025-01-06 lun. 10:43] =>  0:20
 CLOCK: [2024-12-16 lun. 09:53]--[2024-12-16 lun. 10:28] =>  0:35
 CLOCK: [2023-09-01 ven. 09:07]--[2023-09-01 ven. 09:20] =>  0:13
@@ -226,6 +227,7 @@ CLOCK: [2023-04-05 mer. 11:16]--[2023-04-05 mer. 11:40] =>  0:24
 - [X] Seems it's waitin for a user's interaction
   Should auto-update now. I think it's the MainWindow#update's $stdin->getc
 - [ ] More log work : why draw_label isn't shown on screen
+  First draw is back, very close
 - [ ] Maybe keep the pressed char ord print in a new box (or a new widget)
   Key.pm package created but doesn't work
   - [ ] May use gettext
