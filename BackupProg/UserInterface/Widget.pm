@@ -42,7 +42,13 @@ sub new(){
     $self->{dirty} = 1;
     $self->{label}= shift;
 
-    my (%options) = %{(shift)}; # Shift an hash
+    # Check if it's a hash before derreferencing to avoid
+    # 'Can't use an undefined value as a HASH reference' error
+    my %options;
+    my $optionsref = shift;
+    if (ref($optionsref) eq 'HASH') {
+        %options = %{$optionsref};
+    } 
     
     $self->{align} = $options{'align'};
     $self->{y} = $options{'y'};
